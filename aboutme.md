@@ -1,7 +1,5 @@
 ---
 layout: page
 title: About me
-subtitle: Zhanghao Wu
+subtitle: Hi, my name is Zhanghao Wu
 ---
-
-Hi, my name is Zhanghao Wu.
