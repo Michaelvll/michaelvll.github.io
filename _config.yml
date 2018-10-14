@@ -185,6 +185,8 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
+  - /CV
+  - Makefile
 
 # prose.io config
 prose:
