@@ -17,14 +17,18 @@ More formally speaking, the goal of the machine translation task is actually **m
 Before we talk about the objective function of the task, we can take a closer look at the goal. By applying Bayes' theorem to the probability $P(Y|X)$, we can have that 
 $$\text{maximize } P(Y|X) = \prod_{i=0}^n P(Y_i | X, Y_0, \cdots, Y_{i-1}).$$ 
 And the actual meaning of each term is that the probability of the $i^{th}$ phrase in target sentence given the source sentence $X$ and the prefix of this phrase. In the figure below, $P(Y_2 | X, Y_0, Y_1)$, for example, is the probability of "借" given "Can I borrow your book?", "我" and "能".
-![Probability Example](../assets/machine_translation/p_example.png){:height="30%" width="30%" .center-image}
+
+{: .center-image}
+![Probability Example](../assets/machine_translation/p_example.png "Probability Example"){:height="30%" width="30%"}
 
 As a common trick, we can take logarithm of the production and get the objective function of the task, that is 
 $$\text{maximize} \sum_{i=0}^n \log P(Y_i | X, Y_0, \cdots, Y_{i-1}).$$
 This objective function is equivalent to the original goal, but we can benefit a lot from it when designing a algorithm to achieve the goal.
 
 Instead of designing a translator that generate the whole target sentence all at once (this may be quite hard as the length of the target sentence varies for different inputs), with the summation of log probabilities in mind, the translator can predict the probability for one phrase at a time given the source sentence and the prefix of this phrase. By running the translator several times, each time have one more phrase in the prefix, the translator can generate the target sentence.
-![Translator Objective](../assets/machine_translation/translator_obj.png){:.center-image}
+
+{:.center-image}
+![Translator Objective](../assets/machine_translation/translator_obj.png "Translator Objective")
 
 
 **TO BE CONTINUE!**
