@@ -11,7 +11,10 @@ Recently, I have learnt something about machine translation and done a presentat
 
 ## What is machine translation?
 Machine translation is a very straight forward term, that is to let the program do translation work automatically, translating a sentence from one language to another. The following is an example translating a sentence in English to Chinese.
+
+{: .center-image}
 ![Translation Example](../assets/machine_translation/example.png)
+
 More formally speaking, the goal of the machine translation task is actually **maximize the probability of the target sentence $Y$ given the source sentence $X$**, that is maximizing $P(Y|X)$. 
 ### Objective function
 Before we talk about the objective function of the task, we can take a closer look at the goal. By applying Bayes' theorem to the probability $P(Y|X)$, we can have that 
@@ -25,7 +28,7 @@ As a common trick, we can take logarithm of the production and get the objective
 $$\text{maximize} \sum_{i=0}^n \log P(Y_i | X, Y_0, \cdots, Y_{i-1}).$$
 This objective function is equivalent to the original goal, but we can benefit a lot from it when designing a algorithm to achieve the goal.
 
-Instead of designing a translator that generate the whole target sentence all at once (this may be quite hard as the length of the target sentence varies for different inputs), with the summation of log probabilities in mind, the translator can predict the probability for one phrase at a time given the source sentence and the prefix of this phrase. By running the translator several times, each time have one more phrase in the prefix, the translator can generate the target sentence.
+Instead of designing a translator that generate the whole target sentence all at once (this may be quite hard as the length of the target sentence varies for different inputs), with the summation of log probabilities in mind, the translator can **predict the probability for one phrase at a time** given the source sentence and the prefix of this phrase. By running the translator several times, each time have one more phrase in the prefix, the translator can generate the target sentence.
 
 {:.center-image}
 ![Translator Objective](../assets/machine_translation/translator_obj.png "Translator Objective")
