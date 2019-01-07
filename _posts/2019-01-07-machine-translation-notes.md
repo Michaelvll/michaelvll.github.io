@@ -7,7 +7,6 @@ bigimg: /img/notes.jpg
 tags: [note]
 ---
 
-# Machine Translation
 Recently, I have learnt something about machine translation and done a presentation about it. Why not transform the slides into my first post? This post contains some personal understandings of some popular models like, Google's Neural Machine Translation System [[Wu et al.]](https://arxiv.org/abs/1609.08144), Attention is all you need [[Vaswani et al.]](https://arxiv.org/abs/1706.03762) and so on, and if there is any misunderstandings, please correct me in the comment.
 
 ## What is machine translation?
