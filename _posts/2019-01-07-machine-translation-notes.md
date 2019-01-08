@@ -37,14 +37,35 @@ Instead of designing a translator that generate the whole target sentence all at
 
 ## Time for methods!
 There are several methods that are designed to achieve the goal we mentioned before, including *statistical*, *sequence to sequence*, *transformer*, etc.
-### Statistical
+### Statistical - Phrase-Based Translation
 The statistical method is the conventional way to do the translation task. And the one used in [[1]](#Reference) is called phrase-based translation.
 
 The main idea of this method is that when the program takes a foreign input, it will firstly cut the input into phrases and then **translate these phrases one by one independently**. Finally, the program will **reorder the translated phrases** to make the target sentence more natural.
 ![Phrase-Based Example](../assets/machine_translation/phrase_based.png)
 And the goal of this method is to $\text{maximize } P(Y|X)$ by maximizing $P(X|Y)\cdot P_{LM}(Y)$, where $P_{LM}$ is a language model that measures the order of the predicted sentence, by evaluating each trigram in the sentence. There are some elegant and mathematical way to design the translation model and the language model, but I am not going to discuss them here.
 
-### Sequence to Sequence
+### Sequence to Sequence - GNMT
+For a more advance model for machine translation, Google published a model called Google's Neural Machine Translation System [[2]](#Reference), or for short GNMT. And the architecture is shown the figure below.
+![GNMT](../assets/machine_translation/GNMT_model.png)
+
+{:.image-caption}
+Figure Credit: [Wu et al.], Google's Neural Machine Translation System [[2]](#Reference)
+
+The GNMT uses a lot of Long Short Term Memory networks (LSTMs) stacked together, all of the layers are one-directional LSTM except the one at the input, which is a bidirectional LSTM. The model can be divided into three parts, including an encoder, a decoder and an attention part in the middle. The figure below is a simplified GNMT model.
+
+![Simplified GNMT](../assets/machine_translation/gnmt_simple.png)
+
+In this example, for the model, a source sentence, "Can I borrow your book?", is given, the encoder will take the sequence of word embedding representing the source sentence. By the way, word embedding is a kind of vectors in a quite low dimension  space (much smaller than the vocabulary space) that can represent words. When the encoder gets the embedding sequence, it outputs a sequence of hidden vectors with the same length as the input sentence. In expectation, these hidden vectors should contains the information of the phrases in the source sentence as well as the information of the whole sequence.
+
+To make it clear, the training and testing process of GNMT is to optimize the objective function we mentioned before -- $\text{maximize } \sum_{i=0}^n P(Y_i|X, Y_0, \cdots, Y_{i-1})$. GNMT predicts a phrase in the target sentence one by one. And each time, the decoder will be fed with the prefix of the phrase we want to predict. 
+![Decoder of GNMT](../assets/machine_translation/gnmt_decoder.png)
+Getting the hidden vectors, the attention part use the information of the prefix, and generate a sequence of weights for the hidden sequence. Taking the weighted average of the hidden vectors, the attention part outputs a embedding vector that contains the all the information from the source sentence. In the meantime, the information in the embedding vector is focused on predicting the next phrase after the prefix because of the weight applied to the hidden vectors.
+
+Finally, the LSTMs in the decoder uses the word embedding sequence of the prefix and the embedding vector $e_3$ and outputs the probability for the next phrase. The model then can calculate the objective function by adding up these log probabilities. 
+
+The training process takes the gradient of the objective function and updates the parameters in the model. The testing process, however, the model will use beam search for generating target sentence. 
+
+## Transformer - Attention is All You Need
 
 **TO BE CONTINUE!**
 
