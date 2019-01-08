@@ -787,3 +787,9 @@ td.gutter {
 {
     text-align: center;
 }
+
+.image-caption {
+  text-align: center;
+  font-size: 10px;
+  color: #808080;
+}
