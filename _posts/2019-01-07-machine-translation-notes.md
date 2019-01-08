@@ -65,7 +65,7 @@ Finally, the LSTMs in the decoder uses the word embedding sequence of the prefix
 
 The training process takes the gradient of the objective function and updates the parameters in the model. The testing process, however, the model will use **beam search** (with the probability of each phrase given the source sentence and the prefix in hand, the beam search can be done easily) for generating target sentence. 
 
-## Transformer - Attention is All You Need
+### Transformer - Attention is All You Need
 The state-of-the-art machine translation model is designed by another group at Google, which is usually called Transformer. The figure below shows the architecture of the transformer model.
 
 ![Transformer](../assets/machine_translation/transformer.png)
