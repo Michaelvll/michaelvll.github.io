@@ -63,7 +63,7 @@ Getting the hidden vectors, the attention part use the information of the prefix
 
 Finally, the LSTMs in the decoder uses the word embedding sequence of the prefix and the embedding vector $e_3$ and outputs the probability distribution for the next phrase on the vocabulary. The model then can calculate the objective function by adding up these log probabilities. 
 
-The training process takes the gradient of the objective function and updates the parameters in the model. The testing process, however, the model will use **beam search** (with the probability of each phrase given the source sentence and the prefix in hand, the beam search can be done easily) for generating target sentence. 
+The training process takes the gradient of the objective function and updates the parameters in the model. In the testing process, however, the model will use **beam search** (with the probability of each phrase given the source sentence and the prefix in hand, the beam search can be done easily) for generating target sentence. 
 
 ### Transformer - Attention is All You Need
 The state-of-the-art machine translation model is designed by another group at Google, which is usually called Transformer. The figure below shows the architecture of the transformer model.
@@ -83,7 +83,7 @@ As for the training and testing processes of this model, they are almost the sam
 
 ![Transformer Decoder](../assets/machine_translation/transformer_decoder.png)
 
-It is good to mention that there some tricks for accelerating the training process of neural machine translation models, like GNMT and Transformer. To having batches of sentences that have different lengths, we can use mask to indicate that which parts of a input batch are paddings. Also, in order to train the model for each phrase in the target (of length $k$), we do not need to run the model for $k$ times with different prefix, but by right shift the target sentence that is fed into the decoder and applying mask of size $k\times k$, to the attention, all of the probabilities of the phrases in target sentence can be generated in one step.
+It is good to mention that there are some tricks for accelerating the training process of neural machine translation models, like GNMT and Transformer. To having batches of sentences that have different lengths, we can use mask to indicate that which parts of a input batch are paddings. Also, in order to train the model for each phrase in the target (of length $k$), we do not need to run the model for $k$ times with different prefix, but by right shift the target sentence that is fed into the decoder and applying mask of size $k\times k$, to the attention, all of the probabilities of the phrases in target sentence can be generated in one step.
 
 ## Summary
 In this post, I mentioned my understanding of some models used for machine translation, including the conventional methods, the sequence to sequence neural methods and the state-of-the-art transformer methods. There are also many other excellent models for translation task. For example, the convolutional sequence to sequence model, [[4]](#Reference), uses the convolution networks instead of the recurrent network used in GNMT. Each of these models are designed carefully to solve the translation problem in natural language processing. With so many brilliant ideas to appreciate, it is very interesting exploring such fields.
