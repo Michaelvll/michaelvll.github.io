@@ -18,7 +18,9 @@ social: true
 
 ### About me
 
-I am a junior student majoring in **computer science** at [Shanghai Jiao Tong University](www.sjtu.edu.cn) (SJTU). I am a member of [ACM Honors Class](https://acm.sjtu.edu.cn/home), which is an elite CS program for top 5% talented students at SJTU.
+I am a junior student majoring in **computer science** at [Shanghai Jiao Tong University](www.sjtu.edu.cn) (SJTU). I am a member of [ACM Honors Class](https://acm.sjtu.edu.cn/home), which is an elite CS program for top 5% talented students at SJTU. And I am among the top 3 students of the class.
+
+I plan to pursue a CS Ph.D. program that starts in fall 2020.
 
 ### Research interest
 I am interested in computer architecture and deep learning.
@@ -26,7 +28,7 @@ I am interested in computer architecture and deep learning.
 ### Research Experience
 
 #### [SpeechLab](https://speechlab.sjtu.edu.cn/), SJTU
-I am an undergraduate researcher advised by Prof. Kai Yu in SpeechLab, SJTU, from Jul. 2018 to present.
+I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu in SpeechLab, SJTU, from Jul. 2018 to present.
 * I am focusing on Rich Audio Analysis (RAA), analysis and classification of non-text information with human speech.
 * I designed a data augmentation using variational autoencoder for embedding based speaker verification, submitted to interspeech 2019
 * I implemented a deep coanonical correlation analysis (DCCA) to combine *i*-vector and *x*-vector, which are two kinds of highly complementary embedding of speaker.

@@ -3,6 +3,7 @@ layout: page
 permalink: /projects/
 title: projects
 ---
+* **[DeepCCA](https://github.com/Michaelvll/DeepCCA)**: an implementation of Deep Canonical Correlation Analysis in pytorch.
 * **[MW Compiler](https://www.github.com/Michaelvll/MWCompiler)**: a toy compiler for Mx language, a C-and-Java-like language.  
   Implemented in Java. Many optimization were applied to beat gcc O1.(Top 3 fastest)
 * **[RISCV CPU](https://www.github.com/Michaelvll/RISCV_CPU)**: a FPGA-supported RISC-V CPU with 5-stage pipeline.  
