@@ -1,7 +1,7 @@
 all:
-	cd ./CV &&	xelatex ./resume.tex -output-directory=../
-	copy resume.pdf cv.pdf 
-	del resume.*
+	cd ./CV &&	xelatex ./resume_cv.tex -output-directory=../
+	copy resume_cv.pdf cv.pdf 
+	del resume_cv.*
 
 clean:
-	del resume.*
+	del resume_cv.*
