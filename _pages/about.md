@@ -8,9 +8,9 @@ profile:
   align: right
   image: my_pic.png
   address: >
-    <p>3-225 SEIEE</p>
-    <p>Shanghai Jiao Tong University</p>
-    <p>Shanghai, China 200240</p>
+    <p>50 Vassar St 38-344</p>
+    <p>Massachusetts Institute of Technology</p>
+    <p>Cambridge, USA 02139</p>
 
 news: false
 social: true
