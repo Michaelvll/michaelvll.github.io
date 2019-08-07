@@ -27,17 +27,25 @@ I am interested in computer architecture and deep learning.
 
 ### Research Experience
 
+#### [HanLab](https://songhan.mit.edu), MIT
+
+I am an research assistant supervised by Prof. Song Han in HanLab, MIT, from Jul. 2019 to present.
+* Focusing on privacy preserving and efficient machine learning.
+* Won first place in the CVPR'19 Visual Wake Words challenge and third place (academic first place) in CVPR'19 Low Power Image Recognition Competition track 1.
+
 #### [SpeechLab](https://speechlab.sjtu.edu.cn/), SJTU
 I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu in SpeechLab, SJTU, from Jul. 2018 to present.
-* I am focusing on Rich Audio Analysis (RAA), analysis and classification of non-text information with human speech.
-* I designed a data augmentation using variational autoencoder for embedding based speaker verification, submitted to interspeech 2019
-* I implemented a deep coanonical correlation analysis (DCCA) to combine *i*-vector and *x*-vector, which are two kinds of highly complementary embedding of speaker.
+* Focused on Rich Audio Analysis (RAA), analysis and classification of non-text information with human speech.
+* Designed a data augmentation using variational autoencoder for embedding based speaker verification, [Interspeech 2019 oral](assets/VAE_Data_Augmentation_proceeding.pdf).
+* Implemented a deep coanonical correlation analysis (DCCA) to combine *i*-vector and *x*-vector, which are two kinds of highly complementary embedding of speaker.
 
 ### Teaching Experience 
 * [Compiler Design and Implementation](https://acm.sjtu.edu.cn/wiki/Compiler_2019), teacher assistant, Spring 2019
 * [C++ Programing (CS512)](https://acm.sjtu.edu.cn/wiki/Programming_2017), teacher assistant, Fall 2017
 
 ### Honors & Award
+* **First place**, CVPR'19 Visual Wake Words challenge, 2019
+* **Third place**, CVPR'19 Low Power Image Recognition Competition track 1
 * **National Scholarship**, Ministry of Education of P.R. China, 2018
 * **Fan Hsu-Chi Chancellor's Scholarship**, (Top 0.1%), Shanghai Jiao Tong University, 2017
 * **Outstanding Winner**, Mathematical Contest in Modeling (Top 0.5%, international), COMAP, 2017
