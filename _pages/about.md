@@ -29,7 +29,7 @@ I am interested in computer architecture and deep learning.
 
 #### [HanLab](https://songhan.mit.edu), MIT
 
-I am an research assistant supervised by Prof. Song Han in HanLab, MIT, from Jul. 2019 to present.
+I am a research assistant supervised by Prof. Song Han in HanLab, MIT, from Jul. 2019 to present.
 * Focusing on privacy preserving and efficient machine learning.
 * Won first place in the CVPR'19 Visual Wake Words challenge and third place (academic first place) in CVPR'19 Low Power Image Recognition Competition track 1.
 
