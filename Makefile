@@ -1,7 +1,6 @@
 all:
-	cd ./CV &&	xelatex ./resume_cv.tex -output-directory=../
-	copy resume_cv.pdf assets\cv.pdf 
-	del resume_cv.*
+	cd ../CV && git pull && xelatex ./resume_cv.tex -output-directory=./
+	copy ..\CV\resume_cv.pdf assets\cv.pdf 
 
 clean:
-	del resume_cv.*
+	del ..\resume_cv.*
