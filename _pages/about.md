@@ -23,7 +23,7 @@ I am a senior student majoring in **computer science** at [Shanghai Jiao Tong Un
 I plan to pursue a CS Ph.D. program that starts in fall 2020.
 
 ### Research interest
-I am interested in machine learning, including speech, natural language processing and efficient machine learning.
+I am interested in machine learning, including natural language processing, speech and efficient AI.
 
 ### Research Experience
 
@@ -31,7 +31,8 @@ I am interested in machine learning, including speech, natural language processi
 
 I am a research assistant supervised by Prof. Song Han in HanLab, MIT, from Jul. 2019 to present.
 * Focusing on privacy preserving and efficient machine learning.
-* Won first place in the CVPR'19 Visual Wake Words challenge and third place (academic first place) in CVPR'19 Low Power Image Recognition Competition track 1.
+* Won first place in the CVPR'19 Visual Wake Words challenge and third place (first place of all academic groups) in CVPR'19 Low Power Image Recognition Competition.
+* Working on efficient natural language processing, especially for machine translation. And just made a submission to ICLR 2020.
 
 #### [SpeechLab](https://speechlab.sjtu.edu.cn/), SJTU
 I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu in SpeechLab, SJTU, from Jul. 2018 to present.
@@ -46,7 +47,7 @@ I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu i
 ### Honors & Award
 * **First place**, CVPR'19 Visual Wake Words challenge, 2019
 * **Third place**, CVPR'19 Low Power Image Recognition Competition track 1
-* **National Scholarship**, Ministry of Education of P.R. China, 2018
+* **National Scholarship**, (Top 1%) Ministry of Education of P.R. China, 2018
 * **Fan Hsu-Chi Chancellor's Scholarship**, (Top 0.1%), Shanghai Jiao Tong University, 2017
 * **Outstanding Winner**, Mathematical Contest in Modeling (Top 0.5%, international), COMAP, 2017
 * **Merit Student**, Shanghai Jiao Tong University, 2017
