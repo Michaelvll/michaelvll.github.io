@@ -8,3 +8,6 @@ clean:
 
 run:
 	bundle exec jekyll serve
+
+deploy:
+	./bin/deploy --user
