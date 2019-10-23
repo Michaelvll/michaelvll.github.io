@@ -31,14 +31,16 @@ I am interested in machine learning, including natural language processing, spee
 
 I am a research assistant supervised by Prof. Song Han in HanLab, MIT, from Jul. 2019 to present.
 * Focusing on privacy preserving and efficient machine learning.
-* Won first place in the CVPR'19 Visual Wake Words challenge and third place (first place of all academic groups) in CVPR'19 Low Power Image Recognition Competition.
-* Working on efficient natural language processing, especially for machine translation. And just made a submission to ICLR 2020.
+* Working on efficient natural language processing, especially for machine translation. Proposed a novel primitive with higher capacity than the original transformer under mobile settings and submitted to ICLR 2020.
+* Designed an efficient privacy-preserving cloud-edge inference method utilizing the linearity of neural networks.
+* Won first place in the CVPR’19 Visual Wake Words challenge and third place (first place of all academic groups) in CVPR’19 Low Power Image Recognition Competition.
 
 #### [SpeechLab](https://speechlab.sjtu.edu.cn/), SJTU
 I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu in SpeechLab, SJTU, from Jul. 2018 to present.
-* Focused on Rich Audio Analysis (RAA), analysis and classification of non-text information with human speech.
-* Designed a data augmentation using variational autoencoder for embedding based speaker verification, [Interspeech 2019 oral](assets/VAE_Data_Augmentation_proceeding.pdf).
-* Implemented a deep coanonical correlation analysis (DCCA) to combine *i*-vector and *x*-vector, which are two kinds of highly complementary embedding of speaker.
+* Focused on Rich Audio Analysis (RAA), analysis and classification of non-text information within human speech.
+* Implemented Deep Canonical Correlation Analysis (DCCA) in pytorch and released the code on GitHub.
+* Participated in the translation of the book: Reinforcement Learning: An Introduction by Sutton, R.S., Barto, A.G.
+* Established a VAE based data augmentation to improve the robustness of speaker verification systems by modelling the patterns of noise and reverberation in the speaker embeddings. It was accepted by Interspeech 2019 (oral).
 
 ### Teaching Experience 
 * [Compiler Design and Implementation](https://acm.sjtu.edu.cn/wiki/Compiler_2019), teacher assistant, Spring 2019
@@ -46,7 +48,7 @@ I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu i
 
 ### Honors & Award
 * **First place**, CVPR'19 Visual Wake Words challenge, 2019
-* **Third place**, CVPR'19 Low Power Image Recognition Competition track 1
+* **Third place**, ICCV'19 Low Power Image Recognition Competition track 1
 * **National Scholarship**, (Top 1%) Ministry of Education of P.R. China, 2018
 * **Fan Hsu-Chi Chancellor's Scholarship**, (Top 0.1%), Shanghai Jiao Tong University, 2017
 * **Outstanding Winner**, Mathematical Contest in Modeling (Top 0.5%, international), COMAP, 2017
