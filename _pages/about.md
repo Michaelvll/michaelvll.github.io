@@ -16,14 +16,20 @@ news: false
 social: true
 ---
 
+---
+
 ### About me
 
 I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn) (SJTU). I am a member of [ACM Honors Class](https://acm.sjtu.edu.cn/home), which is an elite CS program for top 5% talented students at SJTU. And I am among the top 3 students of the class.
 
 I plan to pursue a CS Ph.D. program that starts in fall 2020.
 
+---
+
 ### Research interest
 I am interested in deep learning, especially natural language processing, speech and efficient AI.
+
+---
 
 ### Research Experience
 
@@ -42,9 +48,13 @@ I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu i
 * Participated in the translation of the book: Reinforcement Learning: An Introduction by Sutton, R.S., Barto, A.G.
 * Established a VAE based data augmentation to improve the robustness of speaker verification systems by modelling the patterns of noise and reverberation in the speaker embeddings. It was accepted by Interspeech 2019 (oral).
 
+---
+
 ### Teaching Experience 
 * [Compiler Design and Implementation](https://acm.sjtu.edu.cn/wiki/Compiler_2019), teacher assistant, Spring 2019
 * [C++ Programing (CS512)](https://acm.sjtu.edu.cn/wiki/Programming_2017), teacher assistant, Fall 2017
+
+---
 
 ### Honors & Award
 * **First place**, CVPR'19 Visual Wake Words challenge, 2019
