@@ -23,7 +23,7 @@ I am a senior student majoring in **computer science** at [Shanghai Jiao Tong Un
 I plan to pursue a CS Ph.D. program that starts in fall 2020.
 
 ### Research interest
-I am interested in machine learning, including natural language processing, speech and efficient AI.
+I am interested in deep learning, especially natural language processing, speech and efficient AI.
 
 ### Research Experience
 
