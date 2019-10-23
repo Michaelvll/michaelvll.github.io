@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    {% if page.layout != "about" %}
+    {% if page.layout != "About" %}
     <span class="site-title">
         {% assign name = site.name | split: ' ' %}
         <strong>{{ name | first }}</strong> {{ name | last }}
@@ -23,10 +23,10 @@
 
       <div class="trigger">
         <!-- About -->
-        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">about</a>
+        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">About</a>
 
         <!-- Blog -->
-        <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a>
+        <a class="page-link" href="{{ '/Blog/' | prepend: site.baseurl | prepend: site.url }}">Blog</a>
 
         <!-- Pages -->
         {% for page in site.pages %}
@@ -36,7 +36,7 @@
         {% endfor %}
 
         <!-- CV link -->
-        <!-- <a class="page-link" href="{{ '/assets/pdf/CV.pdf' | prepend: site.baseurl | prepend: site.url }}">vitae</a> -->
+        <!-- <a class="page-link" href="{{ '/assets/pdf/cv.pdf' | prepend: site.baseurl | prepend: site.url }}">vitae</a> -->
 
       </div>
     </nav>

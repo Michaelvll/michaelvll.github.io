@@ -37,8 +37,8 @@ blog_description: Keep going, keep good
 
 # Pagination
 paginate: 4
-permalink: /blog/:year/:title/
-paginate_path: /blog/page:num/
+permalink: /Blog/:year/:title/
+paginate_path: /Blog/page:num/
 
 text:
   pagination:
@@ -93,33 +93,33 @@ plugins:
     - jekyll-email-protect
     - jekyll-paginate
     - jemoji
+    - jekyll/scholar
 
 
-# - jekyll-scholar
 
 # Jekyll-Scholar
-# scholar:
+scholar:
 
-#   last_name: Wu
+  last_name: Wu
 
-#   style: apa
-#   locale: en
+  style: apa
+  locale: en
 
-#   sort_by: year
-#   order: descending
+  sort_by: year
+  order: descending
 
-#   source: /_bibliography/
-#   bibliography: papers.bib
-#   bibliography_template: bib
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
 
-#   replace_strings: true
-#   join_strings: true
+  replace_strings: true
+  join_strings: true
 
-#   details_dir: bibliography
-#   details_layout: bibtex.html
-#   details_link: Details
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
 
-#   query: "@*"
+  query: "@*"
 
 # -----------------------------------------------------------------------------
 # Other settings

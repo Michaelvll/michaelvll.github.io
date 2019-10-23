@@ -5,3 +5,6 @@ cv:
 
 clean:
 	del ..\resume_cv.*
+
+run:
+	bundle exec jekyll serve

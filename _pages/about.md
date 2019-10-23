@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: About
 permalink: /
 title: <strong>Zhanghao</strong> Wu
 # description: <a href="www.sjtu.edu.cn">SJTU</a>.

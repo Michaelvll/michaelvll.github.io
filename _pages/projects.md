@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /projects/
-title: projects
+title: Projects
 ---
 * **[VWW](https://github.com/mit-han-lab/VWW)**: first place in the CVPR'19 Visual Wake Words challenge (TF-lite track).
 * **[DeepCCA](https://github.com/Michaelvll/DeepCCA)**: an implementation of Deep Canonical Correlation Analysis in pytorch.

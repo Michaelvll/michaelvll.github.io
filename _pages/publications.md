@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: For future publications ;-)
-years: []
+title: Publications
+description: 
+years: [2019]
 ---
 
 {% for y in page.years %}
