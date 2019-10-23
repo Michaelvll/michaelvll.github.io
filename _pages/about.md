@@ -18,7 +18,7 @@ social: true
 
 ### About me
 
-I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](www.sjtu.edu.cn) (SJTU). I am a member of [ACM Honors Class](https://acm.sjtu.edu.cn/home), which is an elite CS program for top 5% talented students at SJTU. And I am among the top 3 students of the class.
+I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn) (SJTU). I am a member of [ACM Honors Class](https://acm.sjtu.edu.cn/home), which is an elite CS program for top 5% talented students at SJTU. And I am among the top 3 students of the class.
 
 I plan to pursue a CS Ph.D. program that starts in fall 2020.
 

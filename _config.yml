@@ -37,8 +37,8 @@ blog_description: Keep going, keep good
 
 # Pagination
 paginate: 4
-permalink: /Blog/:year/:title/
-paginate_path: /Blog/page:num/
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
 
 text:
   pagination:
