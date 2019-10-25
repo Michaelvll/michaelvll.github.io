@@ -10,4 +10,4 @@ run:
 	bundle exec jekyll serve
 
 deploy:
-	./bin/deploy --user
+	./bin/deploy --user -s
