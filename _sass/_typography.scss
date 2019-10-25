@@ -15,6 +15,7 @@ abbr {
 p {
     color: #333;
     line-height: 1.5;
+    margin: $paragraph-margin;
 }
 
 small,
@@ -30,6 +31,10 @@ sup {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
+}
+h3 {
+    font-size: $h3;
+    color: $h3-color;
 }
 
 div.equation {

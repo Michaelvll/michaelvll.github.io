@@ -12,6 +12,15 @@ layout: page
         {{ page.profile.address }}
       </div>
     {% endif %}
+    {% if site.email %}
+      <div class="address">
+        <center><a href="mailto:{{ site.email }}    ">Email</a>
+        {% if site.github %}
+            / <a href="https://www.github.com/    michaelvll">GitHub</a>
+        {% endif %}
+        </center>
+      </div>
+    {% endif %}
   </div>
 {% endif %}
 

@@ -9,18 +9,16 @@ profile:
   image: my_pic.jpg
 
 news: false
-social: true
+social: false
 ---
 
 
-I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn) (SJTU). I am a member of [ACM Honors Class](https://acm.sjtu.edu.cn/home), which is an elite CS program for top 5% talented students at SJTU. **My overall GPA is 92.13/100, Rank: 2/37**.
+I am a senior student majoring in **computer science** at Shanghai Jiao Tong University. I am a member of ACM Honors Class, which is an elite CS program for top 5% talented students. **My overall GPA is 92.13/100, Rank: 2/37**.
 
-Currently, I am a **visiting student** at [HanLab](https://songhan.mit.edu), MIT, advised by Prof. Song Han.
+Currently, I am a **visiting student** at MIT, working with Prof. [Song Han](https://songhan.mit.edu).
 
-I plan to pursue a CS Ph.D. program that starts in fall 2020.
-
-### Research Interests
-I am interested in deep learning, especially natural language processing, speech and efficient AI.
+I am interested in **deep learning**, especially **natural language processing**, **speech** and **efficient AI**.
+And I plan to pursue a CS Ph.D. that starts in fall, 2020.
 
 ### Research Experience
 

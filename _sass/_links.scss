@@ -3,13 +3,13 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $theme-color;
+        color: $link-hover-color;
         text-decoration: none;
     }
 }
 
 article a, .news a {
-    color: $theme-color;
+    color: $link-color;
     font-weight: 100;
 
     &:hover {

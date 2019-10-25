@@ -2,7 +2,7 @@
 /******************************************************************************/
 
 // Typography
-$base-font-size: 16px !default;
+$base-font-size: 18px !default;
 $small-font-size:  0.875rem !default;
 $bold-font-weight: bold !default;
 $font-family: Helvetica, Arial, sans-serif !default;
@@ -13,7 +13,7 @@ $heading-line-height: 1.25 !default;
 $monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
 $h1: 2.998rem !default;
 $h2: 1.5rem !default;
-$h3: 1.25rem !default;
+$h3: 1.15rem !default;
 $h4: 1rem !default;
 $h5: .875rem !default;
 $h6: .75rem !default;
@@ -26,6 +26,8 @@ $h00-responsive-max: 7.68rem !default;
 $h0-responsive-max: 5.76rem !default;
 $h1-responsive-max: 3.84rem !default;
 $abbr-border-bottom: 1px black dotted;
+
+$paragraph-margin: .3rem !default;
 
 // Page width
 $measure-width: 42rem !default;
@@ -54,6 +56,7 @@ $purple:            #B509AC !default;
 $pink:              #f92080 !default;
 $light-pink:        #ffdddd !default;
 $yellow:            #efcc00 !default;
+$mit-red:           #A31F34 !default;
 
 $white:             #fff !default;
 $dark-gray:         #333 !default;
@@ -70,14 +73,16 @@ $darken-2:          rgba(#000,.125) !default;
 $darken-3:          rgba(#000,.25) !default;
 $darken-4:          rgba(#000,.5) !default;
 
-$theme-color:       $blue;
+$theme-color:       $mit-red;
 $code-color:        $dark-gray;
 $text-color:        $dark-gray;
 $background-color:  white;
 
+$h3-color:          $theme-color;
+
 // Links
-$link-color:        $theme-color;
-$link-hover-color:  darken($theme-color, 40%);
+$link-color:        $blue-1;
+$link-hover-color:  darken($link-color, 40%);
 
 // Breakpoints
 $breakpoint-md: '(min-width: 52em)';
