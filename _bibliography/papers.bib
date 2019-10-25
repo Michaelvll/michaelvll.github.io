@@ -1,6 +1,24 @@
 ---
 ---
 
+@inproceedings{Han:2019rc,
+  title = {Real-Time Image Classification with Proxyless Neural Architecture Search and Quantization-Aware Finetuning},
+  author = {Han, Cai and Wang, Tianzhe and Wu, Zhanghao and Wang, Kuan and Lin, Ji and Han, Song},
+  booktitle = {ICCV workshop},
+  year = {2019},
+  abstract = {It is challenging to efficiently deploy deep learning models on resource-constrained hardware devices (e.g., mobile and IoT device) with strict efficiency constraints (e.g., latency, energy consumption). We employ Proxyless Neural Architecture Search (ProxylessNAS) to auto design compact and specialized neural network architectures for the target hardware platform. ProxylessNAS makes latency differentiable, so we can optimize not only accuracy but also latency by gradient descent. Such direct optimization saves the search cost by 200x compared to conventional neural architecture search methods. Our work is followed by quantization-aware finetuning to further boost the efficiency. In Low Power Image Recognition Competition, CVPR'19, our solution won the 3rd place on the task of Real-Time Image Classification (online track).}
+}
+
+@inproceedings{Wu2020efficient,
+  title = {Efficient Transformer for Mobile Applications},
+  author = {Wu, Zhanghao and Liu, Zhijian and Lin, Ji and Lin, Yujun and Han, Song},
+  booktitle = {Submitted to ICLR},
+  year = {2020},
+  url = {https://openreview.net/forum?id=ByeMPlHKPH},
+  html = {https://openreview.net/pdf?id=ByeMPlHKPH},
+  abstract = {Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for real-world mobile applications since mobile phones are tightly constrained by the hardware resources and battery. In this paper, we investigate the mobile setting (under 500M Mult-Adds) for NLP tasks to facilitate the deployment on the edge devices. We present Long-Short Range Attention (LSRA), where some heads specialize in the local context modeling (by convolution) while the others capture the long-distance relationship (by attention). Based on this primitive, we design Mobile Transformer (MBT) that is tailored for the mobile NLP application. Our MBT demonstrates consistent improvement over the transformer on two well-established language tasks: IWSLT 2014 German-English and WMT 2014 English-German. It outperforms the transformer by 0.9 BLEU under 500M Mult-Adds and 1.1 BLEU under 100M Mult-Adds on WMT'14 English-German. Without the costly architecture search that requires more than 250 GPU years, our manually-designed MBT achieves 0.4 higher BLEU than the AutoML-based Evolved Transformer under the extremely efficient mobile setting (i.e., 100M Mult-Adds).}
+}
+
 @inproceedings{Wu:2019vaeda, 
   title = {Data Augmentation Using Variational Autoencoder for Embedding Based Speaker Verification}, 
   author = {Wu, Zhanghao and Wang, Shuai and Qian, Yanmin and Yu, Kai}, 

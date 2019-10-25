@@ -7,29 +7,20 @@ title: <strong>Zhanghao</strong> Wu
 profile:
   align: right
   image: my_pic.png
-  address: >
-    <p>50 Vassar St 38-344</p>
-    <p>Massachusetts Institute of Technology</p>
-    <p>Cambridge, USA 02139</p>
+ 
 
 news: false
 social: true
 ---
 
----
-
 ### About me
 
-I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn) (SJTU). I am a member of [ACM Honors Class](https://acm.sjtu.edu.cn/home), which is an elite CS program for top 5% talented students at SJTU. And I am among the top 3 students of the class.
+I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](https://www.sjtu.edu.cn) (SJTU). I am a member of [ACM Honors Class](https://acm.sjtu.edu.cn/home), which is an elite CS program for top 5% talented students at SJTU. My overall GPA is **92.13/100, Rank: 2/37**.
 
 I plan to pursue a CS Ph.D. program that starts in fall 2020.
 
----
-
-### Research interest
+### Research Interests
 I am interested in deep learning, especially natural language processing, speech and efficient AI.
-
----
 
 ### Research Experience
 
@@ -48,13 +39,8 @@ I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu i
 * Participated in the translation of the book: Reinforcement Learning: An Introduction by Sutton, R.S., Barto, A.G.
 * Established a VAE based data augmentation to improve the robustness of speaker verification systems by modelling the patterns of noise and reverberation in the speaker embeddings. It was accepted by Interspeech 2019 (oral).
 
----
-
-### Teaching Experience 
-* [Compiler Design and Implementation](https://acm.sjtu.edu.cn/wiki/Compiler_2019), teacher assistant, Spring 2019
-* [C++ Programing (CS512)](https://acm.sjtu.edu.cn/wiki/Programming_2017), teacher assistant, Fall 2017
-
----
+### Publications
+{% bibliography -f papers %}
 
 ### Honors & Award
 * **First place**, CVPR'19 Visual Wake Words challenge, 2019
@@ -64,3 +50,7 @@ I am an undergraduate researcher advised by Prof. Yanmin Qian and Prof. Kai Yu i
 * **Outstanding Winner**, Mathematical Contest in Modeling (Top 0.5%, international), COMAP, 2017
 * **Merit Student**, Shanghai Jiao Tong University, 2017
 * **Zhiyuan Honorary Scholarship**, Shanghai Jiao Tong University, 2016-2018
+
+### Teaching Experience 
+* [Compiler Design and Implementation](https://acm.sjtu.edu.cn/wiki/Compiler_2019), teacher assistant, Spring 2019
+* [C++ Programing (CS512)](https://acm.sjtu.edu.cn/wiki/Programming_2017), teacher assistant, Fall 2017
