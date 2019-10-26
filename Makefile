@@ -1,3 +1,5 @@
+all: deploy
+
 cv:
 	cd ../CV && git pull && xelatex ./resume_cv.tex -output-directory=./
 	copy ..\CV\resume_cv.pdf assets\cv.pdf 
