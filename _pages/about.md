@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /
-title: <strong>Zhanghao</strong> Wu
+title: <black>Zhanghao <slim>Wu</slim></black>
 # description: <a href="www.sjtu.edu.cn">SJTU</a>.
 
 profile:
