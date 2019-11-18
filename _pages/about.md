@@ -17,7 +17,7 @@ I am a senior student majoring in **computer science** at [Shanghai Jiao Tong Un
 
 **My overall GPA is 92.47/100, Rank: 2/37**.
 
-I am a **visiting student** at MIT, working with Prof. [Song Han](https://songhan.mit.edu).
+Currently, I am a **visiting student** at MIT, working with Prof. [Song Han](https://songhan.mit.edu).
 
 I am interested in **deep learning**, especially **natural language processing**, **speech** and **efficient AI**.
 
