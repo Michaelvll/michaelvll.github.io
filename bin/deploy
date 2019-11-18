@@ -46,7 +46,8 @@ echo "Deploying..."
 echo "Source branch: $SRC_BRANCH"
 echo "Deploy branch: $DEPLOY_BRANCH"
 
-read -r -p "Do you want to proceed? [y/N] " response
+# read -r -p "Do you want to proceed? [y/N] " response
+response=y
 if [[ ! $response =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
     echo "Aborting."
