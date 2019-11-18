@@ -8,6 +8,9 @@ cv:
 run:
 	bundle exec jekyll serve
 
-deploy:
+deploy: clean
 	git add .; git commit -m"update"; git push
 	./bin/deploy --user -s
+
+clean:
+	rm ./_site -r
