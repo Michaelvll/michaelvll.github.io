@@ -13,4 +13,4 @@ deploy: clean
 	./bin/deploy --user -s
 
 clean:
-	rm ./_site -r
+	rm ./_site -rf
