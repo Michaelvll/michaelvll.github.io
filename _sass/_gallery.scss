@@ -54,17 +54,17 @@ figcaption {
   padding: 0;
 }
 .namecard .avatar img {
-  width: 20%;
+  width: 200px;
 }
 .namecard .information {
   display: inline-block;
   margin-left: 20px;
-  max-width: 80%;
+  max-width: calc(100% - 200px);
 }
 .namecard .information p {
   padding-bottom: 10px;
 }
-@media (max-width: 100%) {
+@media (max-width: 861px) {
   .namecard .avatar {
     float: none;
   }
