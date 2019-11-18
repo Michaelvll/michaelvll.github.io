@@ -13,7 +13,7 @@ social: false
 ---
 
 
-I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](http://en.sjtu.edu.cn). I am a member of ACM Honors Class, which is an elite CS program for top 5% talented students. **My overall GPA is 92.13/100, Rank: 2/37**.
+I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](http://en.sjtu.edu.cn). I am a member of ACM Honors Class, which is an elite CS program for top 5% talented students. **My overall GPA is 92.47/100, Rank: 2/37**.
 
 Currently, I am a **visiting student** at MIT, working with Prof. [Song Han](https://songhan.mit.edu).
 
@@ -25,7 +25,7 @@ I plan to pursue a CS Ph.D. that starts in fall, 2020.
 
 #### [HanLab](https://songhan.mit.edu), MIT
 I am a research assistant supervised by Prof. [Song Han](https://songhan.mit.edu) at HanLab, MIT, from Jul. 2019 to present.
-* Working on privacy preserving and efficient machine learning, and designed an efficient privacy-preserving cloud-edge inference method utilizing the linearity of neural networks.
+* Working on privacy preserving and efficient machine learning, and designed an efficient privacy-preserving cloud-edge inference method utilizing the linearity of neural networks. We submitted a paper to CVPR 2019.
 * Focusing on efficient natural language processing, especially for machine translation. Proposed a novel primitive with higher capacity than the original transformer under mobile settings and submitted to ICLR 2020.
 * Won **1st** place in the CVPR’19 Visual Wake Words challenge and **3rd place** (**1st** place of all academic groups) in CVPR’19 Low Power Image Recognition Competition.
 
