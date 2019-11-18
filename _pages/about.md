@@ -21,7 +21,10 @@ I am interested in **deep learning**, especially **natural language processing**
 
 I plan to pursue a CS Ph.D. that starts in fall, 2020.
 
-### Research Experience
+### Publications
+{% bibliography -f papers %}
+
+### Education
 
 #### [HanLab](https://songhan.mit.edu), MIT
 I am a research assistant supervised by Prof. [Song Han](https://songhan.mit.edu) at HanLab, MIT, from Jul. 2019 to present.
@@ -36,9 +39,6 @@ I am an undergraduate researcher advised by Prof. [Yanmin Qian](https://speechla
 * Participated in the translation of the book: Reinforcement Learning: An Introduction by Sutton, R.S., Barto, A.G.
 * Established a VAE based data augmentation to improve the robustness of speaker verification systems by modelling the patterns of noise and reverberation in the speaker embeddings. It was accepted by Interspeech 2019 **(oral)**.
 
-### Publications
-{% bibliography -f papers %}
-
 ### Honors & Award
 * **1st place**, in Visual Wake Words (VWW) Challenge of CVPR'19, 2019.
 * **3rd place**, in Low Power Image Recognition Competition of CVPR'19 (1st place for academic participants), 2019.
@@ -47,6 +47,3 @@ I am an undergraduate researcher advised by Prof. [Yanmin Qian](https://speechla
 * **Fan Hsu-Chi Chancellor’s Scholarship**, top 0.1%of 17,000 students in SJTU, 2017.
 * **Zhiyuan Honorary Scholarship**, top 5%of 17,000 students in SJTU, 2016-2018.
 
-### Teaching Experience 
-* Teaching Assistant of [Compiler Design and Implementation](https://acm.sjtu.edu.cn/wiki/Compiler_2019), gave an introduction to programming and designed homework, 2018
-* Teaching Assistant of [C++ Programing (CS512)](https://acm.sjtu.edu.cn/wiki/Programming_2017), designed projects and assisted in grading and answering questions, 2017
