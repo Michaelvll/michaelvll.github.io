@@ -28,14 +28,22 @@ I plan to pursue a CS Ph.D. that starts in fall, 2020.
 
 ### Education
 
-#### [HanLab](https://songhan.mit.edu), MIT
-I am a research assistant supervised by Prof. [Song Han](https://songhan.mit.edu) at HanLab, MIT, from Jul. 2019 to present.
+<img src="assets/img/mit.png"
+  width="64"
+  height="33.2"
+  style="float:left; margin:18px 8px 0px 0px"> 
+#### [**HanLab**](https://songhan.mit.edu), MIT
+Research assistant, working with Prof. [Song Han](https://songhan.mit.edu) at HanLab, MIT, from Jul. 2019 to present.
 * Working on privacy preserving and efficient machine learning, and designed an efficient privacy-preserving cloud-edge inference method utilizing the linearity of neural networks. We submitted a paper to CVPR 2019.
 * Focusing on efficient natural language processing, especially for machine translation. Proposed a novel primitive with higher capacity than the original transformer under mobile settings and submitted to ICLR 2020.
 * Won **1st** place in the CVPR’19 Visual Wake Words challenge and **3rd place** (**1st** place of all academic groups) in CVPR’19 Low Power Image Recognition Competition.
 
-#### [SpeechLab](https://speechlab.sjtu.edu.cn/), SJTU
-I am an undergraduate researcher advised by Prof. [Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) and Prof. [Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) in SpeechLab, SJTU, from Jul. 2018 to Jun. 2019.
+<img src="assets/img/sjtu.png"
+  width="64"
+  height="64"
+  style="float:left; margin:5px 8px 0px 0px"> 
+#### [**SpeechLab**](https://speechlab.sjtu.edu.cn/), SJTU
+Undergraduate researcher, advised by Prof. [Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) and Prof. [Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) at SpeechLab, SJTU, from Jul. 2018 to Jun. 2019.
 * Focused on Rich Audio Analysis (RAA), analysis and classification of non-text information within human speech.
 * Implemented Deep Canonical Correlation Analysis (DCCA) in PyTorch and released the code on GitHub.
 * Participated in the translation of the book: Reinforcement Learning: An Introduction by Sutton, R.S., Barto, A.G.
