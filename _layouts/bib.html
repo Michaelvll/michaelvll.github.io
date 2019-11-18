@@ -10,6 +10,12 @@
 {% endif %}
 
 <div id="{{entry.key}}">
+<section class="namecard">
+  {% if entry.image %}
+      <div class="avatar">
+          <img src="{{ entry.image | prepend: '/assets/papers/img/' }}">
+      </div>
+  {% endif %}
   {% if entry.type == "thesis" %}
     {{reference}}
   {% else %}
@@ -99,4 +105,6 @@
     <p>{{ entry.abstract }}</p>
   </span>
   {% endif %}
+</section>
 </div>
+

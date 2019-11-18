@@ -10,6 +10,7 @@
   url = {https://openreview.net/forum?id=ByeMPlHKPH},
   pdf = {https://openreview.net/pdf?id=ByeMPlHKPH},
   slides = {Presentation_ENMT.pdf},
+  image = {enmt.png},
   abstract = {Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for real-world mobile applications since mobile phones are tightly constrained by the hardware resources and battery. In this paper, we investigate the mobile setting (under 500M Mult-Adds) for NLP tasks to facilitate the deployment on the edge devices. We present Long-Short Range Attention (LSRA), where some heads specialize in the local context modeling (by convolution) while the others capture the long-distance relationship (by attention). Based on this primitive, we design Mobile Transformer (MBT) that is tailored for the mobile NLP application. Our MBT demonstrates consistent improvement over the transformer on two well-established language tasks: IWSLT 2014 German-English and WMT 2014 English-German. It outperforms the transformer by 0.9 BLEU under 500M Mult-Adds and 1.1 BLEU under 100M Mult-Adds on WMT'14 English-German. Without the costly architecture search that requires more than 250 GPU years, our manually-designed MBT achieves 0.4 higher BLEU than the AutoML-based Evolved Transformer under the extremely efficient mobile setting (i.e., 100M Mult-Adds).}
 }
 
@@ -19,6 +20,7 @@
     journal = {Submitted to CVPR},
     year = {2020},
     local_pdf = {privacy_cvpr.pdf},
+    image = {privacy_cvpr.png},
     abstract = {Deep neural networks are widely deployed on edge devices (e.g., for facial attribute classification). Users either perform the inference locally (i.e., edge-based) or send the data to the cloud and run the inference remotely (i.e., cloud-based). However, both solutions have their limitations: edge devices are heavily constrained by insufficient hardware resources and cannot afford to run large models; cloud servers, if not trustworthy, will raise serious privacy issues. In this paper, we mediate between the resource-constrained edge devices and the privacy-invasive cloud servers by introducing a novel privacy-preserving edge-cloud inference framework, FaceMix, for the facial attribute classification networks. We offload the majority of the computations to the cloud and leverage a pair of encryption and decryption functions to protect the privacy of the data transmitted to the cloud. Our framework has three advantages. First, it is privacy-preserving as our encryption cannot be inverted without user's private key. Second, our framework is accuracy-preserving because our encryption takes advantage of the linearity, and we train the model in an encryption-aware manner to help maintain the accuracy. Third, our solution is efficient on the edge since the majority of the workload is delegated to the cloud, and our encryption and decryption processes introduce very few extra computations. Also, our framework introduces small communication overhead and maintains high hardware utilization on the cloud. Extensive experiments on multiple facial attribute classification datasets demonstrate that our framework can greatly reduce the local computations on the edge (to fewer than 20% of FLOPs) with negligible loss of accuracy and no leakages of private information.}
 }
 
@@ -31,7 +33,8 @@
   url = {http://dx.doi.org/10.21437/Interspeech.2019-2248},
   pdf = {https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2248.pdf},
   oral = {},
-  slides= {Presentations_VAE_DA.pdf},
+  slides = {Presentations_VAE_DA.pdf},
+  image = {vae_da.png},
   abstract = {Domain or environment mismatch between training and testing, such as various noises and channels, is a major challenge for speaker verification. In this paper, a variational autoencoder (VAE) is designed to learn the patterns of speaker embeddings extracted from noisy speech segments, including i-vector and xvector, and generate embeddings with more diversity to improve the robustness of speaker verification systems with probabilistic linear discriminant analysis (PLDA) back-end. The approach is evaluated on the standard NIST SRE 2016 dataset. Compared to manual and generative adversarial network (GAN) based augmentation approaches, the proposed VAE based augmentation achieves a slightly better performance for i-vector on Tagalog and Cantonese with EERs of 15.54\% and 7.84\%, and a more significant improvement for x-vector on those two languages with EERs of 11.86\% and 4.20\%.}
 }
 
@@ -42,5 +45,6 @@
   year = {2019},
   url = {http://openaccess.thecvf.com/content_ICCVW_2019/html/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.html},
   pdf = {http://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.pdf},
+  image = {on_device.png},
   abstract = {It is challenging to efficiently deploy deep learning models on resource-constrained hardware devices (e.g., mobile and IoT devices) with strict efficiency constraints (e.g., latency, energy consumption). We employ Proxyless Neural Architecture Search (ProxylessNAS) to auto design compact and specialized neural network architectures for the target hardware platform. ProxylessNAS makes latency differentiable, so we can optimize not only accuracy but also latency by gradient descent. Such direct optimization saves the search cost by 200x compared to conventional neural architecture search methods. Our work is followed by quantization-aware fine-tuning to further boost efficiency. In the Low Power Image Recognition Competition at CVPR'19, our solution won the 3rd place on the task of Real-Time Image Classification (online track).}
 }

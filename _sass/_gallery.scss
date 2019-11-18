@@ -23,6 +23,9 @@ figcaption {
     box-sizing:border-box;
     /*padding: $img-spacing;*/
 }
+.one-fifth {
+    width: 25%;
+}
 .one {
     width:33.33%;
 }
@@ -38,4 +41,42 @@ figcaption {
     text-align: center;
     vertical-align: middle;
     font-size: $caption-font-size;
+}
+
+.namecard::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.namecard .avatar {
+  float: left;
+  padding: 0;
+}
+.namecard .avatar img {
+  width: 200px;
+}
+.namecard .information {
+  display: inline-block;
+  margin-left: 20px;
+  max-width: calc(100% - 200px);
+}
+.namecard .information p {
+  padding-bottom: 10px;
+}
+@media (max-width: 861px) {
+  .namecard .avatar {
+    float: none;
+  }
+  .namecard .avatar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .namecard .information {
+    margin-top: 20px;
+    display: block;
+    max-width: 100%;
+    margin-left: 0;
+  }
 }
