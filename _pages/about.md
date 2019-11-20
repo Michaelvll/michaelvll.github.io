@@ -33,9 +33,10 @@ I plan to pursue a CS Ph.D. that starts in fall, 2020.
   height="33.2"
   style="float:left; margin:18px 8px 0px 0px"> 
 #### [**HanLab**](https://songhan.mit.edu), MIT
+
 Research assistant, working with Prof. [Song Han](https://songhan.mit.edu) at HanLab, MIT, from Jul. 2019 to present.
 * Working on privacy preserving and efficient machine learning. Designed an efficient privacy-preserving cloud-edge inference method utilizing the linearity of neural networks. We wrote a paper and submitted to CVPR 2019.
-* Focusing on efficient natural language processing, especially for machine translation. Proposed a novel primitive with higher capacity than the original transformer under mobile settings. We wrote a paper and submitted to ICLR 2020. The paper just received very positive review (Avg score: 5.7/8).
+* Focusing on efficient natural language processing, especially for machine translation. Proposed a novel primitive with higher capacity than the original transformer under mobile settings. We wrote a paper and submitted to ICLR 2020. The paper just received very positive review (Average score: **5.7/8**).
 * Won **1st** place in the CVPR'19 Visual Wake Words Challenge and **3rd place** (**1st** place of all academic groups) in CVPR'19 Low Power Image Recognition Challenge.
 
 <img src="assets/img/sjtu.png"
@@ -43,6 +44,7 @@ Research assistant, working with Prof. [Song Han](https://songhan.mit.edu) at Ha
   height="64"
   style="float:left; margin:5px 8px 0px 0px"> 
 #### [**SpeechLab**](https://speechlab.sjtu.edu.cn/), SJTU
+
 Undergraduate researcher, advised by Prof. [Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) and Prof. [Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) at SpeechLab, SJTU, from Jul. 2018 to Jun. 2019.
 * Focused on Rich Audio Analysis (RAA), analysis and classification of non-text information within speech.
 * Implemented Deep Canonical Correlation Analysis (DCCA) in PyTorch and released the code on GitHub.
