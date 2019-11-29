@@ -33,8 +33,8 @@
             {% if author.last == site.scholar.last_name or author.last == "Wu*" %}
               <em>{{author.first}} {{author.last}}</em>,
             {% else %}
-              {% if site.data.coauthors[author.last] %}
-                <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>, 
+              {% if site.data.coauthors[author.first] %}
+                <a href="{{site.data.coauthors[author.first].url}}" target="_blank">{{author.first}} {{author.last}}</a>, 
               {% else %}
                 {{author.first}} {{author.last}},
               {% endif %}
@@ -43,8 +43,8 @@
             {% if author.last == site.scholar.last_name or author.last == "Wu*" %}
               and <em>{{author.first}} {{author.last}}</em>
             {% else %}
-              {% if site.data.coauthors[author.last] %}
-                and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a> 
+              {% if site.data.coauthors[author.first] %}
+                and <a href="{{site.data.coauthors[author.first].url}}" target="_blank">{{author.first}} {{author.last}}</a> 
               {% else %}
                 and {{author.first}} {{author.last}}
               {% endif %}
