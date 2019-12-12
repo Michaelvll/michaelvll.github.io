@@ -13,7 +13,9 @@
 <section class="namecard">
   {% if entry.image %}
       <div class="avatar">
+      <a href="{{ entry.image | prepend: '/assets/papers/img/' }}">
           <img src="{{ entry.image | prepend: '/assets/papers/img/' }}">
+      </a>
       </div>
   {% endif %}
   {% if entry.type == "thesis" %}
