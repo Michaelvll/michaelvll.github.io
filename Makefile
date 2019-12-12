@@ -13,4 +13,4 @@ deploy: clean
 	./bin/deploy --user -s
 
 clean:
-	rm ./_site -rf
+	rm ./_site ./2018 ./2019 ./publication -rf
