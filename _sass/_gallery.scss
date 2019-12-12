@@ -53,18 +53,22 @@ figcaption {
     border: 0pt;
 }
 
+.namecard .tr {
+    border: 0;
+}
+
 .namecard .img-td {
     width: $pub-img-width;
     align-content: center;
-    border: 0pt;
     padding: 0 2% 0 0;
+    border: 0pt;
 }
 
 .namecard .txt-td {
     width: $pub-txt-width;
     text-align: left;
+    padding: 0 0;
     border: 0pt;
-    padding: 0 0pt;
 }
 
 
