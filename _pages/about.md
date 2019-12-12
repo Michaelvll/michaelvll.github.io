@@ -28,10 +28,11 @@ I plan to pursue a CS Ph.D. that starts in the fall, 2020.
 
 ### Education
 
+<a href="assets/img/mit.png">
 <img src="assets/img/mit.png"
-  width="64"
-  height="33.2"
+  width="8%"
   style="float:left; margin:18px 8px 0px 0px"> 
+</a>
 #### [**HanLab**](https://songhan.mit.edu), MIT
 
 Research assistant, working with Prof. [Song Han](https://songhan.mit.edu) at HanLab, MIT, from Jul. 2019 to present.
@@ -40,10 +41,11 @@ Research assistant, working with Prof. [Song Han](https://songhan.mit.edu) at Ha
 * Focused on the hardware-aware transformer. Automatically designed neural architectures specialized for different hardware with optimal tradeoff between latency and BLEU score. Prepared a paper for **ACL** 2020.
 * Won **1st** place in the CVPR'19 Visual Wake Words Challenge and **3rd place** (**1st** place of all academic groups) in CVPR'19 Low Power Image Recognition Challenge.
 
+<a href="assets/img/sjtu.png">
 <img src="assets/img/sjtu.png"
-  width="64"
-  height="64"
-  style="float:left; margin:5px 8px 0px 0px"> 
+  width="8%"
+  style="float:left; margin:10px 8px 0px 0px"> 
+</a>
 #### [**SpeechLab**](https://speechlab.sjtu.edu.cn/), SJTU
 
 Undergraduate researcher, advised by Prof. [Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) and Prof. [Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) at SpeechLab, SJTU, from Jul. 2018 to Jun. 2019.

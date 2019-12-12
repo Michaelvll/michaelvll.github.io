@@ -73,4 +73,17 @@ figcaption {
     border: 0pt;
 }
 
+.namecard .logo-img-td {
+    width: $logo-img-width;
+    align-content: center;
+    padding: 0 2% 0 0;
+    border: 0pt;
+}
+
+.namecard .logo-txt-td {
+    width: $logo-txt-width;
+    text-align: left;
+    padding: 0 0;
+    border: 0pt;
+}
 
