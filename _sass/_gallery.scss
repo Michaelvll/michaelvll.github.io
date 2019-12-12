@@ -43,40 +43,28 @@ figcaption {
     font-size: $caption-font-size;
 }
 
-.namecard::after {
-  content: " ";
-  display: block;
-  height: 0;
-  clear: both;
+.namecard {
+    width: 100%;
 }
-.namecard .avatar {
-  float: left;
-  padding: 0;
+
+.namecard .table {
+    widows: 100%;
+    align-content: left;
+    border: 0pt;
 }
-.namecard .avatar img {
-  width: 200px;
+
+.namecard .img-td {
+    width: $pub-img-width;
+    align-content: center;
+    border: 0pt;
+    padding: 0 2% 0 0;
 }
-.namecard .information {
-  display: inline-block;
-  margin-left: 20px;
-  max-width: calc(100% - 200px);
+
+.namecard .txt-td {
+    width: $pub-txt-width;
+    text-align: left;
+    border: 0pt;
+    padding: 0 0pt;
 }
-.namecard .information p {
-  padding-bottom: 10px;
-}
-// @media (max-width: 861px) {
-//   .namecard .avatar {
-//     float: none;
-//   }
-//   .namecard .avatar img {
-//     display: block;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-//   .namecard .information {
-//     margin-top: 20px;
-//     display: block;
-//     max-width: 100%;
-//     margin-left: 0;
-//   }
-// }
+
+
