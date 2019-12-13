@@ -19,7 +19,7 @@ I am a senior student majoring in **computer science** at [Shanghai Jiao Tong Un
 
 Currently, I am a **visiting student** at MIT, working with Prof. [Song Han](https://songhan.mit.edu).
 
-I am interested in **efficient deep learning**, especially for **natural language processing**, **speech**, and **computer architecture**.
+I am interested in **efficient deep learning**, especially for **natural language processing** and **speech**, and **computer architecture**.
 
 I plan to pursue a CS Ph.D. that starts in the fall, 2020.
 
