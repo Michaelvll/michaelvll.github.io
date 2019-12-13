@@ -38,7 +38,7 @@ I plan to pursue a CS Ph.D. that starts in the fall, 2020.
 Research assistant, working with Prof. [Song Han](https://songhan.mit.edu) at HanLab, MIT, from Jul. 2019 to present.
 * Worked on privacy-preserving and efficient machine learning. Designed a privacy-preserving cloud-edge inference method utilizing the linearity of neural networks. Wrote a paper and submitted it to **CVPR** 2019.
 * Devoted to efficient natural language processing, especially for machine translation. Proposed a novel primitive with higher capacity than the original transformer under mobile settings. Wrote a paper and submitted it to **ICLR** 2020. The paper just received very positive reviews (Average score: **6.7/8**).
-* Focused on the hardware-aware transformer. Automatically designed neural architectures specialized for different hardware with optimal tradeoff between latency and BLEU score. Prepared a paper for **ACL** 2020.
+* Focused on the hardware-aware transformer. Automatically designed neural architectures specialized for different hardware with better tradeoff between latency and BLEU score. Prepared a paper for **ACL** 2020.
 * Won **1st** place in the CVPR'19 Visual Wake Words Challenge and **3rd place** (**1st** place of all academic groups) in CVPR'19 Low Power Image Recognition Challenge.
 
 <a href="assets/img/sjtu.png">
