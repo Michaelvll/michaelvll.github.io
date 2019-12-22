@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 {% if page.profile %}
   <div class="profile col one {{ page.profile.align }}">
     {% if page.profile.image %}
@@ -15,7 +14,6 @@ layout: page
       </div>
     {% endif %}
 
-    {% assign has_former = false %}
     <div class="address">
         <center>
         {% if site.email %}
@@ -23,17 +21,17 @@ layout: page
             <a href="mailto:{{ site.email }}">Email</a>
         {% endif %}
         {% if site.scholar_userid %}
-            {% if has_former == true %} / {% endif %}
+            {% if has_former == true %} | {% endif %}
             {% assign has_former = true %}
             <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"  target="_blank" title="Google Scholar">Scholar</a>
         {% endif %}
         {% if site.github_username %}
-            {% if has_former == true %} / {% endif %}
+            {% if has_former == true %} | {% endif %}
             {% assign has_former = true %}
             <a href="https://www.github.com/{{ site.github_username}}" target="_blank" title="GitHub">GitHub</a>
         {% endif %}
         {% if site.linkedin_username %}
-            {% if has_former == true %} / {% endif %}
+            {% if has_former == true %} | {% endif %}
             {% assign has_former = true %}
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn">LinkedIn</a>
         {% endif %}
@@ -43,4 +41,6 @@ layout: page
   </div>
 {% endif %}
 
+<div class="content">
 {{ content }}
+</div>

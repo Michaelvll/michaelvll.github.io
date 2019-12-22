@@ -1,58 +1,51 @@
 ---
 layout: about
 permalink: /
-title: <black>Zhanghao <slim>Wu</slim></black>
+title: Zhanghao Wu
 # description: <a href="www.sjtu.edu.cn">SJTU</a>.
 
 profile:
   align: right
   image: my_pic.jpg
+  email: zhanghao.wu@outlook.com
 
 news: false
 social: false
 ---
 
 
-I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](http://en.sjtu.edu.cn) and a member of the SJTU ACM Honors Class, which is an elite CS program for the top 5% talented students. 
+I am a senior student majoring in computer science at Shanghai Jiao Tong University ([SJTU](http://en.sjtu.edu.cn/)) and a member of the SJTU ACM Honors Class, which is an elite CS program for the top 5% talented students. 
 
 **My overall GPA is 92.47/100, Rank: 2/37**.
 
-I am a **Research Assistant** at MIT HAN Lab, working with Prof. [Song Han](https://songhan.mit.edu).
+I have spent wonderful times as a research assistant working with Prof. [Song Han](https://songhan.mit.edu) at Massachusetts Institute of Technology ([MIT](https://mit.edu)).
 
 I am interested in **efficient deep learning**, especially for **natural language processing** and **speech**, and **computer architecture**.
 
-I am applying for a CS Ph.D. program that start in the fall, 2020.
-
-### Publications
-{% bibliography -f papers %}
+I am applying for a CS Ph.D. program that starts in the fall, 2020.
 
 ### Education
 
-<a href="assets/img/mit.png">
+<a href="https://mit.edu">
 <img src="assets/img/mit.png"
   width="8%"
-  style="float:left; margin:18px 8px 0px 0px"> 
+  style="float:left; margin:8px 12px 0px 0px"> 
 </a>
-#### [**HAN Lab**](https://songhan.mit.edu), MIT
+[Massachusetts Institute of Technology](https://mimt.edu), USA  
+Research assistant, working with Prof. [Song Han](https://songhan.mit.edu). Jul. 2019 - Jan. 2020.
 
-Research assistant, working with Prof. [Song Han](https://songhan.mit.edu), from Jul. 2019 to present.
-* Devoted to efficient natural language processing, especially for machine translation. Proposed a novel primitive with higher capacity than the original transformer under mobile settings. Published a paper on **ICLR 2020**.
-* Worked on privacy-preserving and efficient machine learning. Designed a privacy-preserving cloud-edge inference method utilizing the linearity of neural networks. Wrote a paper and submitted it to **CVPR** 2019.
-* Focused on the hardware-aware transformer. Automatically designed neural architectures specialized for different hardware with better tradeoff between latency and BLEU score. Prepared a paper for **ACL** 2020.
-* Won **1st** place in the CVPR'19 Visual Wake Words Challenge and **3rd place** (**1st** place of all academic groups) in CVPR'19 Low Power Image Recognition Challenge.
+<br/>
 
-<a href="assets/img/sjtu.png">
+<a href="http://en.sjtu.edu.cn/">
 <img src="assets/img/sjtu.png"
   width="8%"
-  style="float:left; margin:10px 8px 0px 0px"> 
+  style="float:left; margin:-7px 12px 0px 0px"> 
 </a>
-#### [**SpeechLab**](https://speechlab.sjtu.edu.cn/), SJTU
+[Shanghai Jiao Tong University](http://en.sjtu.edu.cn/), China  
+B.Eng. in Computer Science, advised by Prof. [Yong Yu](http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140). Sep. 2016 - Jun. 2020.
 
-Undergraduate researcher, advised by Prof. [Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) and Prof. [Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu), from Jul. 2018 to Jun. 2019.
-* Focused on Rich Audio Analysis (RAA), analysis, and classification of non-text information within speech.
-* Implemented Deep Canonical Correlation Analysis (DCCA) in PyTorch and released the code on GitHub.
-* Deep Learning Book Translation: Reinforcement Learning: An Introduction by Sutton, R.S., Barto, A.G.
-* Established a VAE based data augmentation to improve the robustness of speaker verification systems by modeling the patterns of noise and reverberation in the speaker embeddings. It was accepted by **Interspeech** 2019 **(oral)**.
+### Publications
+{% bibliography -f papers %}
 
 ### Honors & Award
 * **1st place**, in Visual Wake Words (VWW) Challenge of CVPR'19, 2019.

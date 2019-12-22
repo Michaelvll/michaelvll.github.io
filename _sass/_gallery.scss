@@ -23,11 +23,13 @@ figcaption {
     box-sizing:border-box;
     /*padding: $img-spacing;*/
 }
-.one-fifth {
+.one-forth {
     width: 25%;
 }
 .one {
     width:33.33%;
+    margin-left: 1%;
+    margin-top: -1%;
 }
 .two {
     width: 66.66%;
@@ -41,6 +43,9 @@ figcaption {
     text-align: center;
     vertical-align: middle;
     font-size: $caption-font-size;
+}
+.content {
+    text-align: justify;
 }
 
 .namecard {

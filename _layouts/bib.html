@@ -69,41 +69,60 @@
             {{entry.year}}
             {% endif %}
             {% if entry.oral %}
-                <strong style="color: #A31F34"> (Oral)</strong>
+                <strong> (Oral)</strong>
             {% endif %}
             </span>
         {% endif %}
 
         <span class="links">
         {% if entry.abstract %}
-            [<a class="abstract">Abstract</a>]
+            {% assign has_former = true %}
+            <a class="abstract">Abstract</a>
         {% endif %}
         {% if entry.arxiv %}
-            [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>
         {% endif %}
         {% if entry.html %}
-            [<a href="{{ entry.html }}" target="_blank">HTML</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.html }}" target="_blank">HTML</a>
         {% endif %}
         {% if entry.pdf %}
-            [<a href="{{ entry.pdf }}" target="_blank">PDF</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.pdf }}" target="_blank">PDF</a>
         {% endif %}
         {% if entry.local_pdf %}
-            [<a href="{{ entry.local_pdf | prepend: '/assets/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.local_pdf | prepend: '/assets/papers/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">PDF</a>
         {% endif %}
         {% if entry.supp %}
-            [<a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.supp | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Supp</a>
         {% endif %}
         {% if entry.poster %}
-            [<a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.poster | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Poster</a>
         {% endif %}
         {% if entry.slides %}
-            [<a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.slides | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank">Slides</a>
         {% endif %}
         {% if entry.demo %}
-            [<a href="{{ entry.demo }}" target="_blank">Demo</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.demo }}" target="_blank">Demo</a>
         {% endif %}
         {% if entry.code %}
-            [<a href="{{ entry.code }}" target="_blank">Code</a>]
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.code }}" target="_blank">Code</a>
         {% endif %}
         </span>
 
