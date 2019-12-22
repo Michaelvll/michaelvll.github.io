@@ -17,11 +17,11 @@ I am a senior student majoring in **computer science** at [Shanghai Jiao Tong Un
 
 **My overall GPA is 92.47/100, Rank: 2/37**.
 
-Currently, I am a **visiting student** at MIT, working with Prof. [Song Han](https://songhan.mit.edu).
+Currently, I am a **Research Assistant** at MIT, working with Prof. [Song Han](https://songhan.mit.edu).
 
 I am interested in **efficient deep learning**, especially for **natural language processing** and **speech**, and **computer architecture**.
 
-I plan to pursue a CS Ph.D. that starts in the fall, 2020.
+I am applying for a CS Ph.D. program that start in the fall, 2020.
 
 ### Publications
 {% bibliography -f papers %}
@@ -33,9 +33,9 @@ I plan to pursue a CS Ph.D. that starts in the fall, 2020.
   width="8%"
   style="float:left; margin:18px 8px 0px 0px"> 
 </a>
-#### [**HanLab**](https://songhan.mit.edu), MIT
+#### [**HAN Lab**](https://songhan.mit.edu), MIT
 
-Research assistant, working with Prof. [Song Han](https://songhan.mit.edu) at HanLab, MIT, from Jul. 2019 to present.
+Research assistant, working with Prof. [Song Han](https://songhan.mit.edu), from Jul. 2019 to present.
 * Worked on privacy-preserving and efficient machine learning. Designed a privacy-preserving cloud-edge inference method utilizing the linearity of neural networks. Wrote a paper and submitted it to **CVPR** 2019.
 * Devoted to efficient natural language processing, especially for machine translation. Proposed a novel primitive with higher capacity than the original transformer under mobile settings. Wrote a paper and submitted it to **ICLR** 2020, which was accepted as a poster paper.
 * Focused on the hardware-aware transformer. Automatically designed neural architectures specialized for different hardware with better tradeoff between latency and BLEU score. Prepared a paper for **ACL** 2020.
@@ -48,7 +48,7 @@ Research assistant, working with Prof. [Song Han](https://songhan.mit.edu) at Ha
 </a>
 #### [**SpeechLab**](https://speechlab.sjtu.edu.cn/), SJTU
 
-Undergraduate researcher, advised by Prof. [Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) and Prof. [Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) at SpeechLab, SJTU, from Jul. 2018 to Jun. 2019.
+Undergraduate researcher, advised by Prof. [Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) and Prof. [Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu), from Jul. 2018 to Jun. 2019.
 * Focused on Rich Audio Analysis (RAA), analysis, and classification of non-text information within speech.
 * Implemented Deep Canonical Correlation Analysis (DCCA) in PyTorch and released the code on GitHub.
 * Deep Learning Book Translation: Reinforcement Learning: An Introduction by Sutton, R.S., Barto, A.G.
