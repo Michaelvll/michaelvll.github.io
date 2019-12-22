@@ -13,7 +13,7 @@ social: false
 ---
 
 
-I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](http://en.sjtu.edu.cn). I am a member of the ACM Honors Class, which is an elite CS program for the top 5% talented students. 
+I am a senior student majoring in **computer science** at [Shanghai Jiao Tong University](http://en.sjtu.edu.cn) and a member of the SJTU ACM Honors Class, which is an elite CS program for the top 5% talented students. 
 
 **My overall GPA is 92.47/100, Rank: 2/37**.
 
