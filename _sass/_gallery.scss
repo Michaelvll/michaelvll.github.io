@@ -44,6 +44,7 @@ figcaption {
     vertical-align: middle;
     font-size: $caption-font-size;
 }
+
 .content {
     text-align: justify;
 }
@@ -52,43 +53,34 @@ figcaption {
     width: 100%;
 }
 
-.namecard .table {
-    widows: 100%;
-    align-content: left;
-    border: 0pt;
-    padding: 0 0 0 0;
-}
-
-.namecard .tr {
-    border: 0;
-    padding: 0;
-}
-
-.namecard .img-td {
+.img-td {
     width: $pub-img-width;
     align-content: center;
     padding: 0 2% 0 0;
     border: 0pt;
+    vertical-align: top;
 }
 
-.namecard .txt-td {
+.txt-td {
     width: $pub-txt-width;
     text-align: left;
     padding: 0 0;
     border: 0pt;
+    vertical-align: top;
 }
 
-.namecard .logo-img-td {
+.logo-img-td {
     width: $logo-img-width;
     align-content: center;
-    padding: 0 2% 0 0;
     border: 0pt;
+    vertical-align: center;
+    padding: 0 10px;
 }
 
-.namecard .logo-txt-td {
+.logo-txt-td {
     width: $logo-txt-width;
     text-align: left;
-    padding: 0 0;
     border: 0pt;
+    vertical-align: center;
 }
 

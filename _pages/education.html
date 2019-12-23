@@ -1,0 +1,18 @@
+<div id="education">
+<div class="namecard">
+<table>
+    {% assign length = page.education.schools | size | minus: 1 %}
+    {% for i in (0..length) %}    
+    <tr>
+    <td class="logo-img-td">
+        <a href="{{ page.education.hrefs[i] }}"><img src="{{ page.education.images[i] }}" width="100%"></a>
+    </td>
+    <td class="logo-txt-td">
+         <a href="{{ page.education.hrefs[i] }}">{{ page.education.schools[i] }}</a>, {{ page.education.location[i] }}<br/>
+         {{ page.education.description[i] }}
+    </td>
+    </tr>
+    {% endfor %}    
+</table>
+</div>
+</div>

@@ -9,6 +9,14 @@ profile:
   image: my_pic.jpg
   email: zhanghao.wu@outlook.com
 
+education:
+  schools: [Massachusetts Institute Technology, Shanghai Jiao Tong University]
+  hrefs: ["https://mit.edu", "http://en.sjtu.edu.cn"]
+  images: [assets/img/mit.png, assets/img/sjtu.png]
+  location: [USA, China]
+  description: ["Research assistant, working with Prof. <a href='https://songhan.mit.edu'>Song Han</a>. Jul. 2019 - Jan. 2020.",
+                "B.Eng. in Computer Science, advised by Prof. <a href='http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140'>Yong Yu</a>. Sep. 2016 - Jun. 2020."]
+
 news: false
 social: false
 ---
@@ -26,23 +34,7 @@ I am applying for a CS Ph.D. program that starts in the fall, 2020.
 
 ### Education
 
-<a href="https://mit.edu">
-<img src="assets/img/mit.png"
-  width="8%"
-  style="float:left; margin:8px 12px 0px 0px"> 
-</a>
-[Massachusetts Institute of Technology](https://mimt.edu), USA  
-Research assistant, working with Prof. [Song Han](https://songhan.mit.edu). Jul. 2019 - Jan. 2020.
-
-<br/>
-
-<a href="http://en.sjtu.edu.cn/">
-<img src="assets/img/sjtu.png"
-  width="8%"
-  style="float:left; margin:-7px 12px 0px 0px"> 
-</a>
-[Shanghai Jiao Tong University](http://en.sjtu.edu.cn/), China  
-B.Eng. in Computer Science, advised by Prof. [Yong Yu](http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140). Sep. 2016 - Jun. 2020.
+{% include_relative education.html %}
 
 ### Publications
 {% bibliography -f papers %}
