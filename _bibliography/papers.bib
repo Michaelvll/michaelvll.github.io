@@ -14,15 +14,6 @@
   abstract = {Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for real-world mobile applications since mobile phones are tightly constrained by the hardware resources and battery. In this paper, we investigate the mobile setting (under 500M Mult-Adds) for NLP tasks to facilitate the deployment on the edge devices. We present Long-Short Range Attention (LSRA), where some heads specialize in the local context modeling (by convolution) while the others capture the long-distance relationship (by attention). Based on this primitive, we design Mobile Transformer (MBT) that is tailored for the mobile NLP application. Our MBT demonstrates consistent improvement over the transformer on two well-established language tasks: IWSLT 2014 German-English and WMT 2014 English-German. It outperforms the transformer by 0.9 BLEU under 500M Mult-Adds and 1.1 BLEU under 100M Mult-Adds on WMT'14 English-German. Without the costly architecture search that requires more than 250 GPU years, our manually-designed MBT achieves 0.4 higher BLEU than the AutoML-based Evolved Transformer under the extremely efficient mobile setting (i.e., 100M Mult-Adds).}
 }
 
-@article{Wu:2020hat,
-  title = {HAT: Hardware-Aware Transformers for Efficient Neural Machine Translation},
-  author = {Wu*, Zhanghao and Wang*, Hanrui and Liu*, Zhijian and Cai, Han and Zhu, Ligeng and Han, Song},
-  journal = {Submitted to ACL},
-  year = {2020},
-  image = {hat.png},
-  abstract = {Transformers are ubiquitous in natural language processing but hard to deploy due to the intensive computation. To enable low latency inference on different hardware platforms, we propose to design Hardware-Aware Transformers (HAT) with neural architecture search. We first construct a large design space with arbitrary encoder-decoder attention and heterogeneous layers. Then we efficiently train all candidates (SubTransformers) in the design space with a weight-shared SuperTransformer. Finally, We conduct an evolutionary search with hardware latency constraint to find a specialized SubTransformer dedicated to run fast on the targeted hardware. Extensive experiments on three machine translation tasks demonstrate that our framework can discover efficient Transformers for different hardware (CPU, GPU, IoT device). Remarkably, when running WMT'14 translation task on Raspberry Pi 4 ARM CPU, HAT can achieve 3x speedup, 3.7x smaller size over baseline Transformer; 2.7x speedup, 3.6x smaller size over Evolved Transformer with 12,041x less search cost and no performance loss.}
-}
-
 @article{Wu:2020FaceMix,
     title = {FaceMix: Privacy-preserving Facial Attribute Classification on the Cloud},
     author = {Wu*, Zhanghao and Liu*, Zhijian and Zhu, Ligeng and Gan, Chuang and Han, Song},
