@@ -10,6 +10,7 @@ run:
 
 deploy: clean
 	git add .; git commit -m"update"; git push
+	chmod +x ./bin/deploy
 	./bin/deploy --user -s
 
 clean:
