@@ -9,8 +9,8 @@ run:
 	bundle exec jekyll serve
 
 deploy: clean
-	git add .; git commit -m"update"; git push
 	chmod +x ./bin/deploy
+	git add .; git commit -m"update"; git push
 	./bin/deploy --user -s
 
 clean:
