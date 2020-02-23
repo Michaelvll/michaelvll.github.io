@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+ <title>Lite Transformer</title>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+ <link href="style.css" rel="stylesheet">
+
+ <style>
+  .paperthumb {
+   float: left;
+   width: 120px;
+   margin: 3px 10px 7px 0;
+  }
+
+  .paperdesc {
+   clear: both;
+  }
+ </style>
+</head>
+
+<body class="nd-docs">
+ <div class="nd-pageheader">
+  <div class="container">
+   <p class="lead">
+    <a href="https://openreview.net/pdf?id=ByeMPlHKPH"><p style="font-size:30px"><b><nobr>Lite Transformer</nobr> with <nobr>Long-Short Range Attention</nobr></b></p></a>
+    <address>
+     <nobr><a href="https://zhanghaowu.me">Zhanghao Wu</a><sup>1,2,*</sup>,</nobr>
+     <nobr>Zhijian Liu<sup>1,*</sup>,</nobr>
+     <nobr>Ji Lin<sup>1</sup>,</nobr>
+     <nobr>Yujun Lin<sup>1</sup>,</nobr>
+     <nobr><a href="https://songhan.mit.edu/">Song Han</a><sup>1</sup>,</nobr>
+     <br>
+     <nobr><sup>1</sup>Massachusetts Institute of Technology,</nobr>
+     <nobr><sup>2</sup>Shanghai Jiao Tong University</nobr>
+    </address>
+   </p>
+  </div>
+ </div> <!-- end nd-pageheader -->
+
+ <div class="container">
+
+  <div class="row">
+   <div class="col text-center">
+    <p>
+     <a href="https://openreview.net/pdf?id=ByeMPlHKPH"
+      class="d-inline-block p-3"><img height="100" width="78" src="figures/paper-thumbnail.png" style="border:1px solid"
+       data-nothumb><br>ICLR 2020 Paper</a>
+    <!-- 
+     <a href="files/slides.pdf" class="d-inline-block p-3"><img src="figures/slides-thumbnail.png"
+       style="border:1px solid; margin-bottom:16px" height="75" data-nothumb><br>ICLR poster</a>
+     <a href="https://github.com/mit-han-lab/mbt" class="d-inline-block p-3"><img height="100" width="100" src="figures/code-thumbnail.png" style="border:1px solid" data-nothumb><br>Code</a>
+    -->
+   </div>
+  </div>
+
+  <div class="row">
+   <div class="col">
+
+    <p>Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications since mobile phones are tightly constrained by the hardware resources and battery. In this paper, we investigate the mobile setting (under 500M Mult-Adds) for NLP tasks to facilitate the deployment on the edge devices. We present Long-Short Range Attention (LSRA), where one group of heads specializes in the local context modeling (by convolution) while another group captures the long-distance relationship (by attention). Based on this primitive, we design Lite Transformer that is tailored for the mobile NLP application. Our Lite Transformer demonstrates consistent improvement over the transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. It outperforms the transformer on WMT’14 English-French by 1.2 BLEU under 500M Mult-Adds and 1.7 BLEU under 100M Mult-Adds, and reduces the computation of transformer base model by 2.5x. Further, with general techniques, our Lite Transformer achieves <strong>18.2x</strong> model size compression. For language modeling, our Lite Transformer also achieves 3.8 lower perplexity than the transformer around 500M Mult-Adds. Without the costly architecture search that requires more than 250 GPU <strong>years</strong>, our Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU under the mobile setting.</p>
+
+    <h2>Lite Transformer</h2>
+
+    <p>Our paper presents a Lite Transformer with Long-Short Range Attention (LSRA):</p>
+    <p style="text-align: center"><img src="figures/overview.png" style="max-width:80%"></p>
+    <ol>
+     <li>The attention branch can specialize in global feature extraction.</li>
+     <li>The local feature extraction is sepcialized by a convolutional branch which efficiently models locality (diagonal structure).</li>
+    </ol>
+
+    <h2>Results on Machine Translation</h2>
+    <p style="text-align: center"><img src="figures/results-mt.png" style="max-width:80%"></p>
+    <h2>Compared with AutoML-based Evolved Transformer</h2>
+    <p style="text-align: center"><img src="figures/results-et.png" style="max-width:80%"></p>
+
+    <!--
+    <h2>Introduction Video</h2>
+    <center class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" width="560" height="315" src="????" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    -->
+
+    <h2>Citation</h2>
+
+    <pre class="highlight">
+@inproceedings{Wu2020LiteTransformer,
+  title={Lite Transformer with Long-Short Range Attention},
+  author={Zhanghao Wu* and Zhijian Liu* and Ji Lin and Yujun Lin and Song Han},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2020}
+}
+</pre>
+
+    <p><strong>Acknowledgments</strong>: We sincerely thank MIT-IBM Watson AI Lab, Facebook Faculty Award, Google-Daydream Research Award, and AWS Machine Learning Research Award for supporting this research.</p>
+
+   </div>
+  </div> <!-- row -->
+
+ </div> <!-- container -->
+
+</body>
+
+</html>

@@ -3,15 +3,16 @@
 
 
 @inproceedings{Wu:2020efficient,
-  title = {Efficient Transformer for Mobile Applications},
-  author = {Wu, Zhanghao and Liu, Zhijian and Lin, Ji and Lin, Yujun and Han, Song},
+  title = {Lite Transformer with Long-Short Range Attention},
+  author = {Wu*, Zhanghao and Liu*, Zhijian and Lin, Ji and Lin, Yujun and Han, Song},
   booktitle = {ICLR},
   year = {2020},
   url = {https://openreview.net/forum?id=ByeMPlHKPH},
   pdf = {https://openreview.net/pdf?id=ByeMPlHKPH},
   slides = {Presentation_ENMT.pdf},
   image = {enmt.png},
-  abstract = {Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for real-world mobile applications since mobile phones are tightly constrained by the hardware resources and battery. In this paper, we investigate the mobile setting (under 500M Mult-Adds) for NLP tasks to facilitate the deployment on the edge devices. We present Long-Short Range Attention (LSRA), where some heads specialize in the local context modeling (by convolution) while the others capture the long-distance relationship (by attention). Based on this primitive, we design Mobile Transformer (MBT) that is tailored for the mobile NLP application. Our MBT demonstrates consistent improvement over the transformer on two well-established language tasks: IWSLT 2014 German-English and WMT 2014 English-German. It outperforms the transformer by 0.9 BLEU under 500M Mult-Adds and 1.1 BLEU under 100M Mult-Adds on WMT'14 English-German. Without the costly architecture search that requires more than 250 GPU years, our manually-designed MBT achieves 0.4 higher BLEU than the AutoML-based Evolved Transformer under the extremely efficient mobile setting (i.e., 100M Mult-Adds).}
+  website = {https://zhanghaowu.me/publications/mbt/index.html},
+  abstract = {Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications since mobile phones are tightly constrained by the hardware resources and battery. In this paper, we investigate the mobile setting (under 500M Mult-Adds) for NLP tasks to facilitate the deployment on the edge devices. We present Long-Short Range Attention (LSRA), where one group of heads specializes in the local context modeling (by convolution) while another group captures the long-distance relationship (by attention). Based on this primitive, we design Lite Transformer that is tailored for the mobile NLP application. Our Lite Transformer demonstrates consistent improvement over the transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. It outperforms the transformer on WMT’14 English-French by 1.2 BLEU under 500M Mult-Adds and 1.7 BLEU under 100M Mult-Adds, and reduces the computation of transformer base model by 2.5x. Further, with general techniques, our Lite Transformer achieves 18.2x model size compression. For language modeling, our Lite Transformer also achieves 3.8 lower perplexity than the transformer around 500M Mult-Adds. Without the costly architecture search that requires more than 250 GPU years, our Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU under the mobile setting.}
 }
 
 @article{Wu:2020hat,

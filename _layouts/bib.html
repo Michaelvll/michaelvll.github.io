@@ -124,6 +124,11 @@
             {% assign has_former = true %}
             <a href="{{ entry.code }}" target="_blank">Code</a>
         {% endif %}
+        {% if entry.website %}
+            {% if has_former == true %} | {% endif %}
+            {% assign has_former = true %}
+            <a href="{{ entry.website }}" target="_blank">Website</a>
+        {% endif %}
         </span>
 
         <!-- Hidden abstract block -->
