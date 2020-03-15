@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /
-title: Zhanghao Wu
+title: Zhanghao Wu (吴章昊)
 # description: <a href="www.sjtu.edu.cn">SJTU</a>.
 
 profile:
@@ -28,7 +28,7 @@ I am a senior student majoring in computer science at Shanghai Jiao Tong Univers
 
 I have spent wonderful times as a research assistant working with Prof. [Song Han](https://songhan.mit.edu) at Massachusetts Institute of Technology ([MIT](https://mit.edu)).
 
-I am interested in **efficient deep learning**, especially for **natural language processing** and **speech**, and **computer architecture**.
+I am interested in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**.
 
 I am applying for a CS Ph.D. program that starts in the fall, 2020.
 
