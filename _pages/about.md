@@ -30,7 +30,7 @@ I have spent wonderful times as a research assistant working with Prof. [Song Ha
 
 I am interested in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**.
 
-I will join the CS Ph.D. program at UC Berkeley in the fall, 2020.
+I will join the CS Ph.D. program at UC Berkeley RISELab in the fall, 2020.
 
 ### Education
 
