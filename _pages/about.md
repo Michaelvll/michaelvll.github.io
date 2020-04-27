@@ -15,7 +15,7 @@ education:
   images: [assets/img/mit.png, assets/img/sjtu.png]
   location: [USA, China]
   description: ["Research assistant, working with Prof. <a href='https://songhan.mit.edu'>Song Han</a>. Jul. 2019 - Jan. 2020.",
-                "B.Eng. in Computer Science, advised by Prof. <a href='http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140'>Yong Yu</a>. Sep. 2016 - Jun. 2020."]
+                "B.Eng. in Computer Science, advised by Prof. <a href='https://speechlab.sjtu.edu.cn/members/kai_yu'>Kai Yu</a> and Prof. <a href='http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140'>Yong Yu</a>. Sep. 2016 - Jun. 2020."]
 
 news: false
 social: false
