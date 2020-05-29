@@ -6,7 +6,7 @@ title: Zhanghao Wu (吴章昊)
 
 profile:
   align: right
-  image: boston.jpg
+  image: Boston.jpg
   email: zhanghao.wu@outlook.com
 
 education:
