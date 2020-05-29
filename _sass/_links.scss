@@ -23,6 +23,15 @@ article a, .news a {
     &:hover { color: $theme-color; }
 }
 
+.nolinkcolor a {
+    color: $text-color;
+    font-weight: normal;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 
 // a {
 //   color: $link-color;

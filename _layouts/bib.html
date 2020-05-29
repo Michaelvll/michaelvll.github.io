@@ -25,7 +25,7 @@
             {{reference}}
         {% else %}
             <span class="title"><strong>{{entry.title}}</strong></span>
-            <span class="author">
+            <span class="author nolinkcolor">
             {% for author in entry.author_array %}
                 {% if forloop.length == 1 %}
                 {% if author.last == site.scholar.last_name or author.last == "Wu*" %}
@@ -36,7 +36,7 @@
                 {% else %}
                 {% unless forloop.last %}
                     {% if author.last == site.scholar.last_name or author.last == "Wu*" %}
-                    <em>{{author.first}} {{author.last}}</em>,
+                    <em><a href="{{site.baseurl}}">{{author.first}} {{author.last}}</a></em>,
                     {% else %}
                     {% if site.data.coauthors[author.first] %}
                         <a href="{{site.data.coauthors[author.first].url}}" target="_blank">{{author.first}} {{author.last}}</a>, 
@@ -46,7 +46,7 @@
                     {% endif %}
                 {% else %}
                     {% if author.last == site.scholar.last_name or author.last == "Wu*" %}
-                    and <em>{{author.first}} {{author.last}}</em>
+                    and <em><a href="{{site.baseurl}}">{{author.first}} {{author.last}}</a></em>
                     {% else %}
                     {% if site.data.coauthors[author.first] %}
                         and <a href="{{site.data.coauthors[author.first].url}}" target="_blank">{{author.first}} {{author.last}}</a> 
@@ -92,7 +92,7 @@
         {% if entry.pdf %}
             {% if has_former == true %} | {% endif %}
             {% assign has_former = true %}
-            <a href="{{ entry.pdf }}" target="_blank">PDF</a>
+            <a href="{{ entry.pdf }}" target="_blank">Paper</a>
         {% endif %}
         {% if entry.local_pdf %}
             {% if has_former == true %} | {% endif %}
