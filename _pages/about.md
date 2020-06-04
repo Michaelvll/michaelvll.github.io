@@ -26,11 +26,11 @@ I am a senior student majoring in computer science at Shanghai Jiao Tong Univers
 
 **My overall GPA is 92.47/100, Rank: 2/37**.
 
-I have spent wonderful times as a research assistant working with Prof. [Song Han](https://songhan.mit.edu) at Massachusetts Institute of Technology ([MIT](https://mit.edu)).
+I have spent a wonderful time as a research assistant working with [Prof. Song Han](https://songhan.mit.edu) at MIT HAN Lab, and an undergraduate researcher working with [Prof. Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) and [Prof. Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) at SJTU SpeechLab.
 
-I am interested in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**.
+My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**.
 
-I will fortunately join the CS Ph.D. program at UC Berkeley RISELab in the fall, 2020.
+I will fortunately join the CS Ph.D. program at [UC Berkeley RISELab](https://rise.cs.berkeley.edu/) in the fall, 2020.
 
 ### Education
 
