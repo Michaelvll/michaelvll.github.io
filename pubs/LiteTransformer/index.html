@@ -27,8 +27,8 @@
 <body class="nd-docs" data-gr-c-s-loaded="true">
  <div class="nd-pageheader">
   <div class="container">
-   <p class="lead">
-    <a href="https://openreview.net/pdf?id=ByeMPlHKPH"><p style="font-size:200%"><b><nobr>Lite Transformer</nobr> with <nobr>Long-Short Range Attention</nobr></b></p></a>
+   <p class="lead" style="font-size:200%">
+    <a href="https://openreview.net/pdf?id=ByeMPlHKPH">Lite Transformer with Long-Short Range Attention</a>
     <address>
      <nobr><a href="https://zhanghaowu.me">Zhanghao Wu</a><sup>1,2,*</sup>,</nobr>
      <nobr>Zhijian Liu<sup>1,*</sup>,</nobr>
@@ -60,7 +60,7 @@
   <div class="row">
    <div class="col">
 
-    <p>Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained by the hardware resources and battery. In this paper, we present an efficient mobile NLP architecture, Lite Transformer to facilitate deploying mobile NLP applications on edge devices. The key primitive is the Long-Short Range Attention (LSRA), where one group of heads specializes in the <strong>local</strong> context modeling (by convolution) while another group specializes in the <strong>long-distance</strong> relationship modeling (by attention). Such specialization brings consistent improvement over the vanilla transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. Under constrained resources (500M/100M MACs), Lite Transformer outperforms transformer on WMT'14 English-French by 1.2/1.7 BLEU, respectively. Lite Transformer reduces the computation of transformer base model by 2.5x with 0.3 BLEU score degradation. Combining with pruning and quantization, we further compressed the model size of Lite Transformer by <strong>18.2x</strong>. For language modeling, Lite Transformer achieves 1.8 lower perplexity than the transformer at around 500M MACs. Notably, Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU for the mobile NLP setting without the costly architecture search that requires more than 250 GPU <strong>years</strong>. Code has been made available at <a href="https://github.com/mit-han-lab/lite-transformer">https://github.com/mit-han-lab/lite-transformer</a>.</p>
+    <p style="text-align: justify;text-justify: inter-word">Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained by the hardware resources and battery. In this paper, we present an efficient mobile NLP architecture, Lite Transformer to facilitate deploying mobile NLP applications on edge devices. The key primitive is the Long-Short Range Attention (LSRA), where one group of heads specializes in the <strong>local</strong> context modeling (by convolution) while another group specializes in the <strong>long-distance</strong> relationship modeling (by attention). Such specialization brings consistent improvement over the vanilla transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. Under constrained resources (500M/100M MACs), Lite Transformer outperforms transformer on WMT'14 English-French by 1.2/1.7 BLEU, respectively. Lite Transformer reduces the computation of transformer base model by 2.5x with 0.3 BLEU score degradation. Combining with pruning and quantization, we further compressed the model size of Lite Transformer by <strong>18.2x</strong>. For language modeling, Lite Transformer achieves 1.8 lower perplexity than the transformer at around 500M MACs. Notably, Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU for the mobile NLP setting without the costly architecture search that requires more than 250 GPU <strong>years</strong>. Code has been made available at <a href="https://github.com/mit-han-lab/lite-transformer">https://github.com/mit-han-lab/lite-transformer</a>.</p>
 
     <h2>Lite Transformer</h2>
 
@@ -104,7 +104,7 @@
 }
 </pre>
 
-    <p><strong>Acknowledgments</strong>: We sincerely thank MIT-IBM Watson AI Lab, Facebook Faculty Award, Google-Daydream Research Award, and AWS Machine Learning Research Award for supporting this research.</p>
+    <p style="text-align: justify;text-justify: inter-word"><strong>Acknowledgments</strong>: We sincerely thank MIT-IBM Watson AI Lab, Facebook Faculty Award, Google-Daydream Research Award, and AWS Machine Learning Research Award for supporting this research.</p>
 
    </div>
   </div> <!-- row -->
