@@ -10,11 +10,12 @@ profile:
   email: zhanghao.wu@outlook.com
 
 education:
-  schools: [Massachusetts Institute Technology, Shanghai Jiao Tong University]
-  hrefs: ["https://mit.edu", "http://en.sjtu.edu.cn"]
-  images: [assets/img/mit.png, assets/img/sjtu.png]
-  location: [USA, China]
-  description: ["Research assistant, working with Prof. <a href='https://songhan.mit.edu'>Song Han</a>. Jul. 2019 - Jan. 2020.",
+  schools: [UC Berkeley, Massachusetts Institute Technology, Shanghai Jiao Tong University]
+  hrefs: ["https://berkeley.edu/", "https://mit.edu", "http://en.sjtu.edu.cn"]
+  images: [assets/berkeley.png, assets/img/mit.png, assets/img/sjtu.png]
+  location: [USA, USA, China]
+  description: ["Ph.D. student at <a href="https://rise.cs.berkeley.edu/">RISELab</a>. Aug. 2020 - ",
+                "Research assistant, working with Prof. <a href='https://songhan.mit.edu'>Song Han</a>. Jul. 2019 - Jan. 2020.",
                 "B.Eng. in Computer Science, advised by Prof. <a href='https://speechlab.sjtu.edu.cn/members/kai_yu'>Kai Yu</a> and Prof. <a href='http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140'>Yong Yu</a>. Sep. 2016 - Jun. 2020."]
 
 news: false
