@@ -22,16 +22,13 @@ news: false
 social: false
 ---
 
+I just fortunately joined the CS Ph.D. program at [UC Berkeley RISELab](https://rise.cs.berkeley.edu/) in the fall, 2020.
 
-I am a senior student majoring in computer science at Shanghai Jiao Tong University ([SJTU](http://en.sjtu.edu.cn/)) and a member of the SJTU ACM Honors Class, which is an elite CS program for the top 5% talented students. 
+Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University ([SJTU](http://en.sjtu.edu.cn/)) and a member of the SJTU ACM Honors Class, which is an elite CS program for the top 5% talented students. 
 
-**My overall GPA is 92.47/100, Rank: 2/37**.
-
-I have had a wonderful time as a research assistant working with [Prof. Song Han](https://songhan.mit.edu) at MIT HAN Lab, and an undergraduate researcher working with [Prof. Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) and [Prof. Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) at SJTU SpeechLab.
+I also had a wonderful time as a research assistant working with [Prof. Song Han](https://songhan.mit.edu) at MIT HAN Lab, and an undergraduate researcher working with [Prof. Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) and [Prof. Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) at SJTU SpeechLab.
 
 My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**.
-
-I will fortunately join the CS Ph.D. program at [UC Berkeley RISELab](https://rise.cs.berkeley.edu/) in the fall, 2020.
 
 ### Education
 

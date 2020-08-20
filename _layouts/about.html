@@ -17,13 +17,15 @@ layout: page
     <div class="address">
         <center>
         {% if site.email %}
-            {% assign has_former = true %}
-            <a href="mailto:{{ site.email }}">Email</a>
+            {% comment %} {% assign has_former = true %} {% endcomment %}
+            {% comment %} <a href="mailto:{{ site.email }}">Email</a> {% endcomment %}
+            <strong>Email:</strong> zhwu at berkeley dot edu
+            <p></p>
         {% endif %}
         {% if site.scholar_userid %}
             {% if has_former == true %} | {% endif %}
             {% assign has_former = true %}
-            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"  target="_blank" title="Google Scholar">Scholar</a>
+            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"  target="_blank" title="Google Scholar">Google Scholar</a>
         {% endif %}
         {% if site.github_username %}
             {% if has_former == true %} | {% endif %}
