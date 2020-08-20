@@ -42,8 +42,8 @@ My research interests lie in **efficient deep learning**, especially for **natur
 * **3rd place**, in Low Power Image Recognition Challenge of CVPR'19 (1st place of academic groups), 2019.
 * **Outstanding Winner**,in Mathematical Contest in Modeling (top 0.5%), 2017.
 * **Chinese National Scholarship**, highest honor for undergraduates, top 0.2% nation wide, 2018 & 2019.
-* **Excellent Graduate Award of SJTU**,the highest honor for graduates at Shanghai Jiao Tong University, 2020.
-* **Zhiyuan Outstanding Student Scholarship of SJTU**, 16 graduates of SJTU Zhiyuan College per year, 2020.
+* **Excellent Graduate Award of SJTU**, the highest honor for graduates at SJTU, 2020.
+* **Zhiyuan Outstanding Student Scholarship of SJTU**, 16 graduates of SJTU Zhiyuan College, 2020.
 * **Fan Hsu-Chi Chancellor’s Scholarship**, top 0.1%of 17,000 students in SJTU, 2017.
 * **Zhiyuan Honorary Scholarship**, top 5% of 17,000 students in SJTU, 2016-2018.
 
