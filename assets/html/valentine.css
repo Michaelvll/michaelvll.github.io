@@ -80,17 +80,6 @@ body {
   transform: rotate(450deg) translateY(100px);
 }
 
-.heart:after
-{
-  content: '';
-  position: absolute;
-  width: 500%;
-  height: 500%;
-  left: 0%;
-  background: #fff;
-  transition: 2s;
-  transform-origin: right bottom;
-}
 
 /* body {
   display: flex;
