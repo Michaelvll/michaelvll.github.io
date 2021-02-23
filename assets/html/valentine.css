@@ -45,9 +45,10 @@ body {
 .heart {
   width: 180px;
   height: 100px;
-  position: absolute;
-  top: 55%;
-  left: 30%;
+  position: relative;
+  top: 120px;
+  left: 50%;
+  margin-left: -180px;
   background: #ff3e3e;
   transition: 1s;
   transform-origin: right bottom;
