@@ -22,7 +22,7 @@ news: false
 social: false
 ---
 
-I just fortunately joined the CS Ph.D. program at [UC Berkeley RISELab](https://rise.cs.berkeley.edu/) in the fall, 2020.
+I fortunately joined the CS Ph.D. program at [UC Berkeley RISELab](https://rise.cs.berkeley.edu/) in the fall, 2020.
 
 Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University ([SJTU](http://en.sjtu.edu.cn/)) and a member of the SJTU ACM Honors Class.
 
