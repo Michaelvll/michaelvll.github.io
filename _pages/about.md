@@ -28,7 +28,7 @@ Before coming to Berkeley, I was an undergraduate student majoring in computer s
 
 I also had a wonderful time as a research assistant working with [Prof. Song Han](https://songhan.mit.edu) at MIT HAN Lab, and an undergraduate researcher working with [Prof. Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) and [Prof. Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) at SJTU SpeechLab.
 
-My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**.
+<!-- My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**. -->
 
 ### Education
 
