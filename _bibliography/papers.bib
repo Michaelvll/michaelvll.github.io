@@ -1,67 +1,81 @@
 ---
 ---
 
-@article{Wu:2020RLlibFlow,
-  title           = {RLlib Flow: Distributed Reinforcement Learning is a Dataflow Problem},
-  author          = {Liang*, Eric and Wu*, Zhanghao and Luo, Michael and Mika, Sven and Gonzalez, Joseph and Stoica, Ion},
-  year            = {2021},
-  booktitle = {Arxiv},
-  eprint          = {2011.12719},
-  archivePrefix   = {arXiv},
-  primaryClass    = {cs.LG},
-  image = {rllibflow.png},
-  pdf = {https://arxiv.org/pdf/2011.12719.pdf},
-  abstract        = {Researchers and practitioners in the field of reinforcement learning (RL) frequently leverage parallel computation, which has led to a plethora of new algorithms and systems in the last few years. In this paper, we re-examine the challenges posed by distributed RL and try to view it through the lens of an old idea: distributed dataflow. We show that viewing RL as a dataflow problem leads to highly composable and performant implementations. We propose RLlib flow, a hybrid actor-dataflow programming model for distributed RL, and validate its practicality by porting the full suite of algorithms in RLlib, a widely-adopted distributed RL library.}
+
+@inproceedings{Wu:2021GraphTrans,
+  title     = {Representing Long-Range Context for Graph Neural Networks with Global Attention},
+  author    = {Paras Jain and Zhanghao Wu and Matthew Wright and Azalia Mirhoseini and Joseph E. Gonzalez and Ion Stoica},
+  year      = {2021},
+  booktitle = {NeurIPS},
+  url       = {https://proceedings.neurips.cc//paper/2021/hash/6e67691b60ed3e4a55935261314dd534-Abstract.html},
+  pdf       = {https://proceedings.neurips.cc/paper/2021/file/6e67691b60ed3e4a55935261314dd534-Paper.pdf},
+  image     = {graphtrans.png},
+  slides    = {GraphTrans_Neurips2021_Slides.pdf},
+  abstract  = {Graph neural networks are powerful architectures for structured datasets. However, current methods struggle to represent long-range dependencies. Scaling the depth or width of GNNs is insufficient to broaden receptive fields as larger GNNs encounter optimization instabilities such as vanishing gradients and representation oversmoothing, while pooling-based approaches have yet to become as universally useful as in computer vision. In this work, we propose the use of Transformer-based self-attention to learn long-range pairwise relationships, with a novel “readout” mechanism to obtain a global graph embedding. Inspired by recent computer vision results that find position-invariant attention performant in learning long-range relationships, our method, which we call GraphTrans, applies a permutation-invariant Transformer module after a standard GNN module. This simple architecture leads to state-of-the-art results on several graph classification tasks, outperforming methods that explicitly encode graph structure. Our results suggest that purely-learning-based approaches without graph structure may be suitable for learning high-level, long-range relationships on graphs. Code for GraphTrans is available at <a href="https://github.com/ucbrise/graphtrans">https://github.com/ucbrise/graphtrans</a>.}
 }
 
+
+@inproceedings{Liang:2021RLlibflow,
+  title     = {RLlib Flow: Distributed Reinforcement Learning is a Dataflow Problem},
+  author    = {Eric Liang and Zhanghao Wu and Michael Luo and Sven Mika and Joseph E. Gonzalez and Ion Stoica},
+  year      = {2021},
+  booktitle = {NeurIPS},
+  url       = {https://proceedings.neurips.cc/paper/2021/hash/2bce32ed409f5ebcee2a7b417ad9beed-Abstract.html},
+  pdf       = {https://arxiv.org/pdf/2011.12719.pdf},
+  image     = {rllibflow.png},
+  slides    = {RLlib_Flow_Neurips_2021_Slides.pdf},
+  abstract  = {Researchers and practitioners in the field of reinforcement learning (RL) frequently leverage parallel computation, which has led to a plethora of new algorithms and systems in the last few years. In this paper, we re-examine the challenges posed by distributed RL and try to view it through the lens of an old idea: distributed dataflow. We show that viewing RL as a dataflow problem leads to highly composable and performant implementations. We propose RLlib Flow, a hybrid actor-dataflow programming model for distributed RL, and validate its practicality by porting the full suite of algorithms in RLlib, a widely adopted distributed RL library. Concretely, RLlib Flow provides 2-9 code savings in real production code and enables the composition of multi-agent algorithms not possible by end users before. The open-source code is available as part of RLlib at <a href="https://github.com/ray-project/ray/tree/master/rllib">https://github.com/ray-project/ray/tree/master/rllib</a>.}
+}
+
+
 @inproceedings{Wu:2020DataMix,
-    title = {DataMix: Efficient Privacy-Preserving Edge-Cloud Inference},
-    author = {Liu*, Zhijian and Wu*, Zhanghao and Gan, Chuang and Zhu, Ligeng and Han, Song},
-    booktitle = {ECCV},
-    year = {2020},
-    pdf = {https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560562.pdf},
-    slides = {Presentation_Privacy-Preserving_Edge-Cloud_Inference.pdf},
-    demo = {https://www.youtube.com/watch?v=nLVWIl-h5Zc&feature=youtu.be},
-    image = {privacy_eccv.png},
-    abstract = {Deep neural networks are widely deployed on edge devices. Users either perform the inference locally (i.e., edge-based) or send the data to the cloud and run inference remotely (i.e., cloud-based). However, edge devices are heavily constrained by insufficient hardware resources and cannot afford to run large models; cloud servers, if not trustworthy, will raise serious privacy issues. In this paper, we mediate between the resource-constrained edge devices and the privacy-invasive cloud servers by introducing a novel privacy-preserving edge-cloud inference framework, DataMix. We off-load the majority of the computations to the cloud and leverage a pair of mixing and de-mixing operation, inspired by mixup, to protect the privacy of the data transmitted to the cloud. Our framework has three advantages. First, it is privacy-preserving as the mixing cannot be inverted without the user's private mixing coefficients. Second, our framework is accuracy-preserving because our framework takes advantage of the space spanned by image mixing, and we train the model in a mixing-aware manner to maintain accuracy. Third, our solution is efficient on the edge since the majority of the workload is delegated to the cloud, and mixing and de-mixing introduce few extra computations. DataMix introduces small communication overhead and maintains high hardware utilization on the cloud. Extensive experiments on multiple computer vision and speech recognition datasets demonstrate that our framework can greatly reduce the local computations on the edge (to fewer than 20% of FLOPs) with negligible loss of accuracy and no leakages of private information.}
+  title     = {DataMix: Efficient Privacy-Preserving Edge-Cloud Inference},
+  author    = {Liu*, Zhijian and Wu*, Zhanghao and Gan, Chuang and Zhu, Ligeng and Han, Song},
+  booktitle = {ECCV},
+  year      = {2020},
+  pdf       = {https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560562.pdf},
+  slides    = {Presentation_Privacy-Preserving_Edge-Cloud_Inference.pdf},
+  demo      = {https://www.youtube.com/watch?v=nLVWIl-h5Zc&feature=youtu.be},
+  image     = {privacy_eccv.png},
+  abstract  = {Deep neural networks are widely deployed on edge devices. Users either perform the inference locally (i.e., edge-based) or send the data to the cloud and run inference remotely (i.e., cloud-based). However, edge devices are heavily constrained by insufficient hardware resources and cannot afford to run large models; cloud servers, if not trustworthy, will raise serious privacy issues. In this paper, we mediate between the resource-constrained edge devices and the privacy-invasive cloud servers by introducing a novel privacy-preserving edge-cloud inference framework, DataMix. We off-load the majority of the computations to the cloud and leverage a pair of mixing and de-mixing operation, inspired by mixup, to protect the privacy of the data transmitted to the cloud. Our framework has three advantages. First, it is privacy-preserving as the mixing cannot be inverted without the user's private mixing coefficients. Second, our framework is accuracy-preserving because our framework takes advantage of the space spanned by image mixing, and we train the model in a mixing-aware manner to maintain accuracy. Third, our solution is efficient on the edge since the majority of the workload is delegated to the cloud, and mixing and de-mixing introduce few extra computations. DataMix introduces small communication overhead and maintains high hardware utilization on the cloud. Extensive experiments on multiple computer vision and speech recognition datasets demonstrate that our framework can greatly reduce the local computations on the edge (to fewer than 20% of FLOPs) with negligible loss of accuracy and no leakages of private information.}
 }
 
 
 @inproceedings{Wu:2020hat,
-  title = {HAT: Hardware-Aware Transformers for Efficient Natural Language Processing},
-  author = {Wang, Hanrui and Wu, Zhanghao and Liu, Zhijian and Cai, Han and Zhu, Ligeng and Han, Song},
-  pdf = {https://arxiv.org/pdf/2005.14187.pdf},
-  website = {https://hanlab.mit.edu/projects/hat/},
+  title     = {HAT: Hardware-Aware Transformers for Efficient Natural Language Processing},
+  author    = {Wang, Hanrui and Wu, Zhanghao and Liu, Zhijian and Cai, Han and Zhu, Ligeng and Han, Song},
+  pdf       = {https://arxiv.org/pdf/2005.14187.pdf},
+  website   = {https://hanlab.mit.edu/projects/hat/},
   booktitle = {ACL},
-  year = {2020},
-  image = {hat.png},
-  abstract = {Transformers are ubiquitous in Natural Language Processing (NLP) tasks, but they are difficult to be deployed on hardware due to the intensive computation. To enable low-latency inference on resource-constrained hardware platforms, we propose to design Hardware-Aware Transformers (HAT) with neural architecture search. We first construct a large design space with arbitrary encoder-decoder attention and heterogeneous layers. Then we train a SuperTransformer that covers all candidates in the design space, and efficiently produces many SubTransformers with weight sharing. Finally, we perform an evolutionary search with a hardware latency constraint to find a specialized SubTransformer dedicated to run fast on the target hardware. Extensive experiments on four machine translation tasks demonstrate that HAT can discover efficient models for different hardware (CPU, GPU, IoT device). When running WMT'14 translation task on Raspberry Pi-4, HAT can achieve 3× speedup, 3.7× smaller size over baseline Transformer; 2.7× speedup, 3.6× smaller size over Evolved Transformer with 12,041× less search cost and no performance loss. HAT code is open-sourced at <a href="https://github.com/mit-hanlab/hardware-aware-transformers.git">https://github.com/mit-hanlab/hardware-aware-transformers.git</a>.}
+  year      = {2020},
+  image     = {hat.png},
+  abstract  = {Transformers are ubiquitous in Natural Language Processing (NLP) tasks, but they are difficult to be deployed on hardware due to the intensive computation. To enable low-latency inference on resource-constrained hardware platforms, we propose to design Hardware-Aware Transformers (HAT) with neural architecture search. We first construct a large design space with arbitrary encoder-decoder attention and heterogeneous layers. Then we train a SuperTransformer that covers all candidates in the design space, and efficiently produces many SubTransformers with weight sharing. Finally, we perform an evolutionary search with a hardware latency constraint to find a specialized SubTransformer dedicated to run fast on the target hardware. Extensive experiments on four machine translation tasks demonstrate that HAT can discover efficient models for different hardware (CPU, GPU, IoT device). When running WMT'14 translation task on Raspberry Pi-4, HAT can achieve 3× speedup, 3.7× smaller size over baseline Transformer; 2.7× speedup, 3.6× smaller size over Evolved Transformer with 12,041× less search cost and no performance loss. HAT code is open-sourced at <a href="https://github.com/mit-hanlab/hardware-aware-transformers.git">https://github.com/mit-hanlab/hardware-aware-transformers.git</a>.}
 }
 
 
 @inproceedings{Wu:2020efficient,
-  title = {Lite Transformer with Long-Short Range Attention},
-  author = {Wu*, Zhanghao and Liu*, Zhijian and Lin, Ji and Lin, Yujun and Han, Song},
+  title     = {Lite Transformer with Long-Short Range Attention},
+  author    = {Wu*, Zhanghao and Liu*, Zhijian and Lin, Ji and Lin, Yujun and Han, Song},
   booktitle = {ICLR},
-  year = {2020},
-  url = {https://openreview.net/forum?id=ByeMPlHKPH},
-  pdf = {https://arxiv.org/pdf/2004.11886.pdf},
-  image = {enmt.png},
-  slides = {Presentation_LiteTransformer.pdf},
-  website = {https://hanlab.mit.edu/projects/litetransformer/},
-  abstract = {Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained by the hardware resources and battery. In this paper, we present an efficient mobile NLP architecture, Lite Transformer to facilitate deploying mobile NLP applications on edge devices. The key primitive is the Long-Short Range Attention (LSRA), where one group of heads specializes in the local context modeling (by convolution) while another group specializes in the long-distance relationship modeling (by attention). Such specialization brings consistent improvement over the vanilla transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. Under constrained resources (500M/100M MACs), Lite Transformer outperforms transformer on WMT'14 English-French by 1.2/1.7 BLEU, respectively. Lite Transformer reduces the computation of transformer base model by 2.5x with 0.3 BLEU score degradation. Combining with pruning and quantization, we further compressed the model size of Lite Transformer by 18.2x. For language modeling, Lite Transformer achieves 1.8 lower perplexity than the transformer at around 500M MACs. Notably, Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU for the mobile NLP setting without the costly architecture search that requires more than 250 GPU years. Code has been made available at <a href="https://github.com/mit-han-lab/lite-transformer">https://github.com/mit-han-lab/lite-transformer</a>.}
+  year      = {2020},
+  url       = {https://openreview.net/forum?id=ByeMPlHKPH},
+  pdf       = {https://arxiv.org/pdf/2004.11886.pdf},
+  image     = {enmt.png},
+  slides    = {Presentation_LiteTransformer.pdf},
+  website   = {https://hanlab.mit.edu/projects/litetransformer/},
+  abstract  = {Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained by the hardware resources and battery. In this paper, we present an efficient mobile NLP architecture, Lite Transformer to facilitate deploying mobile NLP applications on edge devices. The key primitive is the Long-Short Range Attention (LSRA), where one group of heads specializes in the local context modeling (by convolution) while another group specializes in the long-distance relationship modeling (by attention). Such specialization brings consistent improvement over the vanilla transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. Under constrained resources (500M/100M MACs), Lite Transformer outperforms transformer on WMT'14 English-French by 1.2/1.7 BLEU, respectively. Lite Transformer reduces the computation of transformer base model by 2.5x with 0.3 BLEU score degradation. Combining with pruning and quantization, we further compressed the model size of Lite Transformer by 18.2x. For language modeling, Lite Transformer achieves 1.8 lower perplexity than the transformer at around 500M MACs. Notably, Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU for the mobile NLP setting without the costly architecture search that requires more than 250 GPU years. Code has been made available at <a href="https://github.com/mit-han-lab/lite-transformer">https://github.com/mit-han-lab/lite-transformer</a>.}
 }
 
 @article{Wang:2020da,
-  author  = {Wang, Shuai and Yang, Yexin and Wu, Zhanghao and Qian, Yanmin and Yu, Kai},
-  journal = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
-  title   = {Data Augmentation Using Deep Generative Models for Embedding Based Speaker Recognition},
-  year    = {2020},
-  pdf = {https://ieeexplore.ieee.org/abstract/document/9167416},
-  volume  = {28},
-  number  = {},
-  image = {da_taslp.png},
-  pages   = {2598-2609},
+  author   = {Wang, Shuai and Yang, Yexin and Wu, Zhanghao and Qian, Yanmin and Yu, Kai},
+  journal  = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  title    = {Data Augmentation Using Deep Generative Models for Embedding Based Speaker Recognition},
+  year     = {2020},
+  pdf      = {https://ieeexplore.ieee.org/abstract/document/9167416},
+  volume   = {28},
+  number   = {},
+  image    = {da_taslp.png},
+  pages    = {2598-2609},
   abstract = {Data augmentation is an effective method to improve the robustness of embedding based speaker verification systems, which could be applied to either the front-end speaker embedding extractor or the back-end PLDA. Different from the conventional augmentation methods such as manually adding noise or reverberation to the original audios, in this article, we propose to use deep generative models to directly generate more diverse speaker embeddings, which would be used for robust PLDA training. Conditional GAN, and VAE are designed, and investigated for different embedding types, including factor analysis based i-vector, TDNN based x-vector, and ResNet based r-vector. The proposed back-end augmentation methods are evaluated on NIST SRE 2016, and 2018 dataset. Within the popular x-vector, and r-vector framework, the experimental results show that our proposed methods can outperform the traditional audio based back-end augmentation method while different front-end augmentation methods are considered.},
   keywords = {Generative adversarial networks;Data mining;Speaker recognition;Gallium nitride;Feature extraction;Training;Speech recognition;Text-independent speaker verification;data augmentation;generative adversarial network;variational auto-encoder},
   doi      = {10.1109/TASLP.2020.3016498},
@@ -69,28 +83,28 @@
   month    = {}
 }
 
-@inproceedings{Wu:2019vaeda, 
-  title = {Data Augmentation Using Variational Autoencoder for Embedding Based Speaker Verification}, 
-  author = {Wu, Zhanghao and Wang, Shuai and Qian, Yanmin and Yu, Kai}, 
-  booktitle = {Interspeech}, 
-  doi = {10.21437/Interspeech.2019-2248},
-  year = {2019},
-  url = {http://dx.doi.org/10.21437/Interspeech.2019-2248},
-  pdf = {https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2248.pdf},
-  oral = {},
-  slides = {Presentations_VAE_DA.pdf},
-  image = {vae_da.png},
-  abstract = {Domain or environment mismatch between training and testing, such as various noises and channels, is a major challenge for speaker verification. In this paper, a variational autoencoder (VAE) is designed to learn the patterns of speaker embeddings extracted from noisy speech segments, including i-vector and xvector, and generate embeddings with more diversity to improve the robustness of speaker verification systems with probabilistic linear discriminant analysis (PLDA) back-end. The approach is evaluated on the standard NIST SRE 2016 dataset. Compared to manual and generative adversarial network (GAN) based augmentation approaches, the proposed VAE based augmentation achieves a slightly better performance for i-vector on Tagalog and Cantonese with EERs of 15.54\% and 7.84\%, and a more significant improvement for x-vector on those two languages with EERs of 11.86\% and 4.20\%.}
+@inproceedings{Wu:2019vaeda,
+  title     = {Data Augmentation Using Variational Autoencoder for Embedding Based Speaker Verification},
+  author    = {Wu, Zhanghao and Wang, Shuai and Qian, Yanmin and Yu, Kai},
+  booktitle = {Interspeech},
+  doi       = {10.21437/Interspeech.2019-2248},
+  year      = {2019},
+  url       = {http://dx.doi.org/10.21437/Interspeech.2019-2248},
+  pdf       = {https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2248.pdf},
+  oral      = {},
+  slides    = {Presentations_VAE_DA.pdf},
+  image     = {vae_da.png},
+  abstract  = {Domain or environment mismatch between training and testing, such as various noises and channels, is a major challenge for speaker verification. In this paper, a variational autoencoder (VAE) is designed to learn the patterns of speaker embeddings extracted from noisy speech segments, including i-vector and xvector, and generate embeddings with more diversity to improve the robustness of speaker verification systems with probabilistic linear discriminant analysis (PLDA) back-end. The approach is evaluated on the standard NIST SRE 2016 dataset. Compared to manual and generative adversarial network (GAN) based augmentation approaches, the proposed VAE based augmentation achieves a slightly better performance for i-vector on Tagalog and Cantonese with EERs of 15.54\% and 7.84\%, and a more significant improvement for x-vector on those two languages with EERs of 11.86\% and 4.20\%.}
 }
 
 @inproceedings{Han:2019rc,
-  title = {On-Device Image Classification with Proxyless Neural Architecture Search and Quantization-Aware Fine-Tuning},
-  author = {Cai, Han and Wang, Tianzhe and Wu, Zhanghao and Wang, Kuan and Lin, Ji and Han, Song},
+  title     = {On-Device Image Classification with Proxyless Neural Architecture Search and Quantization-Aware Fine-Tuning},
+  author    = {Cai, Han and Wang, Tianzhe and Wu, Zhanghao and Wang, Kuan and Lin, Ji and Han, Song},
   booktitle = {ICCV workshop},
-  year = {2019},
-  slides = {Presentation_on_device.pdf},
-  url = {http://openaccess.thecvf.com/content_ICCVW_2019/html/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.html},
-  pdf = {http://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.pdf},
-  image = {on_device.png},
-  abstract = {It is challenging to efficiently deploy deep learning models on resource-constrained hardware devices (e.g., mobile and IoT devices) with strict efficiency constraints (e.g., latency, energy consumption). We employ Proxyless Neural Architecture Search (ProxylessNAS) to auto design compact and specialized neural network architectures for the target hardware platform. ProxylessNAS makes latency differentiable, so we can optimize not only accuracy but also latency by gradient descent. Such direct optimization saves the search cost by 200x compared to conventional neural architecture search methods. Our work is followed by quantization-aware fine-tuning to further boost efficiency. In the Low Power Image Recognition Competition at CVPR'19, our solution won the 3rd place on the task of Real-Time Image Classification (online track).}
+  year      = {2019},
+  slides    = {Presentation_on_device.pdf},
+  url       = {http://openaccess.thecvf.com/content_ICCVW_2019/html/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.html},
+  pdf       = {http://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.pdf},
+  image     = {on_device.png},
+  abstract  = {It is challenging to efficiently deploy deep learning models on resource-constrained hardware devices (e.g., mobile and IoT devices) with strict efficiency constraints (e.g., latency, energy consumption). We employ Proxyless Neural Architecture Search (ProxylessNAS) to auto design compact and specialized neural network architectures for the target hardware platform. ProxylessNAS makes latency differentiable, so we can optimize not only accuracy but also latency by gradient descent. Such direct optimization saves the search cost by 200x compared to conventional neural architecture search methods. Our work is followed by quantization-aware fine-tuning to further boost efficiency. In the Low Power Image Recognition Competition at CVPR'19, our solution won the 3rd place on the task of Real-Time Image Classification (online track).}
 }
