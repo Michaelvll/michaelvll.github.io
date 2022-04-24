@@ -6,7 +6,7 @@ title: Zhanghao Wu (吴章昊)
 
 profile:
   align: right
-  image: Boston.jpg
+  image: 2022-sky-head-shot.jpg
   email: zhanghao.wu@outlook.com
 
 education:
