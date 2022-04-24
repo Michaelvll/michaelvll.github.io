@@ -1,0 +1,86 @@
+I"0<p>Recently, I have learnt something about machine translation and done a presentation about it. Why not transform the slides into my first post? This post contains some naive personal understandings of some popular models like, Google’s Neural Machine Translation System <a href="#Reference">[1]</a>, Attention is all you need <a href="#Reference">[2]</a> and so on. I expect that these thoughts may helps a little for somebody who has never looked into this task before like me. If there are any misunderstandings, please correct me in the comment.</p>
+
+<h2 id="what-is-machine-translation">What is machine translation?</h2>
+<p>Machine translation is a very straight forward term, that is to let the program do translation work automatically, translating a sentence from one language to another. The following is an example translating a sentence in English to Chinese.</p>
+
+<p class="center-image"><img src="machine_translation/example.png" alt="Translation Example" height="100%" width="100%" /></p>
+
+<p>More formally speaking, the goal of the machine translation task is actually <strong>maximize the probability of the target sentence $Y$ given the source sentence $X$</strong>, that is maximizing $P(Y|X)$.</p>
+<h3 id="objective-function">Objective function</h3>
+<p>Before we talk about the objective function of the task, we can take a closer look at the goal. By applying Bayes’ theorem to the probability $P(Y|X)$, we can have that 
+$\text{maximize } P(Y|X) $ $= \prod_{i=0}^n P(Y_i | X, Y_0, \cdots, Y_{i-1}).$ 
+And the actual meaning of each term is that the probability of the $i^{th}$ phrase in target sentence given the source sentence $X$ and the prefix of this phrase. In the figure below, $P(Y_2 | X, Y_0, Y_1)$, for example, is the probability of “借” given “Can I borrow your book?”, “我” and “能”.</p>
+
+<p class="center-image"><img src="machine_translation/p_example.png" alt="Probability Example" title="Probability Example" height="30%" width="30%" /></p>
+
+<p>As a common trick, we can take logarithm of the production and get the objective function of the task, that is 
+\(\text{maximize} \sum_{i=0}^n \log P(Y_i | X, Y_0, \cdots, Y_{i-1}).\)
+This objective function is equivalent to the original goal, but we can benefit a lot from it when designing a algorithm to achieve the goal.</p>
+
+<p>Instead of designing a translator that generate the whole target sentence all at once (this may be quite hard as the length of the target sentence varies for different inputs), with the summation of log probabilities in mind, the translator can <strong>predict the probability for one phrase at a time</strong> given the source sentence and the prefix of this phrase. By running the translator several times, each time have one more phrase in the prefix, the translator can generate the target sentence.</p>
+
+<p class="center-image"><img src="machine_translation/translator_obj.png" alt="Translator Objective" title="Translator Objective" height="100%" width="100%" /></p>
+
+<h2 id="time-for-methods">Time for methods!</h2>
+<p>There are several methods that are designed to achieve the goal we mentioned before, including <em>statistical</em>, <em>sequence to sequence</em>, <em>transformer</em>, etc.</p>
+<h3 id="statistical---phrase-based-translation">Statistical - Phrase-Based Translation</h3>
+<p>The statistical method is the conventional way to do the translation task. And the one used in <a href="#Reference">[1]</a> is called phrase-based translation.</p>
+
+<p class="center-image">The main idea of this method is that when the program takes a foreign input, it will firstly cut the input into phrases and then <strong>translate these phrases one by one independently</strong>. Finally, the program will <strong>reorder the translated phrases</strong> to make the target sentence more natural.</p>
+<p><img src="machine_translation/phrase_based.png" alt="Phrase-Based Example" height="100%" width="100%" />
+And the goal of this method is to $\text{maximize } P(Y|X)$ by maximizing $P(X|Y)\cdot P_{LM}(Y)$, where $P_{LM}$ is a language model that measures the order of the predicted sentence, by evaluating each trigram in the sentence. There are some elegant and mathematical way to design the translation model and the language model, but I am not going to discuss them here.</p>
+
+<h3 id="sequence-to-sequence---gnmt">Sequence to Sequence - GNMT</h3>
+<p class="center-image">For a more advance model for machine translation, Google published a model called Google’s Neural Machine Translation System <a href="#Reference">[2]</a>, or for short GNMT. And the figure below shows the architecture of it.</p>
+<p><img src="machine_translation/GNMT_model.png" alt="GNMT" height="100%" width="100%" /></p>
+
+<p class="image-caption">Figure Credit: [Wu et al.], Google’s Neural Machine Translation System <a href="#Reference">[2]</a></p>
+
+<p>The GNMT uses a lot of Long Short Term Memory networks (LSTMs) stacked together, all of the layers are one-directional LSTM except the one at the input, which is a bidirectional LSTM. The model can be divided into three parts, including an encoder, a decoder and an attention part in the middle. The figure below is a simplified GNMT model.</p>
+
+<p class="center-image"><img src="machine_translation/gnmt_simple.png" alt="Simplified GNMT" height="100%" width="100%" /></p>
+
+<p>In this example, for the model, a source sentence, “Can I borrow your book?”, is given, the encoder will take the sequence of word embedding representing the source sentence. By the way, <em>word embedding</em> is a kind of vectors in a quite low dimension  space (much smaller than the vocabulary space) that can represent words. When the encoder gets the embedding sequence, it outputs a sequence of hidden vectors with the same length as the input sentence. In expectation, these hidden vectors should contains the information of the phrases in the source sentence as well as the information of the whole sequence.</p>
+
+<p>To make it clear, the training and testing process of GNMT is to optimize the objective function we mentioned before – $\text{maximize } \sum_{i=0}^n P(Y_i|X, Y_0, \cdots, Y_{i-1})$. GNMT predicts a phrase in the target sentence one by one. And each time, the decoder will be fed with the prefix of the phrase we want to predict.</p>
+
+<p class="center-image"><img src="machine_translation/gnmt_decoder.png" alt="Decoder of GNMT" height="100%" width="100%" /></p>
+
+<p>Getting the hidden vectors, the attention part use the information of the prefix, and generate a sequence of weights for the hidden sequence. Taking the <strong>weighted average</strong> of the hidden vectors, the attention part outputs a embedding vector that contains the all the information from the source sentence. In the meantime, the information in the embedding vector is <strong><em>focused on</em> predicting the next phrase</strong> after the prefix because of the weight applied to the hidden vectors.</p>
+
+<p>Finally, the LSTMs in the decoder uses the word embedding sequence of the prefix and the embedding vector $e_3$ and outputs the probability distribution for the next phrase on the vocabulary. The model then can calculate the objective function by adding up these log probabilities.</p>
+
+<p>The training process takes the gradient of the objective function and updates the parameters in the model. In the testing process, however, the model will use <strong>beam search</strong> (with the probability of each phrase given the source sentence and the prefix in hand, the beam search can be done easily) for generating target sentence.</p>
+
+<h3 id="transformer---attention-is-all-you-need">Transformer - Attention is All You Need</h3>
+<p>The state-of-the-art machine translation model is designed by another group at Google, which is usually called Transformer. The figure below shows the architecture of the transformer model.</p>
+
+<p class="center-image"><img src="machine_translation/transformer.png" alt="Transformer" height="100%" width="100%" /></p>
+
+<p class="image-caption">Figure Credit: Vaswani et al., Attention is All You Need <a href="#Reference">[3]</a></p>
+
+<p>The main difference between the transformer and the GNMT is that the LSTM layers in the GNMT are replaced by <strong>attentions and feed-forward networks</strong> (or linear networks). Without those recurrent networks, the transformer model does not suffer the long dependency problem (causing the gradients to explode or vanish) many recurrent networks have.</p>
+
+<p>Another difference is that in the GNMT model, it only has one attention part, i.e. the hidden vectors are only used once in generating the embedding with focused information; on the other hand, in the transformer model, the attention that extracts information from the hidden vectors is <strong>included in the basic block of the decoder</strong>. Therefore, if the decoder has multiple basic blocks, it can extract more information from the hidden vectors, and adapt those information to focus on the next phrase.</p>
+
+<p class="center-image"><img src="machine_translation/transformer_simple.png" alt="Simplified Transformer" height="100%" width="100%" /></p>
+
+<p>As for the training and testing processes of this model, they are almost the same as the GNMT model. The model uses the probabilities it generates <strong>for each phrase</strong> in the target to compute the objective function and update the parameters in the networks. Also, by applying beam search, the model can generate the target sentence while testing.</p>
+
+<p class="center-image"><img src="machine_translation/transformer_decoder.png" alt="Transformer Decoder" height="100%" width="100%" /></p>
+
+<p>It is good to mention that there are some tricks for accelerating the training process of neural machine translation models, like GNMT and Transformer. To having batches of sentences that have different lengths, we can use mask to indicate that which parts of a input batch are paddings. Also, in order to train the model for each phrase in the target (of length $k$), we do not need to run the model for $k$ times with different prefix, but by right shift the target sentence that is fed into the decoder and applying mask of size $k\times k$, to the attention, all of the probabilities of the phrases in target sentence can be generated in one step.</p>
+
+<h2 id="summary">Summary</h2>
+<p>In this post, I mentioned my understanding of some models used for machine translation, including the conventional methods, the sequence to sequence neural methods and the state-of-the-art transformer methods. There are also many other excellent models for translation task. For example, the convolutional sequence to sequence model, <a href="#Reference">[4]</a>, uses the convolution networks instead of the recurrent network used in GNMT. Each of these models are designed carefully to solve the translation problem in natural language processing. With so many brilliant ideas to appreciate, it is very interesting exploring such fields.</p>
+
+<h2 id="reference">Reference</h2>
+<p>[1] <a href="http://www.aclweb.org/anthology/N03-1017">Statistical Phrase-Based Translation</a>, Philipp Koehn, Franz Josef Och, Daniel Marcu. Presentations at DARPA IAO Machine Translation Workshop, 2002</p>
+
+<p>[2] <a href="https://arxiv.org/abs/1609.08144">Google’s Neural Machine Translation System: Bridging the Gap between Human and Machine Translation</a>, Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V. Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, Jeff Klingner, Apurva Shah, Melvin Johnson, Xiaobing Liu, Łukasz Kaiser, Stephan Gouws, Yoshikiyo Kato, Taku Kudo, Hideto Kazawa, Keith Stevens, George Kurian, Nishant Patil, Wei Wang, Cliff Young, Jason Smith, Jason Riesa, Alex Rudnick, Oriol Vinyals, Greg Corrado, Macduff Hughes, Jeffrey Dean. Technical Report, 2016.</p>
+
+<p>[3] <a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a>, Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin. NeurIPS 2017.</p>
+
+<p>[4] <a href="https://arxiv.org/abs/1705.03122">Convolutional Sequence to Sequence Learning</a>,Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, Yann N. Dauphin. NeurIPS 2017.</p>
+
+:ET
