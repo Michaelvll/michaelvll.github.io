@@ -19,13 +19,13 @@ layout: page
         {% if site.email %}
             {% comment %} {% assign has_former = true %} {% endcomment %}
             {% comment %} <a href="mailto:{{ site.email }}">Email</a> {% endcomment %}
-            <strong>Email:</strong> {{ site.email }}
+            {{ site.email }}
             <p></p>
         {% endif %}
         {% if site.scholar_userid %}
             {% if has_former == true %} | {% endif %}
             {% assign has_former = true %}
-            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"  target="_blank" title="Google Scholar">Google Scholar</a>
+            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"  target="_blank" title="Google Scholar">Scholar</a>
         {% endif %}
         {% if site.github_username %}
             {% if has_former == true %} | {% endif %}
