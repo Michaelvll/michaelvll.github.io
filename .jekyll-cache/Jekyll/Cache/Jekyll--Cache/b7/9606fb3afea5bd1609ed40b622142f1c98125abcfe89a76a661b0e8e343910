@@ -1,8 +1,8 @@
-I"€Õ{"source"=>"/Users/zhwu/Library/CloudStorage/OneDrive-Personal/AResource/web/michaelvll.github.io", "destination"=>"/Users/zhwu/Library/CloudStorage/OneDrive-Personal/AResource/web/michaelvll.github.io/_site", "collections_dir"=>"", "cache_dir"=>".jekyll-cache", "plugins_dir"=>"_plugins", "layouts_dir"=>"_layouts", "data_dir"=>"_data", "includes_dir"=>"_includes", "collections"=>{"posts"=>{"output"=>true, "permalink"=>"/:categories/:year/:month/:day/:title:output_ext"}, "news"=>{"defaults"=>{"layout"=>"post"}, "output"=>true, "permalink"=>"/news/:path/"}, "projects"=>{"output"=>true, "permalink"=>"/projects/:path/"}}, "safe"=>false, "include"=>["_pages"], "exclude"=>["CHANGELOG.md", "Dockerfile", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "/CV", "Makefile", ".sass-cache", ".jekyll-cache", "gemfiles", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"], "keep_files"=>[".git", ".svn"], "encoding"=>"utf-8", "markdown_ext"=>"markdown,mkdown,mkdn,mkd,md", "strict_front_matter"=>false, "show_drafts"=>nil, "limit_posts"=>0, "future"=>false, "unpublished"=>false, "whitelist"=>[], "plugins"=>["jekyll-email-protect", "jekyll-paginate", "jemoji", "jekyll/scholar"], "markdown"=>"kramdown", "highlighter"=>"rouge", "lsi"=>false, "excerpt_separator"=>"\n\n", "incremental"=>false, "detach"=>false, "port"=>"4000", "host"=>"127.0.0.1", "baseurl"=>nil, "show_dir_listing"=>false, "permalink"=>"date", "paginate_path"=>"/page:num", "timezone"=>nil, "quiet"=>false, "verbose"=>false, "defaults"=>[], "liquid"=>{"error_mode"=>"warn", "strict_filters"=>false, "strict_variables"=>false}, "kramdown"=>{"auto_ids"=>true, "toc_levels"=>[1, 2, 3, 4, 5, 6], "entity_output"=>"as_char", "smart_quotes"=>"lsquo,rsquo,ldquo,rdquo", "input"=>"GFM", "hard_wrap"=>false, "guess_lang"=>true, "footnote_nr"=>1, "show_warnings"=>false, "syntax_highlighter"=>"rouge", "syntax_highlighter_opts"=>{:default_lang=>"plaintext", :guess_lang=>true}, "coderay"=>{}}, "name"=>"Zhanghao Wu", "email"=>"zhwu[@]berkeley[.]edu", "description"=>"Zhanghao Wu's personal website\n", "footer_text"=>"Powered by <a href=\"http://jekyllrb.com/\" target=\"_blank\">Jekyll</a>.\n", "url"=>"http://localhost:4000", "last_updated"=>nil, "github_username"=>"Michaelvll", "twitter_username"=>nil, "linkedin_username"=>nil, "scholar_userid"=>"YfyMDFgAAAAJ&hl", "orcid_id"=>nil, "medium_username"=>nil, "quora_username"=>nil, "contact_note"=>"Feel free to contact me :)\n", "google_analytics"=>"UA-125868731-1", "disqus_shortname"=>"al-folio", "show_social_icons"=>false, "enable_anchorjs"=>false, "enable_katex"=>true, "news_limit"=>5, "scholar"=>{"style"=>"apa", "locale"=>"en", "sort_by"=>"year", "order"=>"descending", "group_by"=>"none", "group_order"=>"ascending", "bibliography_group_tag"=>"h2,h3,h4,h5", "bibliography_list_tag"=>"ol", "bibliography_item_tag"=>"li", "bibliography_list_attributes"=>{}, "bibliography_item_attributes"=>{}, "source"=>"/_bibliography/", "bibliography"=>"papers.bib", "repository"=>nil, "repository_file_delimiter"=>".", "bibtex_options"=>{:strip=>false, :parse_months=>true}, "bibtex_filters"=>[:smallcaps, :superscript, :italics, :textit, :lowercase, :textregistered, :tiny, :latex], "raw_bibtex_filters"=>[], "bibtex_skip_fields"=>[:abstract, :month_numeric], "bibtex_quotes"=>["{", "}"], "replace_strings"=>true, "join_strings"=>true, "remove_duplicates"=>false, "details_dir"=>"bibliography", "details_layout"=>"bibtex.html", "details_link"=>"Details", "details_permalink"=>"/:details_dir/:key:extension", "bibliography_class"=>"bibliography", "bibliography_template"=>"bib", "reference_tagname"=>"span", "missing_reference"=>"(missing reference)", "details_link_class"=>"details", "query"=>"@*", "cite_class"=>"citation", "type_names"=>{"article"=>"Journal Articles", "book"=>"Books", "incollection"=>"Book Chapters", "inproceedings"=>"Conference Articles", "thesis"=>"Theses", "mastersthesis"=>"Master's Theses", "phdthesis"=>"PhD Theses", "manual"=>"Manuals", "techreport"=>"Technical Reports", "misc"=>"Miscellaneous", "unpublished"=>"Unpublished"}, "type_aliases"=>{"phdthesis"=>"thesis", "mastersthesis"=>"thesis"}, "type_order"=>[], "month_names"=>nil, "last_name"=>"Wu"}, "jquery_version"=>"1.12.4", "katex_version"=>"0.9.0", "anchorjs_version"=>"3.2.2", "livereload_port"=>35729, "serving"=>true, "watch"=>true, "github"=>{
+I"|Ú{"source"=>"/Users/zhwu/Library/CloudStorage/OneDrive-Personal/AResource/web/michaelvll.github.io", "destination"=>"/Users/zhwu/Library/CloudStorage/OneDrive-Personal/AResource/web/michaelvll.github.io/_site", "collections_dir"=>"", "cache_dir"=>".jekyll-cache", "plugins_dir"=>"_plugins", "layouts_dir"=>"_layouts", "data_dir"=>"_data", "includes_dir"=>"_includes", "collections"=>{"posts"=>{"output"=>true, "permalink"=>"/:categories/:year/:month/:day/:title:output_ext"}, "news"=>{"defaults"=>{"layout"=>"post"}, "output"=>true, "permalink"=>"/news/:path/"}, "projects"=>{"output"=>true, "permalink"=>"/projects/:path/"}}, "safe"=>false, "include"=>["_pages"], "exclude"=>["CHANGELOG.md", "Dockerfile", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "/CV", "Makefile", ".sass-cache", ".jekyll-cache", "gemfiles", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"], "keep_files"=>[".git", ".svn"], "encoding"=>"utf-8", "markdown_ext"=>"markdown,mkdown,mkdn,mkd,md", "strict_front_matter"=>false, "show_drafts"=>nil, "limit_posts"=>0, "future"=>false, "unpublished"=>false, "whitelist"=>[], "plugins"=>["jekyll-email-protect", "jekyll-paginate", "jemoji", "jekyll/scholar"], "markdown"=>"kramdown", "highlighter"=>"rouge", "lsi"=>false, "excerpt_separator"=>"\n\n", "incremental"=>false, "detach"=>false, "port"=>"4000", "host"=>"127.0.0.1", "baseurl"=>nil, "show_dir_listing"=>false, "permalink"=>"date", "paginate_path"=>"/page:num", "timezone"=>nil, "quiet"=>false, "verbose"=>false, "defaults"=>[], "liquid"=>{"error_mode"=>"warn", "strict_filters"=>false, "strict_variables"=>false}, "kramdown"=>{"auto_ids"=>true, "toc_levels"=>[1, 2, 3, 4, 5, 6], "entity_output"=>"as_char", "smart_quotes"=>"lsquo,rsquo,ldquo,rdquo", "input"=>"GFM", "hard_wrap"=>false, "guess_lang"=>true, "footnote_nr"=>1, "show_warnings"=>false, "syntax_highlighter"=>"rouge", "syntax_highlighter_opts"=>{:default_lang=>"plaintext", :guess_lang=>true}, "coderay"=>{}}, "name"=>"Zhanghao Wu", "email"=>"zhwu[@]berkeley[.]edu", "description"=>"Zhanghao Wu's personal website\n", "footer_text"=>"Powered by <a href=\"http://jekyllrb.com/\" target=\"_blank\">Jekyll</a>.\n", "url"=>"http://localhost:4000", "last_updated"=>nil, "github_username"=>"Michaelvll", "twitter_username"=>nil, "linkedin_username"=>nil, "scholar_userid"=>"YfyMDFgAAAAJ&hl", "orcid_id"=>nil, "medium_username"=>nil, "quora_username"=>nil, "contact_note"=>"Feel free to contact me :)\n", "google_analytics"=>"UA-125868731-1", "disqus_shortname"=>"al-folio", "show_social_icons"=>false, "enable_anchorjs"=>false, "enable_katex"=>true, "news_limit"=>5, "scholar"=>{"style"=>"apa", "locale"=>"en", "sort_by"=>"year", "order"=>"descending", "group_by"=>"none", "group_order"=>"ascending", "bibliography_group_tag"=>"h2,h3,h4,h5", "bibliography_list_tag"=>"ol", "bibliography_item_tag"=>"li", "bibliography_list_attributes"=>{}, "bibliography_item_attributes"=>{}, "source"=>"/_bibliography/", "bibliography"=>"papers.bib", "repository"=>nil, "repository_file_delimiter"=>".", "bibtex_options"=>{:strip=>false, :parse_months=>true}, "bibtex_filters"=>[:smallcaps, :superscript, :italics, :textit, :lowercase, :textregistered, :tiny, :latex], "raw_bibtex_filters"=>[], "bibtex_skip_fields"=>[:abstract, :month_numeric], "bibtex_quotes"=>["{", "}"], "replace_strings"=>true, "join_strings"=>true, "remove_duplicates"=>false, "details_dir"=>"bibliography", "details_layout"=>"bibtex.html", "details_link"=>"Details", "details_permalink"=>"/:details_dir/:key:extension", "bibliography_class"=>"bibliography", "bibliography_template"=>"bib", "reference_tagname"=>"span", "missing_reference"=>"(missing reference)", "details_link_class"=>"details", "query"=>"@*", "cite_class"=>"citation", "type_names"=>{"article"=>"Journal Articles", "book"=>"Books", "incollection"=>"Book Chapters", "inproceedings"=>"Conference Articles", "thesis"=>"Theses", "mastersthesis"=>"Master's Theses", "phdthesis"=>"PhD Theses", "manual"=>"Manuals", "techreport"=>"Technical Reports", "misc"=>"Miscellaneous", "unpublished"=>"Unpublished"}, "type_aliases"=>{"phdthesis"=>"thesis", "mastersthesis"=>"thesis"}, "type_order"=>[], "month_names"=>nil, "last_name"=>"Wu"}, "jquery_version"=>"1.12.4", "katex_version"=>"0.9.0", "anchorjs_version"=>"3.2.2", "livereload_port"=>35729, "serving"=>true, "watch"=>true, "github"=>{
   "api_url": "https://api.github.com",
   "archived": null,
   "baseurl": "/pages/Michaelvll/michaelvll.github.io",
-  "build_revision": "88dba1216d6976b995fe2843f5888a2556848412",
+  "build_revision": "3aa3b397a763cd0bc26ec969abfa976405c2f408",
   "clone_url": "https://github.com/Michaelvll/michaelvll.github.io.git",
   "contributors": false,
   "disabled": null,
@@ -25,8 +25,8 @@
     "created_at": "2014-02-22 01:23:29 UTC",
     "description": null,
     "email": null,
-    "followers": 247,
-    "following": 147,
+    "followers": 257,
+    "following": 158,
     "has_organization_projects": null,
     "has_repository_projects": null,
     "hireable": null,
@@ -40,7 +40,7 @@
     "public_gists": 2,
     "public_repos": 29,
     "type": "User",
-    "updated_at": "2022-06-26 06:37:08 UTC"
+    "updated_at": "2022-08-01 04:45:47 UTC"
   },
   "owner_gravatar_url": "https://github.com/Michaelvll.png",
   "owner_name": "Michaelvll",
@@ -142,6 +142,7 @@
       "license": null,
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -248,6 +249,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
         "database",
         "java"
@@ -355,6 +357,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -455,6 +458,7 @@
       "license": null,
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -555,6 +559,7 @@
       "license": null,
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -631,7 +636,7 @@
       "releases_url": "https://api.github.com/repos/Michaelvll/DeepCCA/releases{/id}",
       "deployments_url": "https://api.github.com/repos/Michaelvll/DeepCCA/deployments",
       "created_at": "2018-10-03 05:18:46 UTC",
-      "updated_at": "2022-06-25 18:14:10 UTC",
+      "updated_at": "2022-07-31 13:07:00 UTC",
       "pushed_at": "2020-06-18 09:32:16 UTC",
       "git_url": "git://github.com/Michaelvll/DeepCCA.git",
       "ssh_url": "git@github.com:Michaelvll/DeepCCA.git",
@@ -639,19 +644,19 @@
       "svn_url": "https://github.com/Michaelvll/DeepCCA",
       "homepage": null,
       "size": 10609,
-      "stargazers_count": 177,
-      "watchers_count": 177,
+      "stargazers_count": 182,
+      "watchers_count": 182,
       "language": "Python",
       "has_issues": true,
       "has_projects": true,
       "has_downloads": true,
       "has_wiki": false,
       "has_pages": false,
-      "forks_count": 49,
+      "forks_count": 53,
       "mirror_url": null,
       "archived": false,
       "disabled": false,
-      "open_issues_count": 3,
+      "open_issues_count": 4,
       "license": {
         "key": "other",
         "name": "Other",
@@ -661,13 +666,14 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
       "visibility": "public",
-      "forks": 49,
-      "open_issues": 3,
-      "watchers": 177,
+      "forks": 53,
+      "open_issues": 4,
+      "watchers": 182,
       "default_branch": "master"
     },
     {
@@ -767,6 +773,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -873,6 +880,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -979,6 +987,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -1079,6 +1088,7 @@
       "license": null,
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -1185,6 +1195,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -1285,6 +1296,7 @@
       "license": null,
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -1391,6 +1403,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -1497,6 +1510,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -1603,6 +1617,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
         "cpp"
       ],
@@ -1709,6 +1724,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
         "compiler",
         "java"
@@ -1816,6 +1832,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
         "python3",
         "qsharp"
@@ -1923,6 +1940,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2023,6 +2041,7 @@
       "license": null,
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2129,6 +2148,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2229,6 +2249,7 @@
       "license": null,
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2306,13 +2327,13 @@
       "deployments_url": "https://api.github.com/repos/Michaelvll/ray/deployments",
       "created_at": "2020-04-29 08:11:19 UTC",
       "updated_at": "2022-01-29 23:45:54 UTC",
-      "pushed_at": "2022-06-25 07:13:59 UTC",
+      "pushed_at": "2022-07-23 07:11:29 UTC",
       "git_url": "git://github.com/Michaelvll/ray.git",
       "ssh_url": "git@github.com:Michaelvll/ray.git",
       "clone_url": "https://github.com/Michaelvll/ray.git",
       "svn_url": "https://github.com/Michaelvll/ray",
       "homepage": "https://ray.io",
-      "size": 156825,
+      "size": 156828,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "Python",
@@ -2335,6 +2356,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2411,7 +2433,7 @@
       "releases_url": "https://api.github.com/repos/Michaelvll/RISCV_CPU/releases{/id}",
       "deployments_url": "https://api.github.com/repos/Michaelvll/RISCV_CPU/deployments",
       "created_at": "2017-12-14 15:01:42 UTC",
-      "updated_at": "2022-05-17 14:48:07 UTC",
+      "updated_at": "2022-07-29 11:24:17 UTC",
       "pushed_at": "2019-12-05 17:24:32 UTC",
       "git_url": "git://github.com/Michaelvll/RISCV_CPU.git",
       "ssh_url": "git@github.com:Michaelvll/RISCV_CPU.git",
@@ -2419,8 +2441,8 @@
       "svn_url": "https://github.com/Michaelvll/RISCV_CPU",
       "homepage": "",
       "size": 24691,
-      "stargazers_count": 50,
-      "watchers_count": 50,
+      "stargazers_count": 52,
+      "watchers_count": 52,
       "language": "C",
       "has_issues": true,
       "has_projects": true,
@@ -2441,6 +2463,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
         "risc-v",
         "verilog-hdl"
@@ -2448,7 +2471,7 @@
       "visibility": "public",
       "forks": 12,
       "open_issues": 0,
-      "watchers": 50,
+      "watchers": 52,
       "default_branch": "master"
     },
     {
@@ -2548,6 +2571,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2648,6 +2672,7 @@
       "license": null,
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2754,6 +2779,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2860,6 +2886,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -2966,6 +2993,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
@@ -3072,6 +3100,7 @@
       },
       "allow_forking": true,
       "is_template": false,
+      "web_commit_signoff_required": false,
       "topics": [
 
       ],
