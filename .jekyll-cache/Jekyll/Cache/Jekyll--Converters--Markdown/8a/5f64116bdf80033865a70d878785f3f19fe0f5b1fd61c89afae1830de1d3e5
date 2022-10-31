@@ -1,4 +1,6 @@
-I"x‡<p>I fortunately joined the CS Ph.D. program at <a href="https://rise.cs.berkeley.edu/">UC Berkeley RISELab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on efficient deep learning and system.</p>
+I"$‰<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on efficient deep learning and system.</p>
+
+<p>I am now focusing on building <a href="https://skypilot.readthedocs.io/en/latest/">SkyPilot</a>, a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">sky computing vision</a>. Please check out our system on <a href="https://github.com/skypilot-org/skypilot">Github</a>.</p>
 
 <p>Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University (<a href="http://en.sjtu.edu.cn/">SJTU</a>) and a member of the SJTU ACM Honors Class.</p>
 
