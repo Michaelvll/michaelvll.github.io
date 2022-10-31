@@ -22,7 +22,7 @@ news: false
 social: false
 ---
 
-I fortunately joined the CS Ph.D. program at [UC Berkeley Sky Computing Lab](https://sky.cs.berkeley.edu/) in the fall, 2020. I am currently working with Prof. [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/) on efficient deep learning and system. 
+I fortunately joined the CS Ph.D. program at [UC Berkeley Sky Computing Lab](https://sky.cs.berkeley.edu/) in the fall, 2020. I am currently working with Prof. [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/) on efficient deep learning and system. I am now focusing on building [SkyPilot](https://skypilot.readthedocs.io/en/latest/), a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the [sky computing vision](https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf). Please check out our system on [Github](https://github.com/skypilot-org/skypilot).
 
 Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University ([SJTU](http://en.sjtu.edu.cn/)) and a member of the SJTU ACM Honors Class.
 
