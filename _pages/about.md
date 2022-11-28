@@ -6,7 +6,8 @@ title: Zhanghao Wu (吴章昊)
 
 profile:
   align: right
-  image: 2022-sky-head-shot.jpg
+  # image: 2022-sky-head-shot.jpg
+  image: Boston.jpg
   email: zhanghao.wu@outlook.com
 
 education:
@@ -16,7 +17,7 @@ education:
   location: [USA, USA, China]
   description: ["Ph.D. student at <a href='https://sky.cs.berkeley.edu/'>Sky Computing Lab</a> (aka RISELab, AMPLab). Aug. 2020 - Present",
                 "Research assistant, working with Prof. <a href='https://songhan.mit.edu'>Song Han</a>. Jul. 2019 - Jan. 2020.",
-                "B.Eng. in Computer Science, advised by Prof. <a href='https://speechlab.sjtu.edu.cn/members/kai_yu'>Kai Yu</a> and Prof. <a href='http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140'>Yong Yu</a>. Sep. 2016 - Jun. 2020."]
+                "B.Eng. in Computer Science at ACM Honors Class, advised by <a href='http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140'>Yong Yu</a>. Sep. 2016 - Jun. 2020."]
 
 news: false
 social: false
@@ -26,9 +27,7 @@ I fortunately joined the CS Ph.D. program at [UC Berkeley Sky Computing Lab](htt
 
 I am now focusing on building [SkyPilot](https://skypilot.readthedocs.io/en/latest/), a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the [sky computing vision](https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf). Please check out our system on [Github](https://github.com/skypilot-org/skypilot).
 
-Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University ([SJTU](http://en.sjtu.edu.cn/)) and a member of the SJTU ACM Honors Class.
-
-I also had a wonderful time as a research assistant working with [Prof. Song Han](https://songhan.mit.edu) at MIT HAN Lab, and an undergraduate researcher working with [Prof. Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) and [Prof. Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) at SJTU SpeechLab.
+Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University ([SJTU](http://en.sjtu.edu.cn/)), a member of the SJTU ACM Honors Class, and a research intern working with [Prof. Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) and [Prof. Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) at SJTU SpeechLab. I also had a wonderful time as a research assistant working with [Prof. Song Han](https://songhan.mit.edu) at MIT HAN Lab.
 
 <!-- My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**. -->
 
