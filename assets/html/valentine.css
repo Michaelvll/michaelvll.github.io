@@ -99,19 +99,17 @@ body {
   padding: 5px;
 }
 
-
 html,
 body {
   height: 100%;
   width: 100%;
   background: #122139;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100px;
   height: 300px;
-  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -349,7 +347,7 @@ body {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  background: #122139;
+  background: #12391e;
   content: "";
   position: absolute;
   left: -12px;
@@ -362,7 +360,7 @@ body {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 100%;
-  background: #122139;
+  background: #12391e;
   content: "";
   position: absolute;
   left: -11px;
@@ -723,3 +721,4 @@ body {
     box-shadow: 0px 0px 60px #f594b8;
   }
 }
+

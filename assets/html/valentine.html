@@ -10,80 +10,96 @@
 </head>
 <body>
 
-日天
+<p>
+  日天
 
-<svg class="heart-puls" viewBox="0 0 32 29.6">
-  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-</svg> 
+  <svg class="heart-puls" viewBox="0 0 32 29.6">
+    <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+  </svg>
 
-秋瑞
+  秋瑞
+</p>
 
-<div class="container">
-  <div class="glass"></div>
-  <div class="thorns">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="glow"></div>
-  <div class="rose-leaves">
-    <div></div>
-    <div></div>
-  </div>
-  <div class="rose-petals">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="sparkles">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</div>
+<!-- rose animation -->
+<table style="width:100%;">
+  <tr>
+    <td style="width:33%;">
+      <div class="container">
+        <div class="glass"></div>
+        <div class="thorns">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="glow"></div>
+        <div class="rose-leaves">
+          <div></div>
+          <div></div>
+        </div>
+        <div class="rose-petals">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="sparkles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+</td>
 
-<p id="Since"></p>
+<td style="width:33%">
+<p id="Since">
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Sep 6, 2020 17:20:00").getTime();
+  <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Sep 6, 2020 17:20:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+  // Update the count down every 1 second
+  var x = setInterval(function() {
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = now - countDownDate;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("Since").innerHTML = days + " days";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("Since").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-<div style="font-size:32px">Since Sep 6, 2020</div>
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = now - countDownDate;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("Since").innerHTML = days + " days";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("Since").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+  <div style="font-size:32px;text-align: center;">Since Sep 6, 2020</div>
+  </p>
+</td>
+<td style="width:33%;">
+  <img src="../img/piggy.jpg" alt="piggy" style="width:80%">
+</td>
+</tr>
+</table>
+
 <p></p>
 <div class="row">
   <div class="column">
