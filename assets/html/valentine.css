@@ -722,3 +722,71 @@ body {
   }
 }
 
+
+.flower-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+
+.petal {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #FF69B4;
+  border-radius: 50%;
+  animation-name: bloom;
+  animation-fill-mode: forwards;
+}
+
+.petal1 {
+  transform-origin: 0% 100%;
+  animation-duration: 3s;
+}
+
+.petal2 {
+  transform-origin: 100% 100%;
+  animation-duration: 3.2s;
+}
+
+.petal3 {
+  transform-origin: 100% 0%;
+  animation-duration: 3.4s;
+}
+
+.petal4 {
+  transform-origin: 0% 0%;
+  animation-duration: 3.6s;
+}
+
+.petal5 {
+  width: 30px;
+  height: 30px;
+  background-color: #C71585;
+  border-radius: 50%;
+  z-index: 1;
+  animation: none;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+@keyframes bloom {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+}
