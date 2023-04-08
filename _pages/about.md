@@ -31,12 +31,26 @@ Before coming to Berkeley, I was an undergraduate student majoring in computer s
 
 <!-- My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**. -->
 
+
+
+### News
+
+* **[2023.04]** Our SkyPilot [paper](https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng) is appearing in NSDI'23.
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/skypilot-org/skypilot" data-show-count="true" aria-label="Star skypilot-org/skypilot on GitHub">Star</a>
+* **[2023.03]** An open-source chatbot, [Vicuna](https://vicuna.lmsys.org), powered by SkyPilot is released with a [demo](https://chat.lmsys.org). 
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/lm-sys/FastChat" data-show-count="true" aria-label="Star lm-sys/FastChat on GitHub">Star</a>
+
+### Publications
+{% bibliography -f papers %}
+{% bibliography -f earlier_papers %}
+
 ### Education
 
 {% include_relative education.html %}
 
-### Publications
-{% bibliography -f papers %}
+
 
 ### Honors & Award
 * **1st place**, in Visual Wake Words (VWW) Challenge of CVPR'19, 2019.

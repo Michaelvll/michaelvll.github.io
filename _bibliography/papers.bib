@@ -6,7 +6,9 @@
   booktitle       = {USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
   title           = {SkyPilot: An Intercloud Broker for Sky Computing},
   image           = {skypilot.png},
-  year            = {2023}
+  year            = {2023},
+  code            = {https://github.com/skypilot-org/skypilot},
+  abstract        = {To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.}
 }
 
 @inproceedings{Wu:2021GraphTrans,
@@ -71,37 +73,6 @@
   slides    = {Presentation_LiteTransformer.pdf},
   website   = {https://hanlab.mit.edu/projects/litetransformer/},
   abstract  = {Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained by the hardware resources and battery. In this paper, we present an efficient mobile NLP architecture, Lite Transformer to facilitate deploying mobile NLP applications on edge devices. The key primitive is the Long-Short Range Attention (LSRA), where one group of heads specializes in the local context modeling (by convolution) while another group specializes in the long-distance relationship modeling (by attention). Such specialization brings consistent improvement over the vanilla transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. Under constrained resources (500M/100M MACs), Lite Transformer outperforms transformer on WMT'14 English-French by 1.2/1.7 BLEU, respectively. Lite Transformer reduces the computation of transformer base model by 2.5x with 0.3 BLEU score degradation. Combining with pruning and quantization, we further compressed the model size of Lite Transformer by 18.2x. For language modeling, Lite Transformer achieves 1.8 lower perplexity than the transformer at around 500M MACs. Notably, Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU for the mobile NLP setting without the costly architecture search that requires more than 250 GPU years. Code has been made available at <a href="https://github.com/mit-han-lab/lite-transformer">https://github.com/mit-han-lab/lite-transformer</a>.}
-}
-
-@article{Wang:2020da,
-  author   = {Wang, Shuai and Yang, Yexin and Wu, Zhanghao and Qian, Yanmin and Yu, Kai},
-  journal  = {IEEE/ACM Transactions on Audio, Speech, and Language Processing},
-  title    = {Data Augmentation Using Deep Generative Models for Embedding Based Speaker Recognition},
-  year     = {2020},
-  pdf      = {https://ieeexplore.ieee.org/abstract/document/9167416},
-  volume   = {28},
-  number   = {},
-  image    = {da_taslp.png},
-  pages    = {2598-2609},
-  abstract = {Data augmentation is an effective method to improve the robustness of embedding based speaker verification systems, which could be applied to either the front-end speaker embedding extractor or the back-end PLDA. Different from the conventional augmentation methods such as manually adding noise or reverberation to the original audios, in this article, we propose to use deep generative models to directly generate more diverse speaker embeddings, which would be used for robust PLDA training. Conditional GAN, and VAE are designed, and investigated for different embedding types, including factor analysis based i-vector, TDNN based x-vector, and ResNet based r-vector. The proposed back-end augmentation methods are evaluated on NIST SRE 2016, and 2018 dataset. Within the popular x-vector, and r-vector framework, the experimental results show that our proposed methods can outperform the traditional audio based back-end augmentation method while different front-end augmentation methods are considered.},
-  keywords = {Generative adversarial networks;Data mining;Speaker recognition;Gallium nitride;Feature extraction;Training;Speech recognition;Text-independent speaker verification;data augmentation;generative adversarial network;variational auto-encoder},
-  doi      = {10.1109/TASLP.2020.3016498},
-  issn     = {2329-9304},
-  month    = {}
-}
-
-@inproceedings{Wu:2019vaeda,
-  title     = {Data Augmentation Using Variational Autoencoder for Embedding Based Speaker Verification},
-  author    = {Wu, Zhanghao and Wang, Shuai and Qian, Yanmin and Yu, Kai},
-  booktitle = {Interspeech},
-  doi       = {10.21437/Interspeech.2019-2248},
-  year      = {2019},
-  url       = {http://dx.doi.org/10.21437/Interspeech.2019-2248},
-  pdf       = {https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2248.pdf},
-  oral      = {},
-  slides    = {Presentations_VAE_DA.pdf},
-  image     = {vae_da.png},
-  abstract  = {Domain or environment mismatch between training and testing, such as various noises and channels, is a major challenge for speaker verification. In this paper, a variational autoencoder (VAE) is designed to learn the patterns of speaker embeddings extracted from noisy speech segments, including i-vector and xvector, and generate embeddings with more diversity to improve the robustness of speaker verification systems with probabilistic linear discriminant analysis (PLDA) back-end. The approach is evaluated on the standard NIST SRE 2016 dataset. Compared to manual and generative adversarial network (GAN) based augmentation approaches, the proposed VAE based augmentation achieves a slightly better performance for i-vector on Tagalog and Cantonese with EERs of 15.54\% and 7.84\%, and a more significant improvement for x-vector on those two languages with EERs of 11.86\% and 4.20\%.}
 }
 
 @inproceedings{Han:2019rc,
