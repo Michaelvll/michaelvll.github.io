@@ -1,4 +1,185 @@
-I"`
+I"7Œ
+<h3 class="year"><slim>2023</slim></h3>
+<ol class="bibliography"><li>
+
+<div id="Yang:2023SkyPilot">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/skypilot.png">
+            <img src="/assets/papers/img/skypilot.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>SkyPilot: An Intercloud Broker for Sky Computing</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Zongheng Yang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Michael Luo,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Wei-Lin Chiang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Romil Bhardwaj,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Woosuk Kwon,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Siyuan Zhuang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Frank Sifei Luan,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Gautam Mittal,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Scott Shenker,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and Ion Stoica
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In NSDI 23</em>
+            
+            
+            2023
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="https://github.com/skypilot-org/skypilot" target="_blank">Code</a>
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
+<ol class="bibliography"></ol>
+
+<h3 class="year"><slim>2022</slim></h3>
+<ol class="bibliography"></ol>
+<ol class="bibliography"></ol>
+
 <h3 class="year"><slim>2021</slim></h3>
 <ol class="bibliography"><li>
 
@@ -256,6 +437,7 @@
 </div>
 
 </li></ol>
+<ol class="bibliography"></ol>
 
 <h3 class="year"><slim>2020</slim></h3>
 <ol class="bibliography"><li>
@@ -630,6 +812,120 @@
 </div>
 
 </li></ol>
+<ol class="bibliography"><li>
+
+<div id="Wang:2020da">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/da_taslp.png">
+            <img src="/assets/papers/img/da_taslp.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Data Augmentation Using Deep Generative Models for Embedding Based Speaker Recognition</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/shuai-wang" target="_blank">Shuai Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Yexin Yang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian" target="_blank">Yanmin Qian</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://speechlab.sjtu.edu.cn/members/kai_yu" target="_blank">Kai Yu</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>IEEE/ACM Transactions on Audio, Speech, and Language Processing</em>
+            
+            
+            2020
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://ieeexplore.ieee.org/abstract/document/9167416" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Data augmentation is an effective method to improve the robustness of embedding based speaker verification systems, which could be applied to either the front-end speaker embedding extractor or the back-end PLDA. Different from the conventional augmentation methods such as manually adding noise or reverberation to the original audios, in this article, we propose to use deep generative models to directly generate more diverse speaker embeddings, which would be used for robust PLDA training. Conditional GAN, and VAE are designed, and investigated for different embedding types, including factor analysis based i-vector, TDNN based x-vector, and ResNet based r-vector. The proposed back-end augmentation methods are evaluated on NIST SRE 2016, and 2018 dataset. Within the popular x-vector, and r-vector framework, the experimental results show that our proposed methods can outperform the traditional audio based back-end augmentation method while different front-end augmentation methods are considered.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
 
 <h3 class="year"><slim>2019</slim></h3>
 <ol class="bibliography"><li>
@@ -751,6 +1047,116 @@
         
         <span class="abstract hidden">
             <p>It is challenging to efficiently deploy deep learning models on resource-constrained hardware devices (e.g., mobile and IoT devices) with strict efficiency constraints (e.g., latency, energy consumption). We employ Proxyless Neural Architecture Search (ProxylessNAS) to auto design compact and specialized neural network architectures for the target hardware platform. ProxylessNAS makes latency differentiable, so we can optimize not only accuracy but also latency by gradient descent. Such direct optimization saves the search cost by 200x compared to conventional neural architecture search methods. Our work is followed by quantization-aware fine-tuning to further boost efficiency. In the Low Power Image Recognition Competition at CVPRâ€™19, our solution won the 3rd place on the task of Real-Time Image Classification (online track).</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Wu:2019vaeda">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/vae_da.png">
+            <img src="/assets/papers/img/vae_da.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Data Augmentation Using Variational Autoencoder for Embedding Based Speaker Verification</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/shuai-wang" target="_blank">Shuai Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian" target="_blank">Yanmin Qian</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://speechlab.sjtu.edu.cn/members/kai_yu" target="_blank">Kai Yu</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In Interspeech</em>
+            
+            
+            2019
+            
+            
+                <strong> (Oral)</strong>
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2248.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/Presentations_VAE_DA.pdf" target="_blank">Slides</a>
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Domain or environment mismatch between training and testing, such as various noises and channels, is a major challenge for speaker verification. In this paper, a variational autoencoder (VAE) is designed to learn the patterns of speaker embeddings extracted from noisy speech segments, including i-vector and xvector, and generate embeddings with more diversity to improve the robustness of speaker verification systems with probabilistic linear discriminant analysis (PLDA) back-end. The approach is evaluated on the standard NIST SRE 2016 dataset. Compared to manual and generative adversarial network (GAN) based augmentation approaches, the proposed VAE based augmentation achieves a slightly better performance for i-vector on Tagalog and Cantonese with EERs of 15.54% and 7.84%, and a more significant improvement for x-vector on those two languages with EERs of 11.86% and 4.20%.</p>
         </span>
         
     </td>

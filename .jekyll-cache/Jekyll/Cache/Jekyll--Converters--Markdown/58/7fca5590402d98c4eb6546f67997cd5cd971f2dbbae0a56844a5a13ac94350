@@ -1,53 +1,5 @@
-I"͢<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on efficient deep learning and system.</p>
-
-<p>I am now focusing on building <a href="https://skypilot.readthedocs.io/en/latest/">SkyPilot</a>, a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">sky computing vision</a>. Please check out our system on <a href="https://github.com/skypilot-org/skypilot">Github</a>. The paper will be available soon in NSDI’23.</p>
-
-<p>Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University (<a href="http://en.sjtu.edu.cn/">SJTU</a>), a member of the SJTU ACM Honors Class, and a research intern working with <a href="https://speechlab.sjtu.edu.cn/members/kai_yu">Prof. Kai Yu</a> and <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian">Prof. Yanmin Qian</a> at SJTU SpeechLab. I also had a wonderful time as a research assistant working with <a href="https://songhan.mit.edu">Prof. Song Han</a> at MIT HAN Lab.</p>
-
-<!-- My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**. -->
-
-<h3 id="education">Education</h3>
-
-<div id="education">
-<div class="namecard">
-<table>
-    
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="https://berkeley.edu"><img src="assets/img/berkeley.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="https://berkeley.edu">University of California, Berkeley</a>, USA<br />
-         Ph.D. student at <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a> (aka RISELab, AMPLab). Aug. 2020 - Present
-    </td>
-    </tr>
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="https://mit.edu"><img src="assets/img/mit.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="https://mit.edu">Massachusetts Institute Technology</a>, USA<br />
-         Research assistant, working with Prof. <a href="https://songhan.mit.edu">Song Han</a>. Jul. 2019 - Jan. 2020.
-    </td>
-    </tr>
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="http://en.sjtu.edu.cn"><img src="assets/img/sjtu.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>, China<br />
-         B.Eng. in Computer Science at ACM Honors Class, advised by <a href="http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140">Yong Yu</a>. Sep. 2016 - Jun. 2020.
-    </td>
-    </tr>
-        
-</table>
-</div>
-</div>
-
-<h3 id="publications--blogs">Publications &amp; Blogs</h3>
+I"4�
+<h3 class="year"><slim>2023</slim></h3>
 <ol class="bibliography"><li>
 
 <div id="Yang:2023SkyPilot">
@@ -178,7 +130,7 @@
 
             <span class="periodical">
             
-            <em>In USENIX Symposium on Networked Systems Design and Implementation (NSDI)</em>
+            <em>In NSDI</em>
             
             
             2023
@@ -189,6 +141,8 @@
 
         <span class="links">
         
+            
+            <a class="abstract">Abstract</a>
         
         
         
@@ -198,11 +152,20 @@
         
         
         
+        
+        
+             | 
+            
+            <a href="https://github.com/skypilot-org/skypilot" target="_blank">Code</a>
         
         
         </span>
 
         <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.</p>
+        </span>
         
     </td>
     </tr>
@@ -210,181 +173,15 @@
 </div>
 </div>
 
-</li>
-<li>
+</li></ol>
+<ol class="bibliography"></ol>
 
-<div id="vicuna2023">
-<div class="namecard">
-    <table>
-    <tr>
-    <td class="img-td">
-    
-    </td>
-    <td class="txt-td">
-        
-            <span class="title"><strong>Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality</strong></span>
-            <span class="author nolinkcolor">
-            
-                
-                
-                    
-                    
-                        Wei-Lin Chiang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Zhuohan Li,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Zi Lin,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Ying Sheng,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    <em><a href="">Zhanghao Wu</a></em>,
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Hao Zhang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Lianmin Zheng,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Siyuan Zhuang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Yonghao Zhuang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Joseph E. Gonzalez,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Ion Stoica,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        and Eric P. Xing
-                    
-                    
-                
-                
-            
-            </span>
+<h3 class="year"><slim>2022</slim></h3>
+<ol class="bibliography"></ol>
+<ol class="bibliography"></ol>
 
-            <span class="periodical">
-            
-            <em>In Blog Post</em>
-            
-            
-            2023
-            
-            
-            </span>
-        
-
-        <span class="links">
-        
-        
-        
-        
-        
-            
-            
-            <a href="https://vicuna.lmsys.org" target="_blank">Blog</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        </span>
-
-        <!-- Hidden abstract block -->
-        
-    </td>
-    </tr>
-    </table>
-</div>
-</div>
-
-</li>
-<li>
+<h3 class="year"><slim>2021</slim></h3>
+<ol class="bibliography"><li>
 
 <div id="Wu:2021GraphTrans">
 <div class="namecard">
@@ -639,6 +436,131 @@
 </div>
 </div>
 
+</li></ol>
+<ol class="bibliography"></ol>
+
+<h3 class="year"><slim>2020</slim></h3>
+<ol class="bibliography"><li>
+
+<div id="Wu:2020DataMix">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/privacy_eccv.png">
+            <img src="/assets/papers/img/privacy_eccv.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>DataMix: Efficient Privacy-Preserving Edge-Cloud Inference</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        <a href="http://zhijianliu.com/" target="_blank">Zhijian Liu*</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="http://people.csail.mit.edu/ganchuang/" target="_blank">Chuang Gan</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://lzhu.me/" target="_blank">Ligeng Zhu</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://songhan.mit.edu" target="_blank">Song Han</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In ECCV</em>
+            
+            
+            2020
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560562.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/Presentation_Privacy-Preserving_Edge-Cloud_Inference.pdf" target="_blank">Slides</a>
+        
+        
+             | 
+            
+            <a href="https://www.youtube.com/watch?v=nLVWIl-h5Zc&amp;feature=youtu.be" target="_blank">Demo</a>
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Deep neural networks are widely deployed on edge devices. Users either perform the inference locally (i.e., edge-based) or send the data to the cloud and run inference remotely (i.e., cloud-based). However, edge devices are heavily constrained by insufficient hardware resources and cannot afford to run large models; cloud servers, if not trustworthy, will raise serious privacy issues. In this paper, we mediate between the resource-constrained edge devices and the privacy-invasive cloud servers by introducing a novel privacy-preserving edge-cloud inference framework, DataMix. We off-load the majority of the computations to the cloud and leverage a pair of mixing and de-mixing operation, inspired by mixup, to protect the privacy of the data transmitted to the cloud. Our framework has three advantages. First, it is privacy-preserving as the mixing cannot be inverted without the user’s private mixing coefficients. Second, our framework is accuracy-preserving because our framework takes advantage of the space spanned by image mixing, and we train the model in a mixing-aware manner to maintain accuracy. Third, our solution is efficient on the edge since the majority of the workload is delegated to the cloud, and mixing and de-mixing introduce few extra computations. DataMix introduces small communication overhead and maintains high hardware utilization on the cloud. Extensive experiments on multiple computer vision and speech recognition datasets demonstrate that our framework can greatly reduce the local computations on the edge (to fewer than 20% of FLOPs) with negligible loss of accuracy and no leakages of private information.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
 </li>
 <li>
 
@@ -770,128 +692,6 @@
 </li>
 <li>
 
-<div id="Wu:2020DataMix">
-<div class="namecard">
-    <table>
-    <tr>
-    <td class="img-td">
-    
-        <a href="/assets/papers/img/privacy_eccv.png">
-            <img src="/assets/papers/img/privacy_eccv.png" width="100%" />
-        </a>
-    
-    </td>
-    <td class="txt-td">
-        
-            <span class="title"><strong>DataMix: Efficient Privacy-Preserving Edge-Cloud Inference</strong></span>
-            <span class="author nolinkcolor">
-            
-                
-                
-                    
-                    
-                        <a href="http://zhijianliu.com/" target="_blank">Zhijian Liu*</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    <em><a href="">Zhanghao Wu*</a></em>,
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        <a href="http://people.csail.mit.edu/ganchuang/" target="_blank">Chuang Gan</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        <a href="https://lzhu.me/" target="_blank">Ligeng Zhu</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        and <a href="https://songhan.mit.edu" target="_blank">Song Han</a> 
-                    
-                    
-                
-                
-            
-            </span>
-
-            <span class="periodical">
-            
-            <em>In ECCV</em>
-            
-            
-            2020
-            
-            
-            </span>
-        
-
-        <span class="links">
-        
-            
-            <a class="abstract">Abstract</a>
-        
-        
-        
-        
-             | 
-            
-            <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560562.pdf" target="_blank">Paper</a>
-        
-        
-        
-        
-        
-        
-             | 
-            
-            <a href="http://localhost:4000/assets/pdf/Presentation_Privacy-Preserving_Edge-Cloud_Inference.pdf" target="_blank">Slides</a>
-        
-        
-             | 
-            
-            <a href="https://www.youtube.com/watch?v=nLVWIl-h5Zc&amp;feature=youtu.be" target="_blank">Demo</a>
-        
-        
-        
-        </span>
-
-        <!-- Hidden abstract block -->
-        
-        <span class="abstract hidden">
-            <p>Deep neural networks are widely deployed on edge devices. Users either perform the inference locally (i.e., edge-based) or send the data to the cloud and run inference remotely (i.e., cloud-based). However, edge devices are heavily constrained by insufficient hardware resources and cannot afford to run large models; cloud servers, if not trustworthy, will raise serious privacy issues. In this paper, we mediate between the resource-constrained edge devices and the privacy-invasive cloud servers by introducing a novel privacy-preserving edge-cloud inference framework, DataMix. We off-load the majority of the computations to the cloud and leverage a pair of mixing and de-mixing operation, inspired by mixup, to protect the privacy of the data transmitted to the cloud. Our framework has three advantages. First, it is privacy-preserving as the mixing cannot be inverted without the user’s private mixing coefficients. Second, our framework is accuracy-preserving because our framework takes advantage of the space spanned by image mixing, and we train the model in a mixing-aware manner to maintain accuracy. Third, our solution is efficient on the edge since the majority of the workload is delegated to the cloud, and mixing and de-mixing introduce few extra computations. DataMix introduces small communication overhead and maintains high hardware utilization on the cloud. Extensive experiments on multiple computer vision and speech recognition datasets demonstrate that our framework can greatly reduce the local computations on the edge (to fewer than 20% of FLOPs) with negligible loss of accuracy and no leakages of private information.</p>
-        </span>
-        
-    </td>
-    </tr>
-    </table>
-</div>
-</div>
-
-</li>
-<li>
-
 <div id="Wu:2020efficient">
 <div class="namecard">
     <table>
@@ -1011,8 +811,8 @@
 </div>
 </div>
 
-</li>
-<li>
+</li></ol>
+<ol class="bibliography"><li>
 
 <div id="Wang:2020da">
 <div class="namecard">
@@ -1125,118 +925,10 @@
 </div>
 </div>
 
-</li>
-<li>
+</li></ol>
 
-<div id="Wu:2019vaeda">
-<div class="namecard">
-    <table>
-    <tr>
-    <td class="img-td">
-    
-        <a href="/assets/papers/img/vae_da.png">
-            <img src="/assets/papers/img/vae_da.png" width="100%" />
-        </a>
-    
-    </td>
-    <td class="txt-td">
-        
-            <span class="title"><strong>Data Augmentation Using Variational Autoencoder for Embedding Based Speaker Verification</strong></span>
-            <span class="author nolinkcolor">
-            
-                
-                
-                    
-                    <em><a href="">Zhanghao Wu</a></em>,
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        <a href="https://speechlab.sjtu.edu.cn/members/shuai-wang" target="_blank">Shuai Wang</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian" target="_blank">Yanmin Qian</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        and <a href="https://speechlab.sjtu.edu.cn/members/kai_yu" target="_blank">Kai Yu</a> 
-                    
-                    
-                
-                
-            
-            </span>
-
-            <span class="periodical">
-            
-            <em>In Interspeech</em>
-            
-            
-            2019
-            
-            
-                <strong> (Oral)</strong>
-            
-            </span>
-        
-
-        <span class="links">
-        
-            
-            <a class="abstract">Abstract</a>
-        
-        
-        
-        
-             | 
-            
-            <a href="https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2248.pdf" target="_blank">Paper</a>
-        
-        
-        
-        
-        
-        
-             | 
-            
-            <a href="http://localhost:4000/assets/pdf/Presentations_VAE_DA.pdf" target="_blank">Slides</a>
-        
-        
-        
-        
-        </span>
-
-        <!-- Hidden abstract block -->
-        
-        <span class="abstract hidden">
-            <p>Domain or environment mismatch between training and testing, such as various noises and channels, is a major challenge for speaker verification. In this paper, a variational autoencoder (VAE) is designed to learn the patterns of speaker embeddings extracted from noisy speech segments, including i-vector and xvector, and generate embeddings with more diversity to improve the robustness of speaker verification systems with probabilistic linear discriminant analysis (PLDA) back-end. The approach is evaluated on the standard NIST SRE 2016 dataset. Compared to manual and generative adversarial network (GAN) based augmentation approaches, the proposed VAE based augmentation achieves a slightly better performance for i-vector on Tagalog and Cantonese with EERs of 15.54% and 7.84%, and a more significant improvement for x-vector on those two languages with EERs of 11.86% and 4.20%.</p>
-        </span>
-        
-    </td>
-    </tr>
-    </table>
-</div>
-</div>
-
-</li>
-<li>
+<h3 class="year"><slim>2019</slim></h3>
+<ol class="bibliography"><li>
 
 <div id="Han:2019rc">
 <div class="namecard">
@@ -1364,17 +1056,115 @@
 </div>
 
 </li></ol>
+<ol class="bibliography"><li>
 
-<h3 id="honors--award">Honors &amp; Award</h3>
-<ul>
-  <li><strong>1st place</strong>, in Visual Wake Words (VWW) Challenge of CVPR’19, 2019.</li>
-  <li><strong>3rd place</strong>, in Low Power Image Recognition Challenge of CVPR’19 (1st place of academic groups), 2019.</li>
-  <li><strong>Outstanding Winner</strong>,in Mathematical Contest in Modeling (top 0.5%), 2017.</li>
-  <li><strong>Chinese National Scholarship</strong>, highest honor for undergraduates, top 0.2% nation wide, 2018 &amp; 2019.</li>
-  <li><strong>Excellent Graduate Award of SJTU</strong>, the highest honor for graduates at SJTU, 2020.</li>
-  <li><strong>Zhiyuan Outstanding Student Scholarship of SJTU</strong>, 16 graduates of SJTU Zhiyuan College, 2020.</li>
-  <li><strong>Fan Hsu-Chi Chancellor’s Scholarship</strong>, top 0.1%of 17,000 students in SJTU, 2017.</li>
-  <li><strong>Zhiyuan Honorary Scholarship</strong>, top 5% of 17,000 students in SJTU, 2016-2018.</li>
-</ul>
+<div id="Wu:2019vaeda">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/vae_da.png">
+            <img src="/assets/papers/img/vae_da.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Data Augmentation Using Variational Autoencoder for Embedding Based Speaker Verification</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/shuai-wang" target="_blank">Shuai Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian" target="_blank">Yanmin Qian</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://speechlab.sjtu.edu.cn/members/kai_yu" target="_blank">Kai Yu</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In Interspeech</em>
+            
+            
+            2019
+            
+            
+                <strong> (Oral)</strong>
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2248.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/Presentations_VAE_DA.pdf" target="_blank">Slides</a>
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Domain or environment mismatch between training and testing, such as various noises and channels, is a major challenge for speaker verification. In this paper, a variational autoencoder (VAE) is designed to learn the patterns of speaker embeddings extracted from noisy speech segments, including i-vector and xvector, and generate embeddings with more diversity to improve the robustness of speaker verification systems with probabilistic linear discriminant analysis (PLDA) back-end. The approach is evaluated on the standard NIST SRE 2016 dataset. Compared to manual and generative adversarial network (GAN) based augmentation approaches, the proposed VAE based augmentation achieves a slightly better performance for i-vector on Tagalog and Cantonese with EERs of 15.54% and 7.84%, and a more significant improvement for x-vector on those two languages with EERs of 11.86% and 4.20%.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
 
 :ET
