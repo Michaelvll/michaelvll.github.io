@@ -1,0 +1,1412 @@
+I"�<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on efficient deep learning and system.</p>
+
+<p>I am now focusing on building <a href="https://skypilot.readthedocs.io/en/latest/">SkyPilot</a>, a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">sky computing vision</a>. Please check out our system on <a href="https://github.com/skypilot-org/skypilot">Github</a>. The paper will be available soon in NSDI’23.</p>
+
+<p>Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University (<a href="http://en.sjtu.edu.cn/">SJTU</a>), a member of the SJTU ACM Honors Class, and a research intern working with <a href="https://speechlab.sjtu.edu.cn/members/kai_yu">Prof. Kai Yu</a> and <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian">Prof. Yanmin Qian</a> at SJTU SpeechLab. I also had a wonderful time as a research assistant working with <a href="https://songhan.mit.edu">Prof. Song Han</a> at MIT HAN Lab.</p>
+
+<!-- My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**. -->
+
+<h3 id="news">News</h3>
+
+<ul>
+  <li><strong>[2023.04]</strong> Our SkyPilot <a href="https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng">paper</a> is appearing in NSDI’23.
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/skypilot-org/skypilot" data-show-count="true" aria-label="Star skypilot-org/skypilot on GitHub">Star</a></li>
+  <li><strong>[2023.03]</strong> An open-source chatbot, <a href="https://vicuna.lmsys.org">Vicuna</a>, powered by SkyPilot is released with a <a href="https://chat.lmsys.org">demo</a>. 
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/lm-sys/FastChat" data-show-count="true" aria-label="Star lm-sys/FastChat on GitHub">Star</a></li>
+</ul>
+
+<h3 id="publications">Publications</h3>
+<ol class="bibliography"><li>
+
+<div id="vicuna2023">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/vicuna.jpeg">
+            <img src="/assets/papers/img/vicuna.jpeg" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Wei-Lin Chiang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zhuohan Li*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zi Lin*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Ying Sheng*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Hao Zhang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Lianmin Zheng*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Siyuan Zhuang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Yonghao Zhuang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Joseph E. Gonzalez,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Ion Stoica,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and Eric P. Xing
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            
+            2023
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+            
+            <a href="https://chat.lmsys.org/" target="_blank">Demo</a>
+        
+        
+             | 
+            
+            <a href="https://github.com/lm-sys/FastChat" target="_blank">Code</a>
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="Yang:2023SkyPilot">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/skypilot.png">
+            <img src="/assets/papers/img/skypilot.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>SkyPilot: An Intercloud Broker for Sky Computing</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Zongheng Yang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Michael Luo,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Wei-Lin Chiang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Romil Bhardwaj,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Woosuk Kwon,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Siyuan Zhuang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Frank Sifei Luan,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Gautam Mittal,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Scott Shenker,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and Ion Stoica
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In NSDI</em>
+            
+            
+            2023
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.usenix.org/system/files/nsdi23-yang-zongheng.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="https://github.com/skypilot-org/skypilot" target="_blank">Code</a>
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="Wu:2021GraphTrans">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/graphtrans.png">
+            <img src="/assets/papers/img/graphtrans.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Representing Long-Range Context for Graph Neural Networks with Global Attention</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Paras Jain*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Matthew Wright,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Azalia Mirhoseini,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Joseph E. Gonzalez,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and Ion Stoica
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In NeurIPS</em>
+            
+            
+            2021
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://proceedings.neurips.cc/paper/2021/file/6e67691b60ed3e4a55935261314dd534-Paper.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/GraphTrans_Neurips2021_Slides.pdf" target="_blank">Slides</a>
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Graph neural networks are powerful architectures for structured datasets. However, current methods struggle to represent long-range dependencies. Scaling the depth or width of GNNs is insufficient to broaden receptive fields as larger GNNs encounter optimization instabilities such as vanishing gradients and representation oversmoothing, while pooling-based approaches have yet to become as universally useful as in computer vision. In this work, we propose the use of Transformer-based self-attention to learn long-range pairwise relationships, with a novel “readout” mechanism to obtain a global graph embedding. Inspired by recent computer vision results that find position-invariant attention performant in learning long-range relationships, our method, which we call GraphTrans, applies a permutation-invariant Transformer module after a standard GNN module. This simple architecture leads to state-of-the-art results on several graph classification tasks, outperforming methods that explicitly encode graph structure. Our results suggest that purely-learning-based approaches without graph structure may be suitable for learning high-level, long-range relationships on graphs. Code for GraphTrans is available at <a href="https://github.com/ucbrise/graphtrans">https://github.com/ucbrise/graphtrans</a>.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="Liang:2021RLlibflow">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/rllibflow.png">
+            <img src="/assets/papers/img/rllibflow.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>RLlib Flow: Distributed Reinforcement Learning is a Dataflow Problem</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Eric Liang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Michael Luo,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Sven Mika,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Joseph E. Gonzalez,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and Ion Stoica
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In NeurIPS</em>
+            
+            
+            2021
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://arxiv.org/pdf/2011.12719.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/RLlib_Flow_Neurips_2021_Slides.pdf" target="_blank">Slides</a>
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Researchers and practitioners in the field of reinforcement learning (RL) frequently leverage parallel computation, which has led to a plethora of new algorithms and systems in the last few years. In this paper, we re-examine the challenges posed by distributed RL and try to view it through the lens of an old idea: distributed dataflow. We show that viewing RL as a dataflow problem leads to highly composable and performant implementations. We propose RLlib Flow, a hybrid actor-dataflow programming model for distributed RL, and validate its practicality by porting the full suite of algorithms in RLlib, a widely adopted distributed RL library. Concretely, RLlib Flow provides 2-9 code savings in real production code and enables the composition of multi-agent algorithms not possible by end users before. The open-source code is available as part of RLlib at <a href="https://github.com/ray-project/ray/tree/master/rllib">https://github.com/ray-project/ray/tree/master/rllib</a>.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="Wu:2020DataMix">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/privacy_eccv.png">
+            <img src="/assets/papers/img/privacy_eccv.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>DataMix: Efficient Privacy-Preserving Edge-Cloud Inference</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        <a href="http://zhijianliu.com/" target="_blank">Zhijian Liu*</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="http://people.csail.mit.edu/ganchuang/" target="_blank">Chuang Gan</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://lzhu.me/" target="_blank">Ligeng Zhu</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://songhan.mit.edu" target="_blank">Song Han</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In ECCV</em>
+            
+            
+            2020
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560562.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/Presentation_Privacy-Preserving_Edge-Cloud_Inference.pdf" target="_blank">Slides</a>
+        
+        
+             | 
+            
+            <a href="https://www.youtube.com/watch?v=nLVWIl-h5Zc&amp;feature=youtu.be" target="_blank">Demo</a>
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Deep neural networks are widely deployed on edge devices. Users either perform the inference locally (i.e., edge-based) or send the data to the cloud and run inference remotely (i.e., cloud-based). However, edge devices are heavily constrained by insufficient hardware resources and cannot afford to run large models; cloud servers, if not trustworthy, will raise serious privacy issues. In this paper, we mediate between the resource-constrained edge devices and the privacy-invasive cloud servers by introducing a novel privacy-preserving edge-cloud inference framework, DataMix. We off-load the majority of the computations to the cloud and leverage a pair of mixing and de-mixing operation, inspired by mixup, to protect the privacy of the data transmitted to the cloud. Our framework has three advantages. First, it is privacy-preserving as the mixing cannot be inverted without the user’s private mixing coefficients. Second, our framework is accuracy-preserving because our framework takes advantage of the space spanned by image mixing, and we train the model in a mixing-aware manner to maintain accuracy. Third, our solution is efficient on the edge since the majority of the workload is delegated to the cloud, and mixing and de-mixing introduce few extra computations. DataMix introduces small communication overhead and maintains high hardware utilization on the cloud. Extensive experiments on multiple computer vision and speech recognition datasets demonstrate that our framework can greatly reduce the local computations on the edge (to fewer than 20% of FLOPs) with negligible loss of accuracy and no leakages of private information.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="Wu:2020hat">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/hat.png">
+            <img src="/assets/papers/img/hat.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>HAT: Hardware-Aware Transformers for Efficient Natural Language Processing</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        <a href="https://hanruiwang.me/" target="_blank">Hanrui Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="http://zhijianliu.com/" target="_blank">Zhijian Liu</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://scholar.google.com/citations?user=x-AvvrYAAAAJ&amp;hl=en&amp;authuser=1" target="_blank">Han Cai</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://lzhu.me/" target="_blank">Ligeng Zhu</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://songhan.mit.edu" target="_blank">Song Han</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In ACL</em>
+            
+            
+            2020
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://arxiv.org/pdf/2005.14187.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="https://hanlab.mit.edu/projects/hat/" target="_blank">Website</a>
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Transformers are ubiquitous in Natural Language Processing (NLP) tasks, but they are difficult to be deployed on hardware due to the intensive computation. To enable low-latency inference on resource-constrained hardware platforms, we propose to design Hardware-Aware Transformers (HAT) with neural architecture search. We first construct a large design space with arbitrary encoder-decoder attention and heterogeneous layers. Then we train a SuperTransformer that covers all candidates in the design space, and efficiently produces many SubTransformers with weight sharing. Finally, we perform an evolutionary search with a hardware latency constraint to find a specialized SubTransformer dedicated to run fast on the target hardware. Extensive experiments on four machine translation tasks demonstrate that HAT can discover efficient models for different hardware (CPU, GPU, IoT device). When running WMT’14 translation task on Raspberry Pi-4, HAT can achieve 3× speedup, 3.7× smaller size over baseline Transformer; 2.7× speedup, 3.6× smaller size over Evolved Transformer with 12,041× less search cost and no performance loss. HAT code is open-sourced at <a href="https://github.com/mit-hanlab/hardware-aware-transformers.git">https://github.com/mit-hanlab/hardware-aware-transformers.git</a>.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="Wu:2020efficient">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/enmt.png">
+            <img src="/assets/papers/img/enmt.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Lite Transformer with Long-Short Range Attention</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="http://zhijianliu.com/" target="_blank">Zhijian Liu*</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="http://linji.me/" target="_blank">Ji Lin</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://deepai.org/profile/yujun-lin" target="_blank">Yujun Lin</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://songhan.mit.edu" target="_blank">Song Han</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In ICLR</em>
+            
+            
+            2020
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://arxiv.org/pdf/2004.11886.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/Presentation_LiteTransformer.pdf" target="_blank">Slides</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://hanlab.mit.edu/projects/litetransformer/" target="_blank">Website</a>
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained by the hardware resources and battery. In this paper, we present an efficient mobile NLP architecture, Lite Transformer to facilitate deploying mobile NLP applications on edge devices. The key primitive is the Long-Short Range Attention (LSRA), where one group of heads specializes in the local context modeling (by convolution) while another group specializes in the long-distance relationship modeling (by attention). Such specialization brings consistent improvement over the vanilla transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. Under constrained resources (500M/100M MACs), Lite Transformer outperforms transformer on WMT’14 English-French by 1.2/1.7 BLEU, respectively. Lite Transformer reduces the computation of transformer base model by 2.5x with 0.3 BLEU score degradation. Combining with pruning and quantization, we further compressed the model size of Lite Transformer by 18.2x. For language modeling, Lite Transformer achieves 1.8 lower perplexity than the transformer at around 500M MACs. Notably, Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU for the mobile NLP setting without the costly architecture search that requires more than 250 GPU years. Code has been made available at <a href="https://github.com/mit-han-lab/lite-transformer">https://github.com/mit-han-lab/lite-transformer</a>.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="Han:2019rc">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/on_device.png">
+            <img src="/assets/papers/img/on_device.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>On-Device Image Classification with Proxyless Neural Architecture Search and Quantization-Aware Fine-Tuning</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        <a href="https://scholar.google.com/citations?user=x-AvvrYAAAAJ&amp;hl=en&amp;authuser=1" target="_blank">Han Cai</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://sites.google.com/view/tianzhe-wang/home" target="_blank">Tianzhe Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://scholar.google.com/citations?user=c1-_-dUAAAAJ&amp;hl=en" target="_blank">Kuan Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="http://linji.me/" target="_blank">Ji Lin</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://songhan.mit.edu" target="_blank">Song Han</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In ICCV workshop</em>
+            
+            
+            2019
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="http://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/Presentation_on_device.pdf" target="_blank">Slides</a>
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>It is challenging to efficiently deploy deep learning models on resource-constrained hardware devices (e.g., mobile and IoT devices) with strict efficiency constraints (e.g., latency, energy consumption). We employ Proxyless Neural Architecture Search (ProxylessNAS) to auto design compact and specialized neural network architectures for the target hardware platform. ProxylessNAS makes latency differentiable, so we can optimize not only accuracy but also latency by gradient descent. Such direct optimization saves the search cost by 200x compared to conventional neural architecture search methods. Our work is followed by quantization-aware fine-tuning to further boost efficiency. In the Low Power Image Recognition Competition at CVPR’19, our solution won the 3rd place on the task of Real-Time Image Classification (online track).</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Wang:2020da">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/da_taslp.png">
+            <img src="/assets/papers/img/da_taslp.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Data Augmentation Using Deep Generative Models for Embedding Based Speaker Recognition</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/shuai-wang" target="_blank">Shuai Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Yexin Yang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian" target="_blank">Yanmin Qian</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://speechlab.sjtu.edu.cn/members/kai_yu" target="_blank">Kai Yu</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>IEEE/ACM Transactions on Audio, Speech, and Language Processing</em>
+            
+            
+            2020
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://ieeexplore.ieee.org/abstract/document/9167416" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Data augmentation is an effective method to improve the robustness of embedding based speaker verification systems, which could be applied to either the front-end speaker embedding extractor or the back-end PLDA. Different from the conventional augmentation methods such as manually adding noise or reverberation to the original audios, in this article, we propose to use deep generative models to directly generate more diverse speaker embeddings, which would be used for robust PLDA training. Conditional GAN, and VAE are designed, and investigated for different embedding types, including factor analysis based i-vector, TDNN based x-vector, and ResNet based r-vector. The proposed back-end augmentation methods are evaluated on NIST SRE 2016, and 2018 dataset. Within the popular x-vector, and r-vector framework, the experimental results show that our proposed methods can outperform the traditional audio based back-end augmentation method while different front-end augmentation methods are considered.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="Wu:2019vaeda">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/vae_da.png">
+            <img src="/assets/papers/img/vae_da.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Data Augmentation Using Variational Autoencoder for Embedding Based Speaker Verification</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/shuai-wang" target="_blank">Shuai Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian" target="_blank">Yanmin Qian</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://speechlab.sjtu.edu.cn/members/kai_yu" target="_blank">Kai Yu</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In Interspeech</em>
+            
+            
+            2019
+            
+            
+                <strong> (Oral)</strong>
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.isca-speech.org/archive/Interspeech_2019/pdfs/2248.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/Presentations_VAE_DA.pdf" target="_blank">Slides</a>
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Domain or environment mismatch between training and testing, such as various noises and channels, is a major challenge for speaker verification. In this paper, a variational autoencoder (VAE) is designed to learn the patterns of speaker embeddings extracted from noisy speech segments, including i-vector and xvector, and generate embeddings with more diversity to improve the robustness of speaker verification systems with probabilistic linear discriminant analysis (PLDA) back-end. The approach is evaluated on the standard NIST SRE 2016 dataset. Compared to manual and generative adversarial network (GAN) based augmentation approaches, the proposed VAE based augmentation achieves a slightly better performance for i-vector on Tagalog and Cantonese with EERs of 15.54% and 7.84%, and a more significant improvement for x-vector on those two languages with EERs of 11.86% and 4.20%.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
+
+<h3 id="education">Education</h3>
+
+<div id="education">
+<div class="namecard">
+<table>
+    
+        
+    <tr>
+    <td class="logo-img-td">
+        <a href="https://berkeley.edu"><img src="assets/img/berkeley.png" width="100%" /></a>
+    </td>
+    <td class="logo-txt-td">
+         <a href="https://berkeley.edu">University of California, Berkeley</a>, USA<br />
+         Ph.D. student at <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a> (aka RISELab, AMPLab). Aug. 2020 - Present
+    </td>
+    </tr>
+        
+    <tr>
+    <td class="logo-img-td">
+        <a href="https://mit.edu"><img src="assets/img/mit.png" width="100%" /></a>
+    </td>
+    <td class="logo-txt-td">
+         <a href="https://mit.edu">Massachusetts Institute Technology</a>, USA<br />
+         Research assistant, working with Prof. <a href="https://songhan.mit.edu">Song Han</a>. Jul. 2019 - Jan. 2020.
+    </td>
+    </tr>
+        
+    <tr>
+    <td class="logo-img-td">
+        <a href="http://en.sjtu.edu.cn"><img src="assets/img/sjtu.png" width="100%" /></a>
+    </td>
+    <td class="logo-txt-td">
+         <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>, China<br />
+         B.Eng. in Computer Science at ACM Honors Class, advised by <a href="http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140">Yong Yu</a>. Sep. 2016 - Jun. 2020.
+    </td>
+    </tr>
+        
+</table>
+</div>
+</div>
+
+<h3 id="honors--award">Honors &amp; Award</h3>
+<ul>
+  <li><strong>1st place</strong>, in Visual Wake Words (VWW) Challenge of CVPR’19, 2019.</li>
+  <li><strong>3rd place</strong>, in Low Power Image Recognition Challenge of CVPR’19 (1st place of academic groups), 2019.</li>
+  <li><strong>Outstanding Winner</strong>,in Mathematical Contest in Modeling (top 0.5%), 2017.</li>
+  <li><strong>Chinese National Scholarship</strong>, highest honor for undergraduates, top 0.2% nation wide, 2018 &amp; 2019.</li>
+  <li><strong>Excellent Graduate Award of SJTU</strong>, the highest honor for graduates at SJTU, 2020.</li>
+  <li><strong>Zhiyuan Outstanding Student Scholarship of SJTU</strong>, 16 graduates of SJTU Zhiyuan College, 2020.</li>
+  <li><strong>Fan Hsu-Chi Chancellor’s Scholarship</strong>, top 0.1%of 17,000 students in SJTU, 2017.</li>
+  <li><strong>Zhiyuan Honorary Scholarship</strong>, top 5% of 17,000 students in SJTU, 2016-2018.</li>
+</ul>
+
+:ET

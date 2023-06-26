@@ -1,23 +1,5 @@
-I"Øú<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on efficient deep learning and system.</p>
-
-<p>I am now focusing on building <a href="https://skypilot.readthedocs.io/en/latest/">SkyPilot</a>, a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">sky computing vision</a>. Please check out our system on <a href="https://github.com/skypilot-org/skypilot">Github</a>. The paper will be available soon in NSDI‚Äô23.</p>
-
-<p>Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University (<a href="http://en.sjtu.edu.cn/">SJTU</a>), a member of the SJTU ACM Honors Class, and a research intern working with <a href="https://speechlab.sjtu.edu.cn/members/kai_yu">Prof. Kai Yu</a> and <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian">Prof. Yanmin Qian</a> at SJTU SpeechLab. I also had a wonderful time as a research assistant working with <a href="https://songhan.mit.edu">Prof. Song Han</a> at MIT HAN Lab.</p>
-
-<!-- My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**. -->
-
-<h3 id="news">News</h3>
-
-<ul>
-  <li><strong>[2023.04]</strong> Our SkyPilot <a href="https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng">paper</a> is appearing in NSDI‚Äô23.
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/skypilot-org/skypilot" data-show-count="true" aria-label="Star skypilot-org/skypilot on GitHub">Star</a></li>
-  <li><strong>[2023.03]</strong> An open-source chatbot, <a href="https://vicuna.lmsys.org">Vicuna</a>, powered by SkyPilot is released with a <a href="https://chat.lmsys.org">demo</a>. 
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/lm-sys/FastChat" data-show-count="true" aria-label="Star lm-sys/FastChat on GitHub">Star</a></li>
-</ul>
-
-<h3 id="publications">Publications</h3>
+I"õù
+<h3 class="year"><slim>2023</slim></h3>
 <ol class="bibliography"><li>
 
 <div id="Yang:2023SkyPilot">
@@ -148,7 +130,7 @@
 
             <span class="periodical">
             
-            <em>In NSDI 23</em>
+            <em>In NSDI</em>
             
             
             2023
@@ -164,6 +146,10 @@
         
         
         
+        
+             | 
+            
+            <a href="https://www.usenix.org/system/files/nsdi23-yang-zongheng.pdf" target="_blank">Paper</a>
         
         
         
@@ -193,6 +179,203 @@
 
 </li>
 <li>
+
+<div id="vicuna2023">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/vicuna.jpeg">
+            <img src="/assets/papers/img/vicuna.jpeg" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Wei-Lin Chiang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zhuohan Li*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zi Lin*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Ying Sheng*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu*</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Hao Zhang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Lianmin Zheng*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Siyuan Zhuang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Yonghao Zhuang*,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Joseph E. Gonzalez,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Ion Stoica,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and Eric P. Xing
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            
+            2023
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="https://lmsys.org/blog/2023-03-30-vicuna/" target="_blank">Blog</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="https://chat.lmsys.org/" target="_blank">Demo</a>
+        
+        
+             | 
+            
+            <a href="https://github.com/lm-sys/FastChat" target="_blank">Code</a>
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achieves more than 90%\*quality of OpenAI ChatGPT and Google Bard while outperforming other models like LLaMA and Stanford Alpaca in more than 90%\*of cases. The cost of training Vicuna-13B is around $300. The code and weights, along with an online demo, are publicly available for non-commercial use.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
+<ol class="bibliography"></ol>
+
+<h3 class="year"><slim>2022</slim></h3>
+<ol class="bibliography"></ol>
+<ol class="bibliography"></ol>
+
+<h3 class="year"><slim>2021</slim></h3>
+<ol class="bibliography"><li>
 
 <div id="Wu:2021GraphTrans">
 <div class="namecard">
@@ -447,8 +630,11 @@
 </div>
 </div>
 
-</li>
-<li>
+</li></ol>
+<ol class="bibliography"></ol>
+
+<h3 class="year"><slim>2020</slim></h3>
+<ol class="bibliography"><li>
 
 <div id="Wu:2020DataMix">
 <div class="namecard">
@@ -819,8 +1005,124 @@
 </div>
 </div>
 
-</li>
-<li>
+</li></ol>
+<ol class="bibliography"><li>
+
+<div id="Wang:2020da">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/da_taslp.png">
+            <img src="/assets/papers/img/da_taslp.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Data Augmentation Using Deep Generative Models for Embedding Based Speaker Recognition</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/shuai-wang" target="_blank">Shuai Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Yexin Yang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian" target="_blank">Yanmin Qian</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://speechlab.sjtu.edu.cn/members/kai_yu" target="_blank">Kai Yu</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>IEEE/ACM Transactions on Audio, Speech, and Language Processing</em>
+            
+            
+            2020
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://ieeexplore.ieee.org/abstract/document/9167416" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Data augmentation is an effective method to improve the robustness of embedding based speaker verification systems, which could be applied to either the front-end speaker embedding extractor or the back-end PLDA. Different from the conventional augmentation methods such as manually adding noise or reverberation to the original audios, in this article, we propose to use deep generative models to directly generate more diverse speaker embeddings, which would be used for robust PLDA training. Conditional GAN, and VAE are designed, and investigated for different embedding types, including factor analysis based i-vector, TDNN based x-vector, and ResNet based r-vector. The proposed back-end augmentation methods are evaluated on NIST SRE 2016, and 2018 dataset. Within the popular x-vector, and r-vector framework, the experimental results show that our proposed methods can outperform the traditional audio based back-end augmentation method while different front-end augmentation methods are considered.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
+
+<h3 class="year"><slim>2019</slim></h3>
+<ol class="bibliography"><li>
 
 <div id="Han:2019rc">
 <div class="namecard">
@@ -950,120 +1252,6 @@
 </li></ol>
 <ol class="bibliography"><li>
 
-<div id="Wang:2020da">
-<div class="namecard">
-    <table>
-    <tr>
-    <td class="img-td">
-    
-        <a href="/assets/papers/img/da_taslp.png">
-            <img src="/assets/papers/img/da_taslp.png" width="100%" />
-        </a>
-    
-    </td>
-    <td class="txt-td">
-        
-            <span class="title"><strong>Data Augmentation Using Deep Generative Models for Embedding Based Speaker Recognition</strong></span>
-            <span class="author nolinkcolor">
-            
-                
-                
-                    
-                    
-                        <a href="https://speechlab.sjtu.edu.cn/members/shuai-wang" target="_blank">Shuai Wang</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Yexin Yang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    <em><a href="">Zhanghao Wu</a></em>,
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian" target="_blank">Yanmin Qian</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        and <a href="https://speechlab.sjtu.edu.cn/members/kai_yu" target="_blank">Kai Yu</a> 
-                    
-                    
-                
-                
-            
-            </span>
-
-            <span class="periodical">
-            
-            <em>IEEE/ACM Transactions on Audio, Speech, and Language Processing</em>
-            
-            
-            2020
-            
-            
-            </span>
-        
-
-        <span class="links">
-        
-            
-            <a class="abstract">Abstract</a>
-        
-        
-        
-        
-             | 
-            
-            <a href="https://ieeexplore.ieee.org/abstract/document/9167416" target="_blank">Paper</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </span>
-
-        <!-- Hidden abstract block -->
-        
-        <span class="abstract hidden">
-            <p>Data augmentation is an effective method to improve the robustness of embedding based speaker verification systems, which could be applied to either the front-end speaker embedding extractor or the back-end PLDA. Different from the conventional augmentation methods such as manually adding noise or reverberation to the original audios, in this article, we propose to use deep generative models to directly generate more diverse speaker embeddings, which would be used for robust PLDA training. Conditional GAN, and VAE are designed, and investigated for different embedding types, including factor analysis based i-vector, TDNN based x-vector, and ResNet based r-vector. The proposed back-end augmentation methods are evaluated on NIST SRE 2016, and 2018 dataset. Within the popular x-vector, and r-vector framework, the experimental results show that our proposed methods can outperform the traditional audio based back-end augmentation method while different front-end augmentation methods are considered.</p>
-        </span>
-        
-    </td>
-    </tr>
-    </table>
-</div>
-</div>
-
-</li>
-<li>
-
 <div id="Wu:2019vaeda">
 <div class="namecard">
     <table>
@@ -1172,58 +1360,5 @@
 </div>
 
 </li></ol>
-
-<h3 id="education">Education</h3>
-
-<div id="education">
-<div class="namecard">
-<table>
-    
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="https://berkeley.edu"><img src="assets/img/berkeley.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="https://berkeley.edu">University of California, Berkeley</a>, USA<br />
-         Ph.D. student at <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a> (aka RISELab, AMPLab). Aug. 2020 - Present
-    </td>
-    </tr>
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="https://mit.edu"><img src="assets/img/mit.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="https://mit.edu">Massachusetts Institute Technology</a>, USA<br />
-         Research assistant, working with Prof. <a href="https://songhan.mit.edu">Song Han</a>. Jul. 2019 - Jan. 2020.
-    </td>
-    </tr>
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="http://en.sjtu.edu.cn"><img src="assets/img/sjtu.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>, China<br />
-         B.Eng. in Computer Science at ACM Honors Class, advised by <a href="http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140">Yong Yu</a>. Sep. 2016 - Jun. 2020.
-    </td>
-    </tr>
-        
-</table>
-</div>
-</div>
-
-<h3 id="honors--award">Honors &amp; Award</h3>
-<ul>
-  <li><strong>1st place</strong>, in Visual Wake Words (VWW) Challenge of CVPR‚Äô19, 2019.</li>
-  <li><strong>3rd place</strong>, in Low Power Image Recognition Challenge of CVPR‚Äô19 (1st place of academic groups), 2019.</li>
-  <li><strong>Outstanding Winner</strong>,in Mathematical Contest in Modeling (top 0.5%), 2017.</li>
-  <li><strong>Chinese National Scholarship</strong>, highest honor for undergraduates, top 0.2% nation wide, 2018 &amp; 2019.</li>
-  <li><strong>Excellent Graduate Award of SJTU</strong>, the highest honor for graduates at SJTU, 2020.</li>
-  <li><strong>Zhiyuan Outstanding Student Scholarship of SJTU</strong>, 16 graduates of SJTU Zhiyuan College, 2020.</li>
-  <li><strong>Fan Hsu-Chi Chancellor‚Äôs Scholarship</strong>, top 0.1%of 17,000 students in SJTU, 2017.</li>
-  <li><strong>Zhiyuan Honorary Scholarship</strong>, top 5% of 17,000 students in SJTU, 2016-2018.</li>
-</ul>
 
 :ET

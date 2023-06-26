@@ -1,32 +1,36 @@
 ---
 ---
 
+@inproceedings{Yang:2023SkyPilot,
+  author    = {Zongheng Yang* and Zhanghao Wu* and Michael Luo and Wei-Lin Chiang and Romil Bhardwaj and Woosuk Kwon and Siyuan Zhuang and Frank Sifei Luan and Gautam Mittal and Scott Shenker and Ion Stoica},
+  title     = {{SkyPilot}: An Intercloud Broker for Sky Computing},
+  booktitle = {NSDI},
+  year      = {2023},
+  isbn      = {978-1-939133-33-5},
+  address   = {Boston, MA},
+  pages     = {437--455},
+  url       = {https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng},
+  pdf       = {https://www.usenix.org/system/files/nsdi23-yang-zongheng.pdf},
+  publisher = {USENIX Association},
+  month     = apr,
+  image     = {skypilot.png},
+  year      = {2023},
+  code      = {https://github.com/skypilot-org/skypilot},
+  abstract  = {To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.}
+}
 @misc{vicuna2023,
   title  = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
   url    = {https://lmsys.org/blog/2023-03-30-vicuna/},
   author = {Chiang*, Wei-Lin and Li*, Zhuohan and Lin*, Zi and Sheng*, Ying and Wu*, Zhanghao and Zhang*, Hao and Zheng*, Lianmin and Zhuang*, Siyuan and Zhuang*, Yonghao and Gonzalez, Joseph E. and Stoica, Ion and Xing, Eric P.},
   month  = {March},
-  year   = {2023}
-  image = {vicuna.png}
+  year   = {2023},
+  image = {vicuna.jpeg},
+  abstract = {We introduce Vicuna-13B, an open-source chatbot trained by fine-tuning LLaMA on user-shared conversations collected from ShareGPT. Preliminary evaluation using GPT-4 as a judge shows Vicuna-13B achieves more than 90\%* quality of OpenAI ChatGPT and Google Bard while outperforming other models like LLaMA and Stanford Alpaca in more than 90\%* of cases. The cost of training Vicuna-13B is around $300. The code and weights, along with an online demo, are publicly available for non-commercial use.},
+  code = {https://github.com/lm-sys/FastChat},
+  demo = {https://chat.lmsys.org/},
+  blog = {https://lmsys.org/blog/2023-03-30-vicuna/}
 }
 
-@inproceedings{Yang:2023SkyPilot,
-  author = {Zongheng Yang* and Zhanghao Wu* and Michael Luo and Wei-Lin Chiang and Romil Bhardwaj and Woosuk Kwon and Siyuan Zhuang and Frank Sifei Luan and Gautam Mittal and Scott Shenker and Ion Stoica},
-  title = {{SkyPilot}: An Intercloud Broker for Sky Computing},
-  booktitle = {NSDI},
-  year = {2023},
-  isbn = {978-1-939133-33-5},
-  address = {Boston, MA},
-  pages = {437--455},
-  url = {https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng},
-  pdf = {https://www.usenix.org/system/files/nsdi23-yang-zongheng.pdf},
-  publisher = {USENIX Association},
-  month = apr,
-  image           = {skypilot.png},
-  year            = {2023},
-  code            = {https://github.com/skypilot-org/skypilot},
-  abstract        = {To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.}
-}
 
 @inproceedings{Wu:2021GraphTrans,
   title     = {Representing Long-Range Context for Graph Neural Networks with Global Attention},
