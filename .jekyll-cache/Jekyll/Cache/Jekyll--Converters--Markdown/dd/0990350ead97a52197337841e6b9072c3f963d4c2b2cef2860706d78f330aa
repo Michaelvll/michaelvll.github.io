@@ -1,4 +1,4 @@
-I"úù
+I"”≤
 <h3 class="year"><slim>2023</slim></h3>
 <ol class="bibliography"><li>
 
@@ -169,6 +169,182 @@
         
         <span class="abstract hidden">
             <p>To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="liu2023single">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/brain.png">
+            <img src="/assets/papers/img/brain.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Hanqing Liu,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Qiurui Zeng,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Jingtian Zhou,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Anna Bartlett,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Bang-An Wang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Peter Berube,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Wei Tian,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Mia Kenworthy,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Jordan Altshul,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Joseph R Nery,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and  others
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>Nature</em>
+            
+            
+            2023
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.nature.com/articles/s41586-023-06805-y.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Cytosine DNA methylation is essential in brain development and is implicated in various neurological disorders. Understanding DNA methylation diversity across the entire brain in a spatial context is fundamental for a complete molecular atlas of brain cell types and their gene regulatory landscapes. Here we used single-nucleus methylome sequencing (snmC-seq3) and multi-omic sequencing (snm3C-seq)1 technologies to generate 301,626 methylomes and 176,003 chromatin conformation‚Äìmethylome joint profiles from 117 dissected regions throughout the adult mouse brain. Using iterative clustering and integrating with companion whole-brain transcriptome and chromatin accessibility datasets, we constructed a methylation-based cell taxonomy with 4,673 cell groups and 274 cross-modality-annotated subclasses. We identified 2.6 million differentially methylated regions across the genome that represent potential gene regulation elements. Notably, we observed spatial cytosine methylation patterns on both genes and regulatory elements in cell types within and across brain regions. Brain-wide spatial transcriptomics data validated the association of spatial epigenetic diversity with transcription and improved the anatomical mapping of our epigenetic datasets. Furthermore, chromatin conformation diversities occurred in important neuronal genes and were highly associated with DNA methylation and transcription changes. Brain-wide cell-type comparisons enabled the construction of regulatory networks that incorporate transcription factors, regulatory elements and their potential downstream gene targets. Finally, intragenic DNA methylation and chromatin conformation patterns predicted alternative gene isoform expression observed in a whole-brain SMART-seq2 dataset. Our study establishes a brain-wide, single-cell DNA methylome and 3D multi-omic atlas and provides a valuable resource for comprehending the cellular‚Äìspatial and regulatory genome diversity of the mouse brain.</p>
         </span>
         
     </td>

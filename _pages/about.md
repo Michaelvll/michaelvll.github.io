@@ -23,9 +23,9 @@ news: false
 social: false
 ---
 
-I fortunately joined the CS Ph.D. program at [UC Berkeley Sky Computing Lab](https://sky.cs.berkeley.edu/) in the fall, 2020. I am currently working with Prof. [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/) on efficient deep learning and system. 
+I fortunately joined the CS Ph.D. program at [UC Berkeley Sky Computing Lab](https://sky.cs.berkeley.edu/) in the fall, 2020. I am currently working with Prof. [Ion Stoica](http://people.eecs.berkeley.edu/~istoica/) on Sky Computing over clouds, specially for AI. 
 
-I am now focusing on building [SkyPilot](https://skypilot.readthedocs.io/en/latest/), a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the [sky computing vision](https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf). Please check out our system on [Github](https://github.com/skypilot-org/skypilot). The paper will be available soon in NSDI'23.
+I am focusing on building [SkyPilot](https://skypilot.readthedocs.io/en/latest/), a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the [Sky Computing vision](https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf). Please check out our system on [Github](https://github.com/skypilot-org/skypilot). The paper is available in NSDI'23 and the latest paper for broker policy "Can't Be Late" will be available in NSDI'24.
 
 Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University ([SJTU](http://en.sjtu.edu.cn/)), a member of the SJTU ACM Honors Class, and a research intern working with [Prof. Kai Yu](https://speechlab.sjtu.edu.cn/members/kai_yu) and [Prof. Yanmin Qian](https://speechlab.sjtu.edu.cn/members/yanmin_qian) at SJTU SpeechLab. I also had a wonderful time as a research assistant working with [Prof. Song Han](https://songhan.mit.edu) at MIT HAN Lab.
 
@@ -35,6 +35,7 @@ Before coming to Berkeley, I was an undergraduate student majoring in computer s
 
 ### News
 
+* **[2024.04]** Our "Can't Be Late" [paper](https://www.usenix.org/system/files/nsdi24-wu-zhanghao.pdf) is appearing in NSDI'24 and won the **Outstanding Paper Award**.
 * **[2023.04]** Our SkyPilot [paper](https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng) is appearing in NSDI'23.
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/skypilot-org/skypilot" data-show-count="true" aria-label="Star skypilot-org/skypilot on GitHub">Star</a>

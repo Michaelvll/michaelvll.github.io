@@ -1,6 +1,6 @@
-I"�<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on efficient deep learning and system.</p>
+I"��<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on Sky Computing over clouds, specially for AI.</p>
 
-<p>I am now focusing on building <a href="https://skypilot.readthedocs.io/en/latest/">SkyPilot</a>, a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">sky computing vision</a>. Please check out our system on <a href="https://github.com/skypilot-org/skypilot">Github</a>. The paper will be available soon in NSDI’23.</p>
+<p>I am focusing on building <a href="https://skypilot.readthedocs.io/en/latest/">SkyPilot</a>, a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">Sky Computing vision</a>. Please check out our system on <a href="https://github.com/skypilot-org/skypilot">Github</a>. The paper is available in NSDI’23 and the latest paper for broker policy “Can’t Be Late” will be available in NSDI’24.</p>
 
 <p>Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University (<a href="http://en.sjtu.edu.cn/">SJTU</a>), a member of the SJTU ACM Honors Class, and a research intern working with <a href="https://speechlab.sjtu.edu.cn/members/kai_yu">Prof. Kai Yu</a> and <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian">Prof. Yanmin Qian</a> at SJTU SpeechLab. I also had a wonderful time as a research assistant working with <a href="https://songhan.mit.edu">Prof. Song Han</a> at MIT HAN Lab.</p>
 
@@ -9,6 +9,7 @@
 <h3 id="news">News</h3>
 
 <ul>
+  <li><strong>[2024.04]</strong> Our “Can’t Be Late” <a href="https://www.usenix.org/system/files/nsdi24-wu-zhanghao.pdf">paper</a> is appearing in NSDI’24 and won the <strong>Outstanding Paper Award</strong>.</li>
   <li><strong>[2023.04]</strong> Our SkyPilot <a href="https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng">paper</a> is appearing in NSDI’23.
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/skypilot-org/skypilot" data-show-count="true" aria-label="Star skypilot-org/skypilot on GitHub">Star</a></li>
@@ -19,6 +20,512 @@
 
 <h3 id="publications">Publications</h3>
 <ol class="bibliography"><li>
+
+<div id="Wu:2024SkySpot">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/skyspot.png">
+            <img src="/assets/papers/img/skyspot.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Can’t Be Late: Optimizing Spot Instance Savings under Deadlines</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Wei-Lin Chiang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Ziming Mao,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zongheng Yang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Eric Friedman,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Scott Shenker,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and Ion Stoica
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In NSDI (Outstanding Paper Award)</em>
+            
+            
+            2024
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.usenix.org/system/files/nsdi24-wu-zhanghao.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Cloud providers offer spot instances alongside on-demand instances to optimize resource utilization. While economically appealing, spot instances’ preemptible nature causes them ill-suited for deadline-sensitive jobs. To allow jobs to meet deadlines while leveraging spot instances, we propose a simple idea: use on-demand instances judiciously as a backup resource. However, due to the unpredictable spot instance availability, determining when to switch between spot and on-demand to minimize cost requires careful policy design. In this paper, we first provide an in-depth characterization of spot instances (e.g., availability, pricing, duration), and develop a basic theoretical model to examine the worst and average-case behaviors of baseline policies (e.g., greedy). The model serves as a foundation to motivate our design of a simple and effective policy, Uniform Progress, which is parameter-free and requires no assumptions on spot availability. Our empirical study, based on three-month-long real spot availability traces on AWS, demonstrates that it can (1) outperform the greedy policy by closing the gap to the optimal policy by 2× in both average and bad cases, and (2) further reduce the gap when limited future knowledge is given. These results hold in a variety of conditions ranging from loose to tight deadlines, low to high spot availability, and on single or multiple instances. By implementing this policy on top of SkyPilot, an intercloud broker system, we achieve 27%-84% cost savings across a variety of representative real-world workloads and deadlines. The spot availability traces are open-sourced for future research.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="zheng2024realchatm">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/lmsys.png">
+            <img src="/assets/papers/img/lmsys.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Lianmin Zheng,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Wei-Lin Chiang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Ying Sheng,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Tianle Li,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Siyuan Zhuang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Yonghao Zhuang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zhuohan Li,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zi Lin,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Eric Xing,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Joseph E. Gonzalez,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Ion Stoica,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and Hao Zhang
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In ICLR</em>
+            
+            
+            2024
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://arxiv.org/pdf/2309.11998.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Studying how people interact with large language models (LLMs) in real-world scenarios is increasingly important due to their widespread use in various applications. In this paper, we introduce LMSYS-Chat-1M, a large-scale dataset containing one million real-world conversations with 25 state-of-the-art LLMs. This dataset is collected from 210K unique IP addresses in the wild on our Vicuna demo and Chatbot Arena website. We offer an overview of the dataset’s content, including its curation process, basic statistics, and topic distribution, highlighting its diversity, originality, and scale. We demonstrate its versatility through four use cases: developing content moderation models that perform similarly to GPT-4, building a safety benchmark, training instruction-following models that perform similarly to Vicuna, and creating challenging benchmark questions. We believe that this dataset will serve as a valuable resource for understanding and advancing LLM capabilities. The dataset is publicly available at https://huggingface.co/datasets/lmsys/lmsys-chat-1m</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="zheng2024judging">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/judging.png">
+            <img src="/assets/papers/img/judging.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Judging llm-as-a-judge with mt-bench and chatbot arena</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Lianmin Zheng,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Wei-Lin Chiang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Ying Sheng,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Siyuan Zhuang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Yonghao Zhuang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zi Lin,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Zhuohan Li,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Dacheng Li,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Eric Xing,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and  others
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In NeurIPS</em>
+            
+            
+            2024
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/91f18a1287b398d378ef22505bf41832-Paper-Datasets_and_Benchmarks.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="https://github.com/lm-sys/FastChat" target="_blank">Code</a>
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Evaluating large language model (LLM) based chat assistants is challenging due to their broad capabilities and the inadequacy of existing benchmarks in measuring human preferences.To address this, we explore using strong LLMs as judges to evaluate these models on more open-ended questions.We examine the usage and limitations of LLM-as-a-judge, including position, verbosity, and self-enhancement biases, as well as limited reasoning ability, and propose solutions to mitigate some of them.We then verify the agreement between LLM judges and human preferences by introducing two benchmarks: MT-bench, a multi-turn question set; and Chatbot Arena, a crowdsourced battle platform.Our results reveal that strong LLM judges like GPT-4 can match both controlled and crowdsourced human preferences well, achieving over 80% agreement, the same level of agreement between humans.Hence, LLM-as-a-judge is a scalable and explainable way to approximate human preferences, which are otherwise very expensive to obtain.Additionally, we show our benchmark and traditional benchmarks complement each other by evaluating several variants of LLaMA and Vicuna.The MT-bench questions, 3K expert votes, and 30K conversations with human preferences are publicly available at https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
 
 <div id="Yang:2023SkyPilot">
 <div class="namecard">
@@ -187,6 +694,182 @@
         
         <span class="abstract hidden">
             <p>To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li>
+<li>
+
+<div id="liu2023single">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/brain.png">
+            <img src="/assets/papers/img/brain.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        Hanqing Liu,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Qiurui Zeng,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Jingtian Zhou,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Anna Bartlett,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Bang-An Wang,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Peter Berube,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Wei Tian,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Mia Kenworthy,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Jordan Altshul,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        Joseph R Nery,
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and  others
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>Nature</em>
+            
+            
+            2023
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="https://www.nature.com/articles/s41586-023-06805-y.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>Cytosine DNA methylation is essential in brain development and is implicated in various neurological disorders. Understanding DNA methylation diversity across the entire brain in a spatial context is fundamental for a complete molecular atlas of brain cell types and their gene regulatory landscapes. Here we used single-nucleus methylome sequencing (snmC-seq3) and multi-omic sequencing (snm3C-seq)1 technologies to generate 301,626 methylomes and 176,003 chromatin conformation–methylome joint profiles from 117 dissected regions throughout the adult mouse brain. Using iterative clustering and integrating with companion whole-brain transcriptome and chromatin accessibility datasets, we constructed a methylation-based cell taxonomy with 4,673 cell groups and 274 cross-modality-annotated subclasses. We identified 2.6 million differentially methylated regions across the genome that represent potential gene regulation elements. Notably, we observed spatial cytosine methylation patterns on both genes and regulatory elements in cell types within and across brain regions. Brain-wide spatial transcriptomics data validated the association of spatial epigenetic diversity with transcription and improved the anatomical mapping of our epigenetic datasets. Furthermore, chromatin conformation diversities occurred in important neuronal genes and were highly associated with DNA methylation and transcription changes. Brain-wide cell-type comparisons enabled the construction of regulatory networks that incorporate transcription factors, regulatory elements and their potential downstream gene targets. Finally, intragenic DNA methylation and chromatin conformation patterns predicted alternative gene isoform expression observed in a whole-brain SMART-seq2 dataset. Our study establishes a brain-wide, single-cell DNA methylome and 3D multi-omic atlas and provides a valuable resource for comprehending the cellular–spatial and regulatory genome diversity of the mouse brain.</p>
         </span>
         
     </td>
