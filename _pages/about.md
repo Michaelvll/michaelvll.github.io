@@ -36,6 +36,7 @@ Before coming to Berkeley, I was an undergraduate student majoring in computer s
 ### News
 
 * **[2024.04]** Our "Can't Be Late" [paper](https://www.usenix.org/system/files/nsdi24-wu-zhanghao.pdf) is appearing in NSDI'24 and won the **Outstanding Paper Award**.
+* **[2024.01]** [IBM Fellowship, 2023](https://research.ibm.com/university/awards/fellowships-awardees.html).
 * **[2023.04]** Our SkyPilot [paper](https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng) is appearing in NSDI'23.
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/skypilot-org/skypilot" data-show-count="true" aria-label="Star skypilot-org/skypilot on GitHub">Star</a>
@@ -54,6 +55,8 @@ Before coming to Berkeley, I was an undergraduate student majoring in computer s
 
 
 ### Honors & Award
+* **Outstanding Paper Award**, in NSDI'24, 2024.
+* **IBM Fellowship**, 2024.
 * **1st place**, in Visual Wake Words (VWW) Challenge of CVPR'19, 2019.
 * **3rd place**, in Low Power Image Recognition Challenge of CVPR'19 (1st place of academic groups), 2019.
 * **Outstanding Winner**,in Mathematical Contest in Modeling (top 0.5%), 2017.

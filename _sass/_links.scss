@@ -10,7 +10,6 @@ a {
 
 article a, .news a {
     color: $link-color;
-    font-weight: bold;
 
     &:hover {
         text-decoration: underline;

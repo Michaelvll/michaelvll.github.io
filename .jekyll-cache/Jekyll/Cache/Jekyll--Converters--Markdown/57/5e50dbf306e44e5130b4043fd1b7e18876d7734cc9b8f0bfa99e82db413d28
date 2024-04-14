@@ -1,4 +1,4 @@
-I"��<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on Sky Computing over clouds, specially for AI.</p>
+I"��<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on Sky Computing over clouds, specially for AI.</p>
 
 <p>I am focusing on building <a href="https://skypilot.readthedocs.io/en/latest/">SkyPilot</a>, a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">Sky Computing vision</a>. Please check out our system on <a href="https://github.com/skypilot-org/skypilot">Github</a>. The paper is available in NSDI’23 and the latest paper for broker policy “Can’t Be Late” will be available in NSDI’24.</p>
 
@@ -10,6 +10,7 @@
 
 <ul>
   <li><strong>[2024.04]</strong> Our “Can’t Be Late” <a href="https://www.usenix.org/system/files/nsdi24-wu-zhanghao.pdf">paper</a> is appearing in NSDI’24 and won the <strong>Outstanding Paper Award</strong>.</li>
+  <li><strong>[2024.01]</strong> <a href="https://research.ibm.com/university/awards/fellowships-awardees.html">IBM Fellowship, 2023</a>.</li>
   <li><strong>[2023.04]</strong> Our SkyPilot <a href="https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng">paper</a> is appearing in NSDI’23.
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/skypilot-org/skypilot" data-show-count="true" aria-label="Star skypilot-org/skypilot on GitHub">Star</a></li>
@@ -2093,6 +2094,8 @@
 
 <h3 id="honors--award">Honors &amp; Award</h3>
 <ul>
+  <li><strong>Outstanding Paper Award</strong>, in NSDI’24, 2024.</li>
+  <li><strong>IBM Fellowship</strong>, 2024.</li>
   <li><strong>1st place</strong>, in Visual Wake Words (VWW) Challenge of CVPR’19, 2019.</li>
   <li><strong>3rd place</strong>, in Low Power Image Recognition Challenge of CVPR’19 (1st place of academic groups), 2019.</li>
   <li><strong>Outstanding Winner</strong>,in Mathematical Contest in Modeling (top 0.5%), 2017.</li>
