@@ -1,6 +1,21 @@
 ---
 ---
 
+@inproceedings{Wu:2024SkySpot,
+  author    = {Zhanghao Wu and Wei-Lin Chiang and Ziming Mao and Zongheng Yang and Eric Friedman and Scott Shenker and Ion Stoica},
+  title     = {Can{\textquoteright}t Be Late: Optimizing Spot Instance Savings under Deadlines},
+  booktitle = {21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)},
+  year      = {2024},
+  isbn      = {978-1-939133-39-7},
+  address   = {Santa Clara, CA},
+  pages     = {185--203},
+  url       = {https://www.usenix.org/conference/nsdi24/presentation/wu-zhanghao},
+  publisher = {USENIX Association},
+  month     = apr,
+  abstract = {Cloud providers offer spot instances alongside on-demand instances to optimize resource utilization. While economically appealing, spot instances’ preemptible nature causes them ill-suited for deadline-sensitive jobs. To allow jobs to meet deadlines while leveraging spot instances, we propose a simple idea: use on-demand instances judiciously as a backup resource. However, due to the unpredictable spot instance availability, determining when to switch between spot and on-demand to minimize cost requires careful policy design. In this paper, we first provide an in-depth characterization of spot instances (e.g., availability, pricing, duration), and develop a basic theoretical model to examine the worst and average-case behaviors of baseline policies (e.g., greedy). The model serves as a foundation to motivate our design of a simple and effective policy, Uniform Progress, which is parameter-free and requires no assumptions on spot availability. Our empirical study, based on three-month-long real spot availability traces on AWS, demonstrates that it can (1) outperform the greedy policy by closing the gap to the optimal policy by 2× in both average and bad cases, and (2) further reduce the gap when limited future knowledge is given. These results hold in a variety of conditions ranging from loose to tight deadlines, low to high spot availability, and on single or multiple instances. By implementing this policy on top of SkyPilot, an intercloud broker system, we achieve 27%-84% cost savings across a variety of representative real-world workloads and deadlines. The spot availability traces are open-sourced for future research.},
+  image = {skyspot.png}
+}
+
 @inproceedings{Yang:2023SkyPilot,
   author    = {Zongheng Yang* and Zhanghao Wu* and Michael Luo and Wei-Lin Chiang and Romil Bhardwaj and Woosuk Kwon and Siyuan Zhuang and Frank Sifei Luan and Gautam Mittal and Scott Shenker and Ion Stoica},
   title     = {{SkyPilot}: An Intercloud Broker for Sky Computing},
@@ -18,6 +33,44 @@
   code      = {https://github.com/skypilot-org/skypilot},
   abstract  = {To comply with the increasing number of government regulations about data placement and processing, and to protect themselves against major cloud outages, many users want the ability to easily migrate their workloads between clouds. In this paper we propose doing so not by imposing uniform and comprehensive standards, but by creating a fine-grained two-sided market via an intercloud broker. These brokers will allow users to view the cloud ecosystem not just as a collection of individual and largely incompatible clouds but as a more integrated Sky of Computing. We describe the design and implementation of an intercloud broker, named SkyPilot, evaluate its benefits, and report on its real-world usage.}
 }
+
+
+@article{liu2023single,
+  title     = {Single-cell DNA methylome and 3D multi-omic atlas of the adult mouse brain},
+  author    = {Liu, Hanqing and Zeng, Qiurui and Zhou, Jingtian and Bartlett, Anna and Wang, Bang-An and Berube, Peter and Tian, Wei and Kenworthy, Mia and Altshul, Jordan and Nery, Joseph R and others},
+  journal   = {Nature},
+  volume    = {624},
+  number    = {7991},
+  pages     = {366--377},
+  year      = {2023},
+  publisher = {Nature Publishing Group UK London},
+  abstract = {Cytosine DNA methylation is essential in brain development and is implicated in various neurological disorders. Understanding DNA methylation diversity across the entire brain in a spatial context is fundamental for a complete molecular atlas of brain cell types and their gene regulatory landscapes. Here we used single-nucleus methylome sequencing (snmC-seq3) and multi-omic sequencing (snm3C-seq)1 technologies to generate 301,626 methylomes and 176,003 chromatin conformation–methylome joint profiles from 117 dissected regions throughout the adult mouse brain. Using iterative clustering and integrating with companion whole-brain transcriptome and chromatin accessibility datasets, we constructed a methylation-based cell taxonomy with 4,673 cell groups and 274 cross-modality-annotated subclasses. We identified 2.6 million differentially methylated regions across the genome that represent potential gene regulation elements. Notably, we observed spatial cytosine methylation patterns on both genes and regulatory elements in cell types within and across brain regions. Brain-wide spatial transcriptomics data validated the association of spatial epigenetic diversity with transcription and improved the anatomical mapping of our epigenetic datasets. Furthermore, chromatin conformation diversities occurred in important neuronal genes and were highly associated with DNA methylation and transcription changes. Brain-wide cell-type comparisons enabled the construction of regulatory networks that incorporate transcription factors, regulatory elements and their potential downstream gene targets. Finally, intragenic DNA methylation and chromatin conformation patterns predicted alternative gene isoform expression observed in a whole-brain SMART-seq2 dataset. Our study establishes a brain-wide, single-cell DNA methylome and 3D multi-omic atlas and provides a valuable resource for comprehending the cellular–spatial and regulatory genome diversity of the mouse brain.},
+  url = {https://www.nature.com/articles/s41586-023-06805-y},
+  image = {brain.png}
+}
+
+@inproceedings{zheng2024realchatm,
+  title     = {LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset},
+  author    = {Lianmin Zheng and Wei-Lin Chiang and Ying Sheng and Tianle Li and Siyuan Zhuang and Zhanghao Wu and Yonghao Zhuang and Zhuohan Li and Zi Lin and Eric Xing and Joseph E. Gonzalez and Ion Stoica and Hao Zhang},
+  booktitle = {The Twelfth International Conference on Learning Representations},
+  year      = {2024},
+  url       = {https://arxiv.org/pdf/2309.11998.pdf},
+  image     = {lmsys.png},
+  abstract = {Studying how people interact with large language models (LLMs) in real-world scenarios is increasingly important due to their widespread use in various applications. In this paper, we introduce LMSYS-Chat-1M, a large-scale dataset containing one million real-world conversations with 25 state-of-the-art LLMs. This dataset is collected from 210K unique IP addresses in the wild on our Vicuna demo and Chatbot Arena website. We offer an overview of the dataset's content, including its curation process, basic statistics, and topic distribution, highlighting its diversity, originality, and scale. We demonstrate its versatility through four use cases: developing content moderation models that perform similarly to GPT-4, building a safety benchmark, training instruction-following models that perform similarly to Vicuna, and creating challenging benchmark questions. We believe that this dataset will serve as a valuable resource for understanding and advancing LLM capabilities. The dataset is publicly available at https://huggingface.co/datasets/lmsys/lmsys-chat-1m}
+}
+
+@article{zheng2024judging,
+  title   = {Judging llm-as-a-judge with mt-bench and chatbot arena},
+  author  = {Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric and others},
+  journal = {Advances in Neural Information Processing Systems},
+  volume  = {36},
+  year    = {2024},
+  abstract = {Evaluating large language model (LLM) based chat assistants is challenging due to their broad capabilities and the inadequacy of existing benchmarks in measuring human preferences.To address this, we explore using strong LLMs as judges to evaluate these models on more open-ended questions.We examine the usage and limitations of LLM-as-a-judge, including position, verbosity, and self-enhancement biases, as well as limited reasoning ability, and propose solutions to mitigate some of them.We then verify the agreement between LLM judges and human preferences by introducing two benchmarks: MT-bench, a multi-turn question set; and Chatbot Arena, a crowdsourced battle platform.Our results reveal that strong LLM judges like GPT-4 can match both controlled and crowdsourced human preferences well, achieving over 80\% agreement, the same level of agreement between humans.Hence, LLM-as-a-judge is a scalable and explainable way to approximate human preferences, which are otherwise very expensive to obtain.Additionally, we show our benchmark and traditional benchmarks complement each other by evaluating several variants of LLaMA and Vicuna.The MT-bench questions, 3K expert votes, and 30K conversations with human preferences are publicly available at https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge.},
+  code = {https://github.com/lm-sys/FastChat},
+  image = {judging.png}
+}
+
+
 @misc{vicuna2023,
   title  = {Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality},
   url    = {https://lmsys.org/blog/2023-03-30-vicuna/},
