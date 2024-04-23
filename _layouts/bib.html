@@ -68,6 +68,9 @@
             {% if entry.year %}
             {{entry.year}}
             {% endif %}
+            {% if entry.outstanding %}
+                <strong> (Outstanding Paper Award)</strong>
+            {% endif %}
             {% if entry.oral %}
                 <strong> (Oral)</strong>
             {% endif %}
