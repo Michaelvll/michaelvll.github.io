@@ -15,7 +15,7 @@ education:
   hrefs: ["https://berkeley.edu", "https://mit.edu", "http://en.sjtu.edu.cn"]
   images: [assets/img/berkeley.png, assets/img/mit.png, assets/img/sjtu.png]
   location: [USA, USA, China]
-  description: ["Ph.D. student at <a href='https://sky.cs.berkeley.edu/'>Sky Computing Lab</a> (aka RISELab, AMPLab). Aug. 2020 - Present",
+  description: ["Ph.D. student at <a href='https://sky.cs.berkeley.edu/'>Sky Computing Lab</a> (aka RISELab, AMPLab). Aug. 2020 - May. 2024.",
                 "Research assistant, working with Prof. <a href='https://songhan.mit.edu'>Song Han</a>. Jul. 2019 - Jan. 2020.",
                 "B.Eng. in Computer Science at ACM Honors Class, advised by <a href='http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140'>Yong Yu</a>. Sep. 2016 - Jun. 2020."]
 
