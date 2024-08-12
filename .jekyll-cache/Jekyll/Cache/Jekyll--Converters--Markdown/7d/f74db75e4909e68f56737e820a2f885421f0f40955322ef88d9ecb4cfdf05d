@@ -1,532 +1,6 @@
-I"��<p>I fortunately joined the CS Ph.D. program at <a href="https://sky.cs.berkeley.edu/">UC Berkeley Sky Computing Lab</a> in the fall, 2020. I am currently working with Prof. <a href="http://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a> on Sky Computing over clouds, specially for AI.</p>
-
-<p>I am focusing on building <a href="https://skypilot.readthedocs.io/en/latest/">SkyPilot</a>, a framework for easily and cost effectively running ML and batch jobs on any cloud, which aims to realize the <a href="https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s02-stoica.pdf">Sky Computing vision</a>. Please check out our system on <a href="https://github.com/skypilot-org/skypilot">Github</a>. The paper is available in NSDI’23 and the latest paper for broker policy “Can’t Be Late” will be available in NSDI’24.</p>
-
-<p>Before coming to Berkeley, I was an undergraduate student majoring in computer science at Shanghai Jiao Tong University (<a href="http://en.sjtu.edu.cn/">SJTU</a>), a member of the SJTU ACM Honors Class, and a research intern working with <a href="https://speechlab.sjtu.edu.cn/members/kai_yu">Prof. Kai Yu</a> and <a href="https://speechlab.sjtu.edu.cn/members/yanmin_qian">Prof. Yanmin Qian</a> at SJTU SpeechLab. I also had a wonderful time as a research assistant working with <a href="https://songhan.mit.edu">Prof. Song Han</a> at MIT HAN Lab.</p>
-
-<!-- My research interests lie in **efficient deep learning**, especially for **natural language processing** and **speech**, and **system**. -->
-
-<h3 id="news">News</h3>
-
-<ul>
-  <li><strong>[2024.04]</strong> Our “Can’t Be Late” <a href="https://www.usenix.org/system/files/nsdi24-wu-zhanghao.pdf">paper</a> is appearing in NSDI’24 and won the <strong>Outstanding Paper Award</strong>.</li>
-  <li><strong>[2024.01]</strong> <a href="https://research.ibm.com/university/awards/fellowships-awardees.html">IBM Fellowship, 2023</a>.</li>
-  <li><strong>[2023.04]</strong> Our SkyPilot <a href="https://www.usenix.org/conference/nsdi23/presentation/yang-zongheng">paper</a> is appearing in NSDI’23.
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/skypilot-org/skypilot" data-show-count="true" aria-label="Star skypilot-org/skypilot on GitHub">Star</a></li>
-  <li><strong>[2023.03]</strong> An open-source chatbot, <a href="https://vicuna.lmsys.org">Vicuna</a>, powered by SkyPilot is released with a <a href="https://chat.lmsys.org">demo</a>. 
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/lm-sys/FastChat" data-show-count="true" aria-label="Star lm-sys/FastChat on GitHub">Star</a></li>
-</ul>
-
-<h3 id="publications">Publications</h3>
+I"b�
+<h3 class="year"><slim>2023</slim></h3>
 <ol class="bibliography"><li>
-
-<div id="Wu:2024SkySpot">
-<div class="namecard">
-    <table>
-    <tr>
-    <td class="img-td">
-    
-        <a href="/assets/papers/img/skyspot.png">
-            <img src="/assets/papers/img/skyspot.png" width="100%" />
-        </a>
-    
-    </td>
-    <td class="txt-td">
-        
-            <span class="title"><strong>Can’t Be Late: Optimizing Spot Instance Savings under Deadlines</strong></span>
-            <span class="author nolinkcolor">
-            
-                
-                
-                    
-                    <em><a href="">Zhanghao Wu</a></em>,
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Wei-Lin Chiang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Ziming Mao,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Zongheng Yang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Eric Friedman,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Scott Shenker,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        and Ion Stoica
-                    
-                    
-                
-                
-            
-            </span>
-
-            <span class="periodical">
-            
-            <em>In NSDI (Outstanding Paper Award)</em>
-            
-            
-            2024
-            
-            
-            </span>
-        
-
-        <span class="links">
-        
-            
-            <a class="abstract">Abstract</a>
-        
-        
-        
-        
-             | 
-            
-            <a href="https://www.usenix.org/system/files/nsdi24-wu-zhanghao.pdf" target="_blank">Paper</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </span>
-
-        <!-- Hidden abstract block -->
-        
-        <span class="abstract hidden">
-            <p>Cloud providers offer spot instances alongside on-demand instances to optimize resource utilization. While economically appealing, spot instances’ preemptible nature causes them ill-suited for deadline-sensitive jobs. To allow jobs to meet deadlines while leveraging spot instances, we propose a simple idea: use on-demand instances judiciously as a backup resource. However, due to the unpredictable spot instance availability, determining when to switch between spot and on-demand to minimize cost requires careful policy design. In this paper, we first provide an in-depth characterization of spot instances (e.g., availability, pricing, duration), and develop a basic theoretical model to examine the worst and average-case behaviors of baseline policies (e.g., greedy). The model serves as a foundation to motivate our design of a simple and effective policy, Uniform Progress, which is parameter-free and requires no assumptions on spot availability. Our empirical study, based on three-month-long real spot availability traces on AWS, demonstrates that it can (1) outperform the greedy policy by closing the gap to the optimal policy by 2× in both average and bad cases, and (2) further reduce the gap when limited future knowledge is given. These results hold in a variety of conditions ranging from loose to tight deadlines, low to high spot availability, and on single or multiple instances. By implementing this policy on top of SkyPilot, an intercloud broker system, we achieve 27%-84% cost savings across a variety of representative real-world workloads and deadlines. The spot availability traces are open-sourced for future research.</p>
-        </span>
-        
-    </td>
-    </tr>
-    </table>
-</div>
-</div>
-
-</li>
-<li>
-
-<div id="zheng2024realchatm">
-<div class="namecard">
-    <table>
-    <tr>
-    <td class="img-td">
-    
-        <a href="/assets/papers/img/lmsys.png">
-            <img src="/assets/papers/img/lmsys.png" width="100%" />
-        </a>
-    
-    </td>
-    <td class="txt-td">
-        
-            <span class="title"><strong>LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset</strong></span>
-            <span class="author nolinkcolor">
-            
-                
-                
-                    
-                    
-                        Lianmin Zheng,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Wei-Lin Chiang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Ying Sheng,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Tianle Li,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Siyuan Zhuang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    <em><a href="">Zhanghao Wu</a></em>,
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Yonghao Zhuang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Zhuohan Li,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Zi Lin,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Eric Xing,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Joseph E. Gonzalez,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Ion Stoica,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        and Hao Zhang
-                    
-                    
-                
-                
-            
-            </span>
-
-            <span class="periodical">
-            
-            <em>In ICLR</em>
-            
-            
-            2024
-            
-            
-            </span>
-        
-
-        <span class="links">
-        
-            
-            <a class="abstract">Abstract</a>
-        
-        
-        
-        
-             | 
-            
-            <a href="https://arxiv.org/pdf/2309.11998.pdf" target="_blank">Paper</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        </span>
-
-        <!-- Hidden abstract block -->
-        
-        <span class="abstract hidden">
-            <p>Studying how people interact with large language models (LLMs) in real-world scenarios is increasingly important due to their widespread use in various applications. In this paper, we introduce LMSYS-Chat-1M, a large-scale dataset containing one million real-world conversations with 25 state-of-the-art LLMs. This dataset is collected from 210K unique IP addresses in the wild on our Vicuna demo and Chatbot Arena website. We offer an overview of the dataset’s content, including its curation process, basic statistics, and topic distribution, highlighting its diversity, originality, and scale. We demonstrate its versatility through four use cases: developing content moderation models that perform similarly to GPT-4, building a safety benchmark, training instruction-following models that perform similarly to Vicuna, and creating challenging benchmark questions. We believe that this dataset will serve as a valuable resource for understanding and advancing LLM capabilities. The dataset is publicly available at https://huggingface.co/datasets/lmsys/lmsys-chat-1m</p>
-        </span>
-        
-    </td>
-    </tr>
-    </table>
-</div>
-</div>
-
-</li>
-<li>
-
-<div id="zheng2024judging">
-<div class="namecard">
-    <table>
-    <tr>
-    <td class="img-td">
-    
-        <a href="/assets/papers/img/judging.png">
-            <img src="/assets/papers/img/judging.png" width="100%" />
-        </a>
-    
-    </td>
-    <td class="txt-td">
-        
-            <span class="title"><strong>Judging llm-as-a-judge with mt-bench and chatbot arena</strong></span>
-            <span class="author nolinkcolor">
-            
-                
-                
-                    
-                    
-                        Lianmin Zheng,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Wei-Lin Chiang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Ying Sheng,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Siyuan Zhuang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    <em><a href="">Zhanghao Wu</a></em>,
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Yonghao Zhuang,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Zi Lin,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Zhuohan Li,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Dacheng Li,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        Eric Xing,
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        and  others
-                    
-                    
-                
-                
-            
-            </span>
-
-            <span class="periodical">
-            
-            <em>In NeurIPS</em>
-            
-            
-            2024
-            
-            
-            </span>
-        
-
-        <span class="links">
-        
-            
-            <a class="abstract">Abstract</a>
-        
-        
-        
-        
-             | 
-            
-            <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/91f18a1287b398d378ef22505bf41832-Paper-Datasets_and_Benchmarks.pdf" target="_blank">Paper</a>
-        
-        
-        
-        
-        
-        
-        
-        
-             | 
-            
-            <a href="https://github.com/lm-sys/FastChat" target="_blank">Code</a>
-        
-        
-        </span>
-
-        <!-- Hidden abstract block -->
-        
-        <span class="abstract hidden">
-            <p>Evaluating large language model (LLM) based chat assistants is challenging due to their broad capabilities and the inadequacy of existing benchmarks in measuring human preferences.To address this, we explore using strong LLMs as judges to evaluate these models on more open-ended questions.We examine the usage and limitations of LLM-as-a-judge, including position, verbosity, and self-enhancement biases, as well as limited reasoning ability, and propose solutions to mitigate some of them.We then verify the agreement between LLM judges and human preferences by introducing two benchmarks: MT-bench, a multi-turn question set; and Chatbot Arena, a crowdsourced battle platform.Our results reveal that strong LLM judges like GPT-4 can match both controlled and crowdsourced human preferences well, achieving over 80% agreement, the same level of agreement between humans.Hence, LLM-as-a-judge is a scalable and explainable way to approximate human preferences, which are otherwise very expensive to obtain.Additionally, we show our benchmark and traditional benchmarks complement each other by evaluating several variants of LLaMA and Vicuna.The MT-bench questions, 3K expert votes, and 30K conversations with human preferences are publicly available at https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge.</p>
-        </span>
-        
-    </td>
-    </tr>
-    </table>
-</div>
-</div>
-
-</li>
-<li>
 
 <div id="Yang:2023SkyPilot">
 <div class="namecard">
@@ -660,6 +134,7 @@
             
             
             2023
+            
             
             
             </span>
@@ -840,6 +315,7 @@
             
             
             2023
+            
             
             
             </span>
@@ -1024,6 +500,7 @@
             2023
             
             
+            
             </span>
         
 
@@ -1069,8 +546,15 @@
 </div>
 </div>
 
-</li>
-<li>
+</li></ol>
+<ol class="bibliography"></ol>
+
+<h3 class="year"><slim>2022</slim></h3>
+<ol class="bibliography"></ol>
+<ol class="bibliography"></ol>
+
+<h3 class="year"><slim>2021</slim></h3>
+<ol class="bibliography"><li>
 
 <div id="Wu:2021GraphTrans">
 <div class="namecard">
@@ -1154,6 +638,7 @@
             
             
             2021
+            
             
             
             </span>
@@ -1284,6 +769,7 @@
             2021
             
             
+            
             </span>
         
 
@@ -1325,8 +811,11 @@
 </div>
 </div>
 
-</li>
-<li>
+</li></ol>
+<ol class="bibliography"></ol>
+
+<h3 class="year"><slim>2020</slim></h3>
+<ol class="bibliography"><li>
 
 <div id="Wu:2020DataMix">
 <div class="namecard">
@@ -1400,6 +889,7 @@
             
             
             2020
+            
             
             
             </span>
@@ -1534,6 +1024,7 @@
             2020
             
             
+            
             </span>
         
 
@@ -1652,6 +1143,7 @@
             2020
             
             
+            
             </span>
         
 
@@ -1689,134 +1181,6 @@
         
         <span class="abstract hidden">
             <p>Transformer has become ubiquitous in natural language processing (e.g., machine translation, question answering); however, it requires enormous amount of computations to achieve high performance, which makes it not suitable for mobile applications that are tightly constrained by the hardware resources and battery. In this paper, we present an efficient mobile NLP architecture, Lite Transformer to facilitate deploying mobile NLP applications on edge devices. The key primitive is the Long-Short Range Attention (LSRA), where one group of heads specializes in the local context modeling (by convolution) while another group specializes in the long-distance relationship modeling (by attention). Such specialization brings consistent improvement over the vanilla transformer on three well-established language tasks: machine translation, abstractive summarization, and language modeling. Under constrained resources (500M/100M MACs), Lite Transformer outperforms transformer on WMT’14 English-French by 1.2/1.7 BLEU, respectively. Lite Transformer reduces the computation of transformer base model by 2.5x with 0.3 BLEU score degradation. Combining with pruning and quantization, we further compressed the model size of Lite Transformer by 18.2x. For language modeling, Lite Transformer achieves 1.8 lower perplexity than the transformer at around 500M MACs. Notably, Lite Transformer outperforms the AutoML-based Evolved Transformer by 0.5 higher BLEU for the mobile NLP setting without the costly architecture search that requires more than 250 GPU years. Code has been made available at <a href="https://github.com/mit-han-lab/lite-transformer">https://github.com/mit-han-lab/lite-transformer</a>.</p>
-        </span>
-        
-    </td>
-    </tr>
-    </table>
-</div>
-</div>
-
-</li>
-<li>
-
-<div id="Han:2019rc">
-<div class="namecard">
-    <table>
-    <tr>
-    <td class="img-td">
-    
-        <a href="/assets/papers/img/on_device.png">
-            <img src="/assets/papers/img/on_device.png" width="100%" />
-        </a>
-    
-    </td>
-    <td class="txt-td">
-        
-            <span class="title"><strong>On-Device Image Classification with Proxyless Neural Architecture Search and Quantization-Aware Fine-Tuning</strong></span>
-            <span class="author nolinkcolor">
-            
-                
-                
-                    
-                    
-                        <a href="https://scholar.google.com/citations?user=x-AvvrYAAAAJ&amp;hl=en&amp;authuser=1" target="_blank">Han Cai</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        <a href="https://sites.google.com/view/tianzhe-wang/home" target="_blank">Tianzhe Wang</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    <em><a href="">Zhanghao Wu</a></em>,
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        <a href="https://scholar.google.com/citations?user=c1-_-dUAAAAJ&amp;hl=en" target="_blank">Kuan Wang</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        <a href="http://linji.me/" target="_blank">Ji Lin</a>, 
-                    
-                    
-                
-                
-            
-                
-                
-                    
-                    
-                        and <a href="https://songhan.mit.edu" target="_blank">Song Han</a> 
-                    
-                    
-                
-                
-            
-            </span>
-
-            <span class="periodical">
-            
-            <em>In ICCV workshop</em>
-            
-            
-            2019
-            
-            
-            </span>
-        
-
-        <span class="links">
-        
-            
-            <a class="abstract">Abstract</a>
-        
-        
-        
-        
-             | 
-            
-            <a href="http://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.pdf" target="_blank">Paper</a>
-        
-        
-        
-        
-        
-        
-             | 
-            
-            <a href="http://localhost:4000/assets/pdf/Presentation_on_device.pdf" target="_blank">Slides</a>
-        
-        
-        
-        
-        </span>
-
-        <!-- Hidden abstract block -->
-        
-        <span class="abstract hidden">
-            <p>It is challenging to efficiently deploy deep learning models on resource-constrained hardware devices (e.g., mobile and IoT devices) with strict efficiency constraints (e.g., latency, energy consumption). We employ Proxyless Neural Architecture Search (ProxylessNAS) to auto design compact and specialized neural network architectures for the target hardware platform. ProxylessNAS makes latency differentiable, so we can optimize not only accuracy but also latency by gradient descent. Such direct optimization saves the search cost by 200x compared to conventional neural architecture search methods. Our work is followed by quantization-aware fine-tuning to further boost efficiency. In the Low Power Image Recognition Competition at CVPR’19, our solution won the 3rd place on the task of Real-Time Image Classification (online track).</p>
         </span>
         
     </td>
@@ -1902,6 +1266,7 @@
             2020
             
             
+            
             </span>
         
 
@@ -1939,8 +1304,139 @@
 </div>
 </div>
 
-</li>
-<li>
+</li></ol>
+
+<h3 class="year"><slim>2019</slim></h3>
+<ol class="bibliography"><li>
+
+<div id="Han:2019rc">
+<div class="namecard">
+    <table>
+    <tr>
+    <td class="img-td">
+    
+        <a href="/assets/papers/img/on_device.png">
+            <img src="/assets/papers/img/on_device.png" width="100%" />
+        </a>
+    
+    </td>
+    <td class="txt-td">
+        
+            <span class="title"><strong>On-Device Image Classification with Proxyless Neural Architecture Search and Quantization-Aware Fine-Tuning</strong></span>
+            <span class="author nolinkcolor">
+            
+                
+                
+                    
+                    
+                        <a href="https://scholar.google.com/citations?user=x-AvvrYAAAAJ&amp;hl=en&amp;authuser=1" target="_blank">Han Cai</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://sites.google.com/view/tianzhe-wang/home" target="_blank">Tianzhe Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    <em><a href="">Zhanghao Wu</a></em>,
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="https://scholar.google.com/citations?user=c1-_-dUAAAAJ&amp;hl=en" target="_blank">Kuan Wang</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        <a href="http://linji.me/" target="_blank">Ji Lin</a>, 
+                    
+                    
+                
+                
+            
+                
+                
+                    
+                    
+                        and <a href="https://songhan.mit.edu" target="_blank">Song Han</a> 
+                    
+                    
+                
+                
+            
+            </span>
+
+            <span class="periodical">
+            
+            <em>In ICCV workshop</em>
+            
+            
+            2019
+            
+            
+            
+            </span>
+        
+
+        <span class="links">
+        
+            
+            <a class="abstract">Abstract</a>
+        
+        
+        
+        
+             | 
+            
+            <a href="http://openaccess.thecvf.com/content_ICCVW_2019/papers/LPCV/Cai_On-Device_Image_Classification_with_Proxyless_Neural_Architecture_Search_and_Quantization-Aware_ICCVW_2019_paper.pdf" target="_blank">Paper</a>
+        
+        
+        
+        
+        
+        
+             | 
+            
+            <a href="http://localhost:4000/assets/pdf/Presentation_on_device.pdf" target="_blank">Slides</a>
+        
+        
+        
+        
+        </span>
+
+        <!-- Hidden abstract block -->
+        
+        <span class="abstract hidden">
+            <p>It is challenging to efficiently deploy deep learning models on resource-constrained hardware devices (e.g., mobile and IoT devices) with strict efficiency constraints (e.g., latency, energy consumption). We employ Proxyless Neural Architecture Search (ProxylessNAS) to auto design compact and specialized neural network architectures for the target hardware platform. ProxylessNAS makes latency differentiable, so we can optimize not only accuracy but also latency by gradient descent. Such direct optimization saves the search cost by 200x compared to conventional neural architecture search methods. Our work is followed by quantization-aware fine-tuning to further boost efficiency. In the Low Power Image Recognition Competition at CVPR’19, our solution won the 3rd place on the task of Real-Time Image Classification (online track).</p>
+        </span>
+        
+    </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+</li></ol>
+<ol class="bibliography"><li>
 
 <div id="Wu:2019vaeda">
 <div class="namecard">
@@ -2006,6 +1502,7 @@
             2019
             
             
+            
                 <strong> (Oral)</strong>
             
             </span>
@@ -2050,60 +1547,5 @@
 </div>
 
 </li></ol>
-
-<h3 id="education">Education</h3>
-
-<div id="education">
-<div class="namecard">
-<table>
-    
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="https://berkeley.edu"><img src="assets/img/berkeley.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="https://berkeley.edu">University of California, Berkeley</a>, USA<br />
-         Ph.D. student at <a href="https://sky.cs.berkeley.edu/">Sky Computing Lab</a> (aka RISELab, AMPLab). Aug. 2020 - Present
-    </td>
-    </tr>
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="https://mit.edu"><img src="assets/img/mit.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="https://mit.edu">Massachusetts Institute Technology</a>, USA<br />
-         Research assistant, working with Prof. <a href="https://songhan.mit.edu">Song Han</a>. Jul. 2019 - Jan. 2020.
-    </td>
-    </tr>
-        
-    <tr>
-    <td class="logo-img-td">
-        <a href="http://en.sjtu.edu.cn"><img src="assets/img/sjtu.png" width="100%" /></a>
-    </td>
-    <td class="logo-txt-td">
-         <a href="http://en.sjtu.edu.cn">Shanghai Jiao Tong University</a>, China<br />
-         B.Eng. in Computer Science at ACM Honors Class, advised by <a href="http://www.cs.sjtu.edu.cn/en/PeopleDetail.aspx?id=140">Yong Yu</a>. Sep. 2016 - Jun. 2020.
-    </td>
-    </tr>
-        
-</table>
-</div>
-</div>
-
-<h3 id="honors--award">Honors &amp; Award</h3>
-<ul>
-  <li><strong>Outstanding Paper Award</strong>, in NSDI’24, 2024.</li>
-  <li><strong>IBM Fellowship</strong>, 2024.</li>
-  <li><strong>1st place</strong>, in Visual Wake Words (VWW) Challenge of CVPR’19, 2019.</li>
-  <li><strong>3rd place</strong>, in Low Power Image Recognition Challenge of CVPR’19 (1st place of academic groups), 2019.</li>
-  <li><strong>Outstanding Winner</strong>,in Mathematical Contest in Modeling (top 0.5%), 2017.</li>
-  <li><strong>Chinese National Scholarship</strong>, highest honor for undergraduates, top 0.2% nation wide, 2018 &amp; 2019.</li>
-  <li><strong>Excellent Graduate Award of SJTU</strong>, the highest honor for graduates at SJTU, 2020.</li>
-  <li><strong>Zhiyuan Outstanding Student Scholarship of SJTU</strong>, 16 graduates of SJTU Zhiyuan College, 2020.</li>
-  <li><strong>Fan Hsu-Chi Chancellor’s Scholarship</strong>, top 0.1%of 17,000 students in SJTU, 2017.</li>
-  <li><strong>Zhiyuan Honorary Scholarship</strong>, top 5% of 17,000 students in SJTU, 2016-2018.</li>
-</ul>
 
 :ET
