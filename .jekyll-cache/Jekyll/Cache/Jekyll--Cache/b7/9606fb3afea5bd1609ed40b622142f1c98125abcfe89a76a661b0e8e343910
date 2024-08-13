@@ -2,7 +2,7 @@
   "api_url": "https://api.github.com",
   "archived": false,
   "baseurl": "/pages/Michaelvll/michaelvll.github.io",
-  "build_revision": "e2ff7df993d891718f2a224801aead98a30cbd5f",
+  "build_revision": "f49e2e78598cbccd7c95eb7f7f16b048e2197c15",
   "clone_url": "https://github.com/Michaelvll/michaelvll.github.io.git",
   "contributors": [
     {
@@ -24,7 +24,7 @@
       "received_events_url": "https://api.github.com/users/Michaelvll/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 383
+      "contributions": 384
     },
     {
       "login": "daattali",
@@ -1446,7 +1446,7 @@
       "releases_url": "https://api.github.com/repos/Michaelvll/DeepCCA/releases{/id}",
       "deployments_url": "https://api.github.com/repos/Michaelvll/DeepCCA/deployments",
       "created_at": "2018-10-03 05:18:46 UTC",
-      "updated_at": "2024-07-20 17:20:27 UTC",
+      "updated_at": "2024-08-12 06:42:10 UTC",
       "pushed_at": "2023-08-24 17:16:15 UTC",
       "git_url": "git://github.com/Michaelvll/DeepCCA.git",
       "ssh_url": "git@github.com:Michaelvll/DeepCCA.git",
@@ -1454,8 +1454,8 @@
       "svn_url": "https://github.com/Michaelvll/DeepCCA",
       "homepage": null,
       "size": 10609,
-      "stargazers_count": 287,
-      "watchers_count": 287,
+      "stargazers_count": 288,
+      "watchers_count": 288,
       "language": "Python",
       "has_issues": true,
       "has_projects": true,
@@ -1484,7 +1484,7 @@
       "visibility": "public",
       "forks": 65,
       "open_issues": 7,
-      "watchers": 287,
+      "watchers": 288,
       "default_branch": "master"
     },
     {
@@ -2514,14 +2514,14 @@
       "releases_url": "https://api.github.com/repos/Michaelvll/michaelvll.github.io/releases{/id}",
       "deployments_url": "https://api.github.com/repos/Michaelvll/michaelvll.github.io/deployments",
       "created_at": "2018-09-15 17:31:16 UTC",
-      "updated_at": "2024-08-12 05:06:45 UTC",
-      "pushed_at": "2024-08-12 05:06:40 UTC",
+      "updated_at": "2024-08-12 05:09:37 UTC",
+      "pushed_at": "2024-08-12 05:09:41 UTC",
       "git_url": "git://github.com/Michaelvll/michaelvll.github.io.git",
       "ssh_url": "git@github.com:Michaelvll/michaelvll.github.io.git",
       "clone_url": "https://github.com/Michaelvll/michaelvll.github.io.git",
       "svn_url": "https://github.com/Michaelvll/michaelvll.github.io",
       "homepage": null,
-      "size": 270084,
+      "size": 271524,
       "stargazers_count": 0,
       "watchers_count": 0,
       "language": "SCSS",
@@ -3055,7 +3055,7 @@
       "releases_url": "https://api.github.com/repos/Michaelvll/myQShor/releases{/id}",
       "deployments_url": "https://api.github.com/repos/Michaelvll/myQShor/deployments",
       "created_at": "2018-08-05 16:43:24 UTC",
-      "updated_at": "2024-06-24 13:12:12 UTC",
+      "updated_at": "2024-08-12 22:37:21 UTC",
       "pushed_at": "2019-07-28 02:13:09 UTC",
       "git_url": "git://github.com/Michaelvll/myQShor.git",
       "ssh_url": "git@github.com:Michaelvll/myQShor.git",
@@ -3063,8 +3063,8 @@
       "svn_url": "https://github.com/Michaelvll/myQShor",
       "homepage": null,
       "size": 863,
-      "stargazers_count": 28,
-      "watchers_count": 28,
+      "stargazers_count": 29,
+      "watchers_count": 29,
       "language": "HTML",
       "has_issues": true,
       "has_projects": true,
@@ -3094,7 +3094,7 @@
       "visibility": "public",
       "forks": 11,
       "open_issues": 0,
-      "watchers": 28,
+      "watchers": 29,
       "default_branch": "master"
     },
     {
